@@ -1,0 +1,6 @@
+build/
+data/
+dist/
+venv/
+usecases/
+speakeasypy.egg-info/

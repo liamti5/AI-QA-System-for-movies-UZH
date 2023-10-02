@@ -83,7 +83,7 @@ class Agent:
 if __name__ == '__main__':
     ns1, ns2, ns3 = create_namespaces()
     print("creating graph ...")
-    g = create_graph('data/14_graph.nt', 'turtle')
+    g = create_graph('./data/14_graph.nt', 'turtle')
     print("graph created!")
     demo_bot = Agent("burn-largo-coffee_bot", "Q9R_PM3LJyRDfQ")
     demo_bot.listen()
