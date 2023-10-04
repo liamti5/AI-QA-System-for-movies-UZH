@@ -44,14 +44,22 @@ class Agent:
                     try: 
                         print("querying graph")
                         results = g.query(query)
+                        print(results)
+                        print("...................")
+                        print(type(results))
+
                         result_list = []
                         for row in results:
+                            print(type(row))
+                            print("....")
+                            print(row)
                             result_list.append(row)
                         
                         # # Send a message to the corresponding chat room using the post_messages method of the room object.
                         room.post_messages(f"Answer to your query: '{result_list[0]}' ")
 
-                    except:
+                    except Exception as e:
+                        print(e)
                         print("query failed")
                         room.post_messages(f"Sorry, I could not understand your query: '{message.message}' ")
                         continue
