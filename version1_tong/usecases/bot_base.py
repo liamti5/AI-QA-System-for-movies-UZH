@@ -22,6 +22,8 @@ class Agent:
 
 
     def query_graph(self, message):
+        message = message.replace('"""', '')
+        message = message.replace("'''", "")
         answer = [str(s) for s, in self.graph.query(message)]
         return answer
 
