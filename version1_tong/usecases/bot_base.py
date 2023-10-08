@@ -1,30 +1,19 @@
 from speakeasypy import Speakeasy, Chatroom
 from typing import List
 import time
-from rdflib import Graph
+from sparql import load_graph, sparql
 
 DEFAULT_HOST_URL = 'https://speakeasy.ifi.uzh.ch'
 listen_freq = 2
+
 
 class Agent:
     def __init__(self, username, password):
         self.username = username
         # Initialize the Speakeasy Python framework and login.
         self.speakeasy = Speakeasy(host=DEFAULT_HOST_URL, username=username, password=password)
+        load_graph()
         self.speakeasy.login()  # This framework will help you log out automatically when the program terminates.
-
-
-    def load_graph(self, path, graph_format):
-        print('loading graph...')
-        self.graph = Graph()
-        self.graph.parse(source=path, format=graph_format)
-        print('loaded graph successfully')
-
-
-    def query_graph(self, message):
-        answer = [str(s) for s, in self.graph.query(message)]
-        return answer
-
 
     def listen(self):
         while True:
@@ -49,9 +38,12 @@ class Agent:
                     try:
                         print('---------------------')
                         print(message.message)
-                        room.post_messages(str(self.query_graph(message.message)))
+                        room.post_messages(str(sparql(message.message)))
+                        # room.post_messages(str(sparql(message.message)))
                         print('---------------------')
                     except:
+                        room.post_messages('wrong RDF sentence!')
+                        print('wrong RDF sentence!')
                         pass
                     finally:
                         # Mark the message as processed, so it will be filtered out when retrieving new messages.
@@ -79,5 +71,4 @@ class Agent:
 
 if __name__ == '__main__':
     demo_bot = Agent("burn-largo-coffee_bot", "Q9R_PM3LJyRDfQ")
-    demo_bot.load_graph('./data/14_graph.nt', 'turtle')
     demo_bot.listen()
