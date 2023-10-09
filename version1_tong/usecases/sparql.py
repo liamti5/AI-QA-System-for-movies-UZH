@@ -19,6 +19,5 @@ def query(message):
     print('message in sparql')
     message = str(message)
     print(message)
-
-    temp = [str(s) for s, in graph.query(message)]
+    temp = [str(s).encode('utf-8') for s, in graph.query(message)]
     return temp

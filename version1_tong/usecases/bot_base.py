@@ -1,7 +1,7 @@
 from speakeasypy import Speakeasy, Chatroom
 from typing import List
 import time
-from usecases.sparql import load_graph, query
+from sparql import load_graph, query
 
 DEFAULT_HOST_URL = 'https://speakeasy.ifi.uzh.ch'
 listen_freq = 2
@@ -38,13 +38,17 @@ class Agent:
                     try:
                         print('---------------------')
                         print(message.message)
-                        room.post_messages(str(query(message.message)))
+                        answer = query(message.message)
+                        room.post_messages(str(answer))
                         # room.post_messages(str(query(message.message)))
                         print('---------------------')
-                    except:
-                        room.post_messages('wrong RDF sentence!')
-                        print('wrong RDF sentence!')
-                        pass
+
+
+                    except Exception as e:
+                        print(e)
+                        room.post_messages('invalid RDF sentence.')
+                        print('invalid RDF sentence.')
+
                     finally:
                         # Mark the message as processed, so it will be filtered out when retrieving new messages.
                         room.mark_as_processed(message)
