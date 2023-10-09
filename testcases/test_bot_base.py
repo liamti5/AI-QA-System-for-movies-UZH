@@ -2,13 +2,12 @@ import unittest
 from usecases.sparql import load_graph, query
 from usecases import bot_base
 
-class TestBotBase(unittest.TestCase):
-    
+class TestBotBase(unittest.TestCase):  
+
     @classmethod
-    def setUp(cls):
-        cls.agent = bot_base.Agent(username="burn-largo-coffee_bot", password="Q9R_PM3LJyRDfQ")
-        load_graph() 
-    
+    def setUpClass(cls):
+        load_graph()
+
 
     def test_query_graph_clean_input(self):
         queries = [
@@ -45,6 +44,23 @@ class TestBotBase(unittest.TestCase):
                     LIMIT 1
                 """,
                 'expected_result': ['Vampire Assassin']
+            },
+            {
+                'description': 'multiple results (limit = 10)',
+                'query': """
+                    PREFIX ddis: <http://ddis.ch/atai/>
+                    PREFIX wd: <http://www.wikidata.org/entity/>
+                    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+                    PREFIX schema: <http://schema.org/>
+                    SELECT ?lbl WHERE {
+                        ?movie wdt:P31 wd:Q11424 .
+                        ?movie ddis:rating ?rating .
+                        ?movie rdfs:label ?lbl .
+                    }
+                    ORDER BY ASC(?rating)
+                    LIMIT 10
+                """,
+                'expected_result': ['Vampire Assassin', 'Vampires vs. Zombies', 'Aag', 'Joystick Nation – Generation Hip Hop', 'Going Overboard', "Alex l'ariete", 'House of the Dead', 'Killers', "Ghosts Can't Do It", 'Snakes on a Train']
             },
             {
                 'description': 'Director of Apocalypse Now',
@@ -120,7 +136,7 @@ class TestBotBase(unittest.TestCase):
 
         for query_data in queries:
             with self.subTest(description=query_data['description']):
-                expected_value = query_data['expected_result']
+                expected_value = [str(s).encode('utf-8') for s in query_data['expected_result']]
                 actual_value = query(query_data['query'])
                 self.assertEqual(actual_value, expected_value)
 
@@ -166,7 +182,7 @@ class TestBotBase(unittest.TestCase):
                 'expected_result': ['Forrest Gump']
             },
              {
-                'description': 'Query contains hashtags',
+                'description': 'Query contains comments',
                 'query': '''
                     """ #test
                     PREFIX ddis: <http://ddis.ch/atai/>
@@ -188,7 +204,7 @@ class TestBotBase(unittest.TestCase):
 
         for query_data in queries:
             with self.subTest(description=query_data['description']):
-                expected_value = query_data['expected_result']
+                expected_value = [str(s).encode('utf-8') for s in query_data['expected_result']]
                 actual_value = query(query_data['query'])
                 self.assertEqual(actual_value, expected_value)
 

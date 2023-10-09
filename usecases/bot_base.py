@@ -1,7 +1,7 @@
 from speakeasypy import Speakeasy, Chatroom
 from typing import List
 import time
-from sparql import load_graph, query
+from usecases.sparql import load_graph, query
 
 DEFAULT_HOST_URL = 'https://speakeasy.ifi.uzh.ch'
 listen_freq = 2

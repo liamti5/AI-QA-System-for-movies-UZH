@@ -1,8 +1,0 @@
-Metadata-Version: 2.1
-Name: speakeasypy
-Version: 1.0.0
-Summary: some description for speakeasypy
-Home-page: https://gitlab.ifi.uzh.ch/ddis/Lectures/atai/speakeasy-python-client-library
-Author: author name for speakeasypy
-Author-email: author@email.ch
-Requires-Python: >=3.6

@@ -6,7 +6,7 @@ graph = rdflib.Graph()
 
 def load_graph():
     print('loading graph')
-    graph.parse('./data/14_graph.nt', format='turtle')
+    graph.parse('data/14_graph.nt', format='turtle')
     print('loaded graph successfully')
 
 
