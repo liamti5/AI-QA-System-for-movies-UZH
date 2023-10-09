@@ -5,11 +5,12 @@ graph = rdflib.Graph()
 
 
 def load_graph():
-    graph.parse('./14_graph.nt', format='turtle')
-    print('loaded map successfully')
+    print('loading graph')
+    graph.parse('./data/14_graph.nt', format='turtle')
+    print('loaded graph successfully')
 
 
-def sparql(message):
+def query(message):
     #remember to delete these 2 lines after this boring evaluation
     message = message.replace('"""', '').replace("'''", '')
     #it's wrong, but useful, at least we can pass this fucking evaluation

@@ -1,4 +1,5 @@
 import unittest
+from usecases.sparql import load_graph, query
 from usecases import bot_base
 
 class TestBotBase(unittest.TestCase):
@@ -6,7 +7,7 @@ class TestBotBase(unittest.TestCase):
     @classmethod
     def setUp(cls):
         cls.agent = bot_base.Agent(username="burn-largo-coffee_bot", password="Q9R_PM3LJyRDfQ")
-        cls.agent.load_graph("./data/14_graph.nt", "turtle") 
+        load_graph() 
     
 
     def test_query_graph_clean_input(self):
@@ -75,8 +76,8 @@ class TestBotBase(unittest.TestCase):
                             ?directorItem rdfs:label ?director . 
                         }
                         LIMIT 1
-                        """,
-                        'expected_result': ['Richard Marquand']
+                """,
+                'expected_result': ['Richard Marquand']
             },
             {
                 'description': 'Star Wars: Episode VI - Return of the Jedi',
@@ -120,7 +121,7 @@ class TestBotBase(unittest.TestCase):
         for query_data in queries:
             with self.subTest(description=query_data['description']):
                 expected_value = query_data['expected_result']
-                actual_value = self.agent.query_graph(query_data['query'])
+                actual_value = query(query_data['query'])
                 self.assertEqual(actual_value, expected_value)
 
 
@@ -188,7 +189,7 @@ class TestBotBase(unittest.TestCase):
         for query_data in queries:
             with self.subTest(description=query_data['description']):
                 expected_value = query_data['expected_result']
-                actual_value = self.agent.query_graph(query_data['query'])
+                actual_value = query(query_data['query'])
                 self.assertEqual(actual_value, expected_value)
 
 

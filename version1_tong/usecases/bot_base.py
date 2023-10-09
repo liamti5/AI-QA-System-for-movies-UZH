@@ -1,7 +1,7 @@
 from speakeasypy import Speakeasy, Chatroom
 from typing import List
 import time
-from sparql import load_graph, sparql
+from usecases.sparql import load_graph, query
 
 DEFAULT_HOST_URL = 'https://speakeasy.ifi.uzh.ch'
 listen_freq = 2
@@ -38,8 +38,8 @@ class Agent:
                     try:
                         print('---------------------')
                         print(message.message)
-                        room.post_messages(str(sparql(message.message)))
-                        # room.post_messages(str(sparql(message.message)))
+                        room.post_messages(str(query(message.message)))
+                        # room.post_messages(str(query(message.message)))
                         print('---------------------')
                     except:
                         room.post_messages('wrong RDF sentence!')
