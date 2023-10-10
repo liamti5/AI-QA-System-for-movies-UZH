@@ -136,7 +136,7 @@ class TestBotBase(unittest.TestCase):
 
         for query_data in queries:
             with self.subTest(description=query_data['description']):
-                expected_value = [str(s).encode('utf-8') for s in query_data['expected_result']]
+                expected_value = query_data['expected_result']
                 actual_value = query(query_data['query'])
                 self.assertEqual(actual_value, expected_value)
 
@@ -204,7 +204,7 @@ class TestBotBase(unittest.TestCase):
 
         for query_data in queries:
             with self.subTest(description=query_data['description']):
-                expected_value = [str(s).encode('utf-8') for s in query_data['expected_result']]
+                expected_value = query_data['expected_result']
                 actual_value = query(query_data['query'])
                 self.assertEqual(actual_value, expected_value)
 
