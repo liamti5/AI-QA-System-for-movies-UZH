@@ -1,0 +1,593 @@
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1 
+---------------------
+        - Chatroom ee89c5a0-261f-41d6-9321-b4855153ccc0 - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie rdfs:label ?movieLabel . } ORDER BY ASC(?movieLabel) LIMIT 1' - 10:36:12, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie rdfs:label ?movieLabel . } ORDER BY ASC(?movieLabel) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie rdfs:label ?movieLabel . } ORDER BY ASC(?movieLabel) LIMIT 1
+Expected SelectQuery, found 'PREFIX'  (at char 36), (line:1, col:37)
+invalid RDF sentence.
+        - Chatroom 211996b0-c0ce-4b36-8f7a-88b53ec25095 - new reaction #10: 'THUMBS_UP' - 10:36:20, 11-10-2023
+        - Chatroom 7052bf3b-e59e-42b5-850d-1f1e2b0aad92 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1' - 10:52:59, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1
+---------------------
+        - Chatroom 130bd225-fe74-4894-9dd1-43790269ec43 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 10:53:11, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom 3b128b6f-e27a-492a-a2cb-f21664e244f9 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 10:54:08, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom 7052bf3b-e59e-42b5-850d-1f1e2b0aad92 - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?lbl WHERE { ?genre rdfs:label "thriller"@en . ?movie P136 ?genre . ?movie ddis:rating ?rating . ?movie rdfs:label ?lbl . } ORDER BY DESC(?rating) LIMITTT' - 10:54:10, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?lbl WHERE { ?genre rdfs:label "thriller"@en . ?movie P136 ?genre . ?movie ddis:rating ?rating . ?movie rdfs:label ?lbl . } ORDER BY DESC(?rating) LIMITTT
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?lbl WHERE { ?genre rdfs:label "thriller"@en . ?movie P136 ?genre . ?movie ddis:rating ?rating . ?movie rdfs:label ?lbl . } ORDER BY DESC(?rating) LIMITTT
+Expected SelectQuery, found 'PREFIX'  (at char 36), (line:1, col:37)
+invalid RDF sentence.
+        - Chatroom 130bd225-fe74-4894-9dd1-43790269ec43 - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 10:54:10, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom 130bd225-fe74-4894-9dd1-43790269ec43 - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 ' - 10:54:31, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+---------------------
+        - Chatroom 5dc00346-0232-4124-a879-38f3b0dbc3b5 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 10:54:50, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom 5dc00346-0232-4124-a879-38f3b0dbc3b5 - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1' - 10:55:21, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+---------------------
+        - Chatroom 7052bf3b-e59e-42b5-850d-1f1e2b0aad92 - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel . } ORDER BY ?releaseDate LIMIT 3' - 10:55:23, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel . } ORDER BY ?releaseDate LIMIT 3
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel . } ORDER BY ?releaseDate LIMIT 3
+Expected SelectQuery, found 'PREFIX'  (at char 36), (line:1, col:37)
+invalid RDF sentence.
+        - Chatroom 130bd225-fe74-4894-9dd1-43790269ec43 - new message #7: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1 " Expected Answer: ['Cairo Time'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1' - 10:55:23, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1 " Expected Answer: ['Cairo Time'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1 " Expected Answer: ['Cairo Time'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+Expected end of text, found '"'  (at char 283), (line:1, col:284)
+invalid RDF sentence.
+        - Chatroom 130bd225-fe74-4894-9dd1-43790269ec43 - new message #9: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1' - 10:55:56, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+---------------------
+        - Chatroom 5dc00346-0232-4124-a879-38f3b0dbc3b5 - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 10:57:04, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /api/room/5dc00346-0232-4124-a879-38f3b0dbc3b5/1697014626018?session=5gP9uMinM3kTJXJDhMPSmjhVxkvbZJno
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fb4d7d97e50>, 'Connection to speakeasy.ifi.uzh.ch timed out. (connect timeout=None)')': /api/room/5dc00346-0232-4124-a879-38f3b0dbc3b5/1697014626018?session=5gP9uMinM3kTJXJDhMPSmjhVxkvbZJno
+        - Chatroom 3b128b6f-e27a-492a-a2cb-f21664e244f9 - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1 ' - 11:01:47, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1 
+---------------------
+        - Chatroom 3b590736-1585-4ffc-b2f3-3fe9d648de14 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:12:06, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom 2a8f429c-28c3-4860-ada4-08cc82b6bd02 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1' - 11:12:13, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1
+---------------------
+        - Chatroom 1b6d45ec-5d98-4650-ab5a-49c2a0fd33db - new message #1: 'Hi' - 11:13:09, 11-10-2023
+---------------------
+Hi
+message in sparql
+Hi
+Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'Hi'  (at char 0), (line:1, col:1)
+invalid RDF sentence.
+        - Chatroom 3b590736-1585-4ffc-b2f3-3fe9d648de14 - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:13:09, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom b5b04db9-2ca2-4dac-8443-8cbdd68dc3c1 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:13:09, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom 2a8f429c-28c3-4860-ada4-08cc82b6bd02 - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:14:13, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom 1b6d45ec-5d98-4650-ab5a-49c2a0fd33db - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1' - 11:14:42, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+---------------------
+        - Chatroom 1979c61e-b3ab-46ff-979c-2a85fbe1cd25 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE { ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) < 1980) . ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?releaseDate) LIMIT 1 ' - 11:15:21, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE { ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) < 1980) . ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?releaseDate) LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE { ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) < 1980) . ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?releaseDate) LIMIT 1 
+---------------------
+        - Chatroom 1979c61e-b3ab-46ff-979c-2a85fbe1cd25 - new message #2: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:15:26, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+(Sleep 0.9855160713195801 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 3b590736-1585-4ffc-b2f3-3fe9d648de14 - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:15:27, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom 2a8f429c-28c3-4860-ada4-08cc82b6bd02 - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1' - 11:15:29, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1
+---------------------
+        - Chatroom 2a8f429c-28c3-4860-ada4-08cc82b6bd02 - new message #7: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:15:37, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fb4d7d970d0>, 'Connection to speakeasy.ifi.uzh.ch timed out. (connect timeout=None)')': /api/room/1b6d45ec-5d98-4650-ab5a-49c2a0fd33db/1697015684275?session=5gP9uMinM3kTJXJDhMPSmjhVxkvbZJno
+        - Chatroom 1b6d45ec-5d98-4650-ab5a-49c2a0fd33db - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:18:37, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom 3b590736-1585-4ffc-b2f3-3fe9d648de14 - new message #7: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1' - 11:18:37, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+---------------------
+        - Chatroom 1979c61e-b3ab-46ff-979c-2a85fbe1cd25 - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1' - 11:18:39, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+---------------------
+        - Chatroom 1979c61e-b3ab-46ff-979c-2a85fbe1cd25 - new message #6: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1' - 11:18:39, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+(Sleep 0.7117295265197754 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 1979c61e-b3ab-46ff-979c-2a85fbe1cd25 - new message #7: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:18:40, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+(Sleep 0.9612653255462646 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 2a8f429c-28c3-4860-ada4-08cc82b6bd02 - new message #9: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1' - 11:18:42, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1
+---------------------
+        - Chatroom 1979c61e-b3ab-46ff-979c-2a85fbe1cd25 - new message #11: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1' - 11:19:34, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1
+---------------------
+        - Chatroom 3da637d0-4da4-4d0e-9b38-574c09037694 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1' - 11:19:39, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+---------------------
+        - Chatroom 1b6d45ec-5d98-4650-ab5a-49c2a0fd33db - new message #7: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1' - 11:19:57, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+---------------------
+        - Chatroom 3da637d0-4da4-4d0e-9b38-574c09037694 - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:20:33, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom 27b4d4e3-30fa-48ec-986d-f087985c639d - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1 ' - 11:32:30, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1 
+---------------------
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fb4c0602da0>, 'Connection to speakeasy.ifi.uzh.ch timed out. (connect timeout=None)')': /api/rooms?session=5gP9uMinM3kTJXJDhMPSmjhVxkvbZJno
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fb4d7f4af50>, 'Connection to speakeasy.ifi.uzh.ch timed out. (connect timeout=None)')': /api/rooms?session=5gP9uMinM3kTJXJDhMPSmjhVxkvbZJno
+        - Chatroom 461bbd23-104f-4a3c-9a8f-20c49a9bbf39 - new message #1: 'test' - 11:37:25, 11-10-2023
+---------------------
+test
+message in sparql
+test
+Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'test'  (at char 0), (line:1, col:1)
+invalid RDF sentence.
+        - Chatroom 461bbd23-104f-4a3c-9a8f-20c49a9bbf39 - new message #2: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1' - 11:37:25, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+(Sleep 0.9506893157958984 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:37:26, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #2: 'PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie P57 ?director . ?director rdfs:label "Christopher Nolan"@en . ?movie P577 ?releaseDate . ?movie rdfs:label ?movieLabel . } ORDER BY ?releaseDate LIMIT 1' - 11:37:26, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie P57 ?director . ?director rdfs:label "Christopher Nolan"@en . ?movie P577 ?releaseDate . ?movie rdfs:label ?movieLabel . } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie P57 ?director . ?director rdfs:label "Christopher Nolan"@en . ?movie P577 ?releaseDate . ?movie rdfs:label ?movieLabel . } ORDER BY ?releaseDate LIMIT 1
+Expected SelectQuery, found 'PREFIX'  (at char 36), (line:1, col:37)
+(Sleep 0.9976036548614502 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:37:27, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #4: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1' - 11:37:32, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1
+(Sleep 0.987431526184082 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 6f909e99-7eca-48ac-8234-0004541ec023 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:37:33, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom 6f909e99-7eca-48ac-8234-0004541ec023 - new message #2: 'REFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 ' - 11:37:33, 11-10-2023
+---------------------
+REFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+message in sparql
+REFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'REFIX'  (at char 0), (line:1, col:1)
+(Sleep 0.9984240531921387 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 6f909e99-7eca-48ac-8234-0004541ec023 - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1' - 11:37:34, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE {   ?genre rdfs:label "thriller"@en .   ?movie wdt:P136 ?genre .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating) LIMIT 1
+(Sleep 0.9711687564849854 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 6f909e99-7eca-48ac-8234-0004541ec023 - new message #4: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:37:35, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+(Sleep 0.9781010150909424 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 27b4d4e3-30fa-48ec-986d-f087985c639d - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1' - 11:37:36, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+---------------------
+        - Chatroom 27b4d4e3-30fa-48ec-986d-f087985c639d - new message #4: 'PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie rdfs:label ?movieLabel . } ORDER BY ASC(?movieLabel) LIMIT 1' - 11:37:36, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie rdfs:label ?movieLabel . } ORDER BY ASC(?movieLabel) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie rdfs:label ?movieLabel . } ORDER BY ASC(?movieLabel) LIMIT 1
+Expected SelectQuery, found 'PREFIX'  (at char 36), (line:1, col:37)
+(Sleep 0.998532772064209 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 27b4d4e3-30fa-48ec-986d-f087985c639d - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1 ' - 11:37:37, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1 
+---------------------
+        - Chatroom 27b4d4e3-30fa-48ec-986d-f087985c639d - new message #6: 'PREFIX ddis: <http://ddis.ch/atai/>    PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>    PREFIX schema: <http://schema.org/> SELECT ?item ?itemLabel "' - 11:38:25, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>    PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>    PREFIX schema: <http://schema.org/> SELECT ?item ?itemLabel "
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>    PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>    PREFIX schema: <http://schema.org/> SELECT ?item ?itemLabel "
+Expected SelectQuery, found '"'  (at char 200), (line:1, col:201)
+(Sleep 0.9948482513427734 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 27b4d4e3-30fa-48ec-986d-f087985c639d - new message #7: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 ' - 11:38:26, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+(Sleep 0.9761443138122559 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 2641e434-8328-446e-bbf9-574ab62a95fe - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:38:27, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom 2641e434-8328-446e-bbf9-574ab62a95fe - new message #2: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1' - 11:38:27, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1
+(Sleep 0.8026666641235352 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 2641e434-8328-446e-bbf9-574ab62a95fe - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:38:28, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+(Sleep 0.9738912582397461 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 2641e434-8328-446e-bbf9-574ab62a95fe - new message #4: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>  select ?item ?itemLabel ?openingDate where{   {?item wdt:P31/wdt:P279* wd:Q33506 .} UNION {?item wdt:P31/wdt:P279* wd:Q16970.}  }' - 11:38:29, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>  select ?item ?itemLabel ?openingDate where{   {?item wdt:P31/wdt:P279* wd:Q33506 .} UNION {?item wdt:P31/wdt:P279* wd:Q16970.}  }
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>  select ?item ?itemLabel ?openingDate where{   {?item wdt:P31/wdt:P279* wd:Q33506 .} UNION {?item wdt:P31/wdt:P279* wd:Q16970.}  }
+too many values to unpack (expected 1)
+(Sleep 0.9735138416290283 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 2641e434-8328-446e-bbf9-574ab62a95fe - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE { ?movie wdt:P31 wd:Q11424 .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating)  LIMIT 1 ' - 11:38:30, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE { ?movie wdt:P31 wd:Q11424 .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating)  LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE { ?movie wdt:P31 wd:Q11424 .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating)  LIMIT 1 
+Unknown namespace prefix : wdt
+(Sleep 0.9803986549377441 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom c0307471-ce3a-4e8f-baa5-7c49bf738248 - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:38:31, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom c0307471-ce3a-4e8f-baa5-7c49bf738248 - new message #2: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 ' - 11:38:31, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {    ?movie wdt:P577 ?releaseDate .   FILTER(YEAR(?releaseDate) = 2000) .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+---------------------
+        - Chatroom c0307471-ce3a-4e8f-baa5-7c49bf738248 - new message #3: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1 ' - 11:38:35, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1 
+(Sleep 0.9599988460540771 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom c0307471-ce3a-4e8f-baa5-7c49bf738248 - new message #4: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE { ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) < 1980) . ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?releaseDate) LIMIT 1' - 11:38:36, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE { ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) < 1980) . ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE { ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) < 1980) . ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom c0307471-ce3a-4e8f-baa5-7c49bf738248 - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX schema: <http://schema.org/> SELECT ?lbl WHERE { ?movie wdt:P31 wd:Q11424 .   ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  FILTER(LANG(lbl) = "en") .  } ORDER BY DESC(?rating) LIMIT 1' - 11:38:41, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX schema: <http://schema.org/> SELECT ?lbl WHERE { ?movie wdt:P31 wd:Q11424 .   ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  FILTER(LANG(lbl) = "en") .  } ORDER BY DESC(?rating) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX schema: <http://schema.org/> SELECT ?lbl WHERE { ?movie wdt:P31 wd:Q11424 .   ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  FILTER(LANG(lbl) = "en") .  } ORDER BY DESC(?rating) LIMIT 1
+Expected SelectQuery, found 'FILTER'  (at char 275), (line:1, col:276)
+(Sleep 0.9910321235656738 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom c0307471-ce3a-4e8f-baa5-7c49bf738248 - new message #6: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE { ?movie wdt:P31 wd:Q11424 .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating)  LIMIT 1 ' - 11:38:42, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE { ?movie wdt:P31 wd:Q11424 .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating)  LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX schema: <http://schema.org/>   SELECT ?lbl WHERE { ?movie wdt:P31 wd:Q11424 .  ?movie ddis:rating ?rating .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?rating)  LIMIT 1 
+Unknown namespace prefix : wdt
+(Sleep 0.9792425632476807 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 5dcf5b33-9ab6-4e32-8fb5-72cfcf9567cc - new message #1: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:38:43, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom 5dcf5b33-9ab6-4e32-8fb5-72cfcf9567cc - new message #2: 'PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel . } ORDER BY ?releaseDate LIMIT 1' - 11:38:43, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel . } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel . } ORDER BY ?releaseDate LIMIT 1
+Expected SelectQuery, found 'PREFIX'  (at char 36), (line:1, col:37)
+(Sleep 0.997412919998169 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #9: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1 " Expected Answer: ['Public Enemy No. 1 - Todestrieb'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1' - 11:38:46, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1 " Expected Answer: ['Public Enemy No. 1 - Todestrieb'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie ddis:rating 7.5 .  ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?releaseDate) LIMIT 1 " Expected Answer: ['Public Enemy No. 1 - Todestrieb'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1
+Expected end of text, found '"'  (at char 329), (line:1, col:330)
+invalid RDF sentence.
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #10: '"PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1 " Expected Answer: ['GoldenEye 007'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1' - 11:38:46, 11-10-2023
+---------------------
+"PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1 " Expected Answer: ['GoldenEye 007'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1
+message in sparql
+"PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1 " Expected Answer: ['GoldenEye 007'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1
+Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found '"'  (at char 0), (line:1, col:1)
+(Sleep 0.9992928504943848 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 6f909e99-7eca-48ac-8234-0004541ec023 - new message #8: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1 ' - 11:38:47, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {    ?movie ddis:rating ?rating .  FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel .  } ORDER BY DESC(?rating) LIMIT 1 
+---------------------
+        - Chatroom 6f909e99-7eca-48ac-8234-0004541ec023 - new message #10: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1 ' - 11:38:47, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?movieLabel) LIMIT 1 
+---------------------
+        - Chatroom 27b4d4e3-30fa-48ec-986d-f087985c639d - new message #10: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 ' - 11:39:43, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1 
+---------------------
+        - Chatroom 27b4d4e3-30fa-48ec-986d-f087985c639d - new message #11: 'PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {  ?movie wdt:P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel .  } LIMIT -1  ' - 11:39:43, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {  ?movie wdt:P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel .  } LIMIT -1  
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {  ?movie wdt:P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel .  } LIMIT -1  
+Expected end of text, found 'LIMIT'  (at char 299), (line:1, col:300)
+(Sleep 0.9858458042144775 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 27b4d4e3-30fa-48ec-986d-f087985c639d - new message #15: 'PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {  ?movie wdt:P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel .  } LIMIT -1  ' - 11:39:44, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {  ?movie wdt:P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel .  } LIMIT -1  
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/> PREFIX schema: <http://schema.org/> SELECT ?movieLabel WHERE {  ?movie wdt:P577 ?releaseDate . FILTER(YEAR(?releaseDate) = 2000) . ?movie rdfs:label ?movieLabel .  } LIMIT -1  
+Expected end of text, found 'LIMIT'  (at char 299), (line:1, col:300)
+(Sleep 0.9865422248840332 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 461bbd23-104f-4a3c-9a8f-20c49a9bbf39 - new message #5: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1' - 11:39:47, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1
+---------------------
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #13: 'PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie ddis:rating ?rating . FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel . } ORDER BY DESC(?rating) LIMIT 1 " Expected Answer: ['GoldenEye 007'] SPARQL QUERY: "PREFIX ddis: PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie rdfs:label ?movieLabel . } ORDER BY ASC(?movieLabel) LIMIT 1' - 11:39:49, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie ddis:rating ?rating . FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel . } ORDER BY DESC(?rating) LIMIT 1 " Expected Answer: ['GoldenEye 007'] SPARQL QUERY: "PREFIX ddis: PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie rdfs:label ?movieLabel . } ORDER BY ASC(?movieLabel) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/> PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie ddis:rating ?rating . FILTER(?rating > 8) . ?movie rdfs:label ?movieLabel . } ORDER BY DESC(?rating) LIMIT 1 " Expected Answer: ['GoldenEye 007'] SPARQL QUERY: "PREFIX ddis: PREFIX wd: PREFIX wdt: PREFIX schema: SELECT ?movieLabel WHERE { ?movie rdfs:label ?movieLabel . } ORDER BY ASC(?movieLabel) LIMIT 1
+Expected SelectQuery, found 'PREFIX'  (at char 36), (line:1, col:37)
+invalid RDF sentence.
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #14: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE { ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) < 1980) . ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?releaseDate) LIMIT 1 " Expected Answer: ['La Princesse de Clèves'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1 ' - 11:39:49, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE { ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) < 1980) . ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?releaseDate) LIMIT 1 " Expected Answer: ['La Princesse de Clèves'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE { ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) < 1980) . ?movie rdfs:label ?movieLabel .  } ORDER BY ASC(?releaseDate) LIMIT 1 " Expected Answer: ['La Princesse de Clèves'] SPARQL QUERY: "PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1 
+Expected end of text, found '"'  (at char 338), (line:1, col:339)
+(Sleep 0.9648809432983398 secs to avoid posting requests too frequently.)
+invalid RDF sentence.
+        - Chatroom 6f909e99-7eca-48ac-8234-0004541ec023 - new message #12: 'oo对' - 11:39:50, 11-10-2023
+---------------------
+oo对
+message in sparql
+oo对
+Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'oo'  (at char 0), (line:1, col:1)
+invalid RDF sentence.
+        - Chatroom 461bbd23-104f-4a3c-9a8f-20c49a9bbf39 - new message #7: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1 ' - 11:41:32, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1 
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie rdfs:label ?movieLabel .  FILTER(CONTAINS(?movieLabel, "Time")) . } LIMIT 1 
+---------------------
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #17: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1' - 11:41:32, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?lbl WHERE { ?actor rdfs:label "Ryan Gosling"@en . ?movie wdt:P161 ?actor .  ?movie wdt:P577 ?releaseDate .  FILTER(YEAR(?releaseDate) > 2010) .  ?movie rdfs:label ?lbl .  } ORDER BY DESC(?releaseDate) LIMIT 1
+---------------------
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #19: 'PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1' - 11:41:36, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>   PREFIX wd: <http://www.wikidata.org/entity/>   PREFIX wdt: <http://www.wikidata.org/prop/direct/>   PREFIX schema: <http://schema.org/>   SELECT ?movieLabel WHERE {   ?movie wdt:P57 ?director .  ?director rdfs:label "Christopher Nolan"@en .   ?movie wdt:P577 ?releaseDate .  ?movie rdfs:label ?movieLabel .  } ORDER BY ?releaseDate LIMIT 1
+---------------------
+        - Chatroom 79e8f36b-f6bf-416d-b596-4eeda8725dee - new message #21: 'PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1' - 11:42:26, 11-10-2023
+---------------------
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1
+message in sparql
+PREFIX ddis: <http://ddis.ch/atai/>  PREFIX wd: <http://www.wikidata.org/entity/>  PREFIX wdt: <http://www.wikidata.org/prop/direct/>  PREFIX schema: <http://schema.org/>  SELECT ?movieLabel WHERE {  ?movie wdt:P2142 ?boxOffice .  ?movie rdfs:label ?movieLabel .  }  ORDER BY DESC(?boxOffice)  LIMIT 1
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/src/chatroom.py", line 127, in post_messages
+    response = self.chat_api.post_api_room_with_roomid(
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 771, in __call__
+    return self.callable(self, *args, **kwargs)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api/chat_api.py", line 350, in __post_api_room_with_roomid
+    return self.call_with_http_info(**kwargs)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 833, in call_with_http_info
+    return self.api_client.call_api(
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 408, in call_api
+    return self.__call_api(resource_path, method,
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 202, in __call_api
+    raise e
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 195, in __call_api
+    response_data = self.request(
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 454, in request
+    return self.rest_client.POST(url,
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/rest.py", line 266, in POST
+    return self.request("POST", url,
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/rest.py", line 225, in request
+    raise ApiException(http_resp=r)
+speakeasypy.openapi.client.exceptions.ApiException: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 11 Oct 2023 09:42:30 GMT', 'Server': 'Apache', 'Content-Type': 'application/json', 'Content-Length': '43', 'Via': '1.1 speakeasy.ifi.uzh.ch', 'Connection': 'close'})
+HTTP response body: {
+  "description" : "Chatroom not active"
+}
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 678, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.10/logging/__init__.py", line 368, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/main.py", line 6, in <module>
+    bot.listen()
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/usecases/bot_base.py", line 42, in listen
+    room.post_messages(str(answer))
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/src/chatroom.py", line 132, in post_messages
+    logging.error(f"An error occurred while posting the message to room {self.room_id}:", e)
+Message: 'An error occurred while posting the message to room 79e8f36b-f6bf-416d-b596-4eeda8725dee:'
+Arguments: (ApiException(),)
+---------------------
+^CTraceback (most recent call last):
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/main.py", line 6, in <module>
+    bot.listen()
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/usecases/bot_base.py", line 69, in listen
+    time.sleep(listen_freq)
+KeyboardInterrupt
+Logout successful.
