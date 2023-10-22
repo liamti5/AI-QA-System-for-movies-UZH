@@ -11,10 +11,10 @@ def load_graph():
 
 
 def query(message):
-    #remember to delete these 2 lines after this boring evaluation
+    # remember to delete these 2 lines after this boring evaluation
     message = message.replace('"""', '').replace("'''", '')
-    #it's wrong, but useful, at least we can pass this fucking evaluation
-    message=re.sub('#\w.*?\s','',message)
+    # it's wrong, but useful, at least we can pass this fucking evaluation
+    message = re.sub('#\w.*?\s', '', message)
 
     print('message in sparql')
     message = str(message)
