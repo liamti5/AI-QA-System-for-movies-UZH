@@ -11,9 +11,11 @@ class Agent:
     def __init__(self, username, password):
         self.username = username
         # Initialize the Speakeasy Python framework and login.
-        self.speakeasy = Speakeasy(host=DEFAULT_HOST_URL, username=username, password=password)
+        self.speakeasy = Speakeasy(
+            host=DEFAULT_HOST_URL, username=username, password=password)
         load_graph()
-        self.speakeasy.login()  # This framework will help you log out automatically when the program terminates.
+        # This framework will help you log out automatically when the program terminates.
+        self.speakeasy.login()
 
     def listen(self):
         while True:
@@ -22,7 +24,8 @@ class Agent:
             for room in rooms:
                 if not room.initiated:
                     # send a welcome message if room is not initiated
-                    room.post_messages(f'Hello! This is a welcome message from {room.my_alias}.')
+                    room.post_messages(
+                        f'Hello! This is a welcome message from {room.my_alias}.')
                     room.initiated = True
                 # Retrieve messages from this chat room.
                 # If only_partner=True, it filters out messages sent by the current bot.
@@ -43,7 +46,6 @@ class Agent:
                         # room.post_messages(str(query(message.message)))
                         print('---------------------')
 
-
                     except Exception as e:
                         print(e)
                         room.post_messages('invalid RDF sentence.')
@@ -63,7 +65,8 @@ class Agent:
 
                     # Implement your agent here #
 
-                    room.post_messages(f"Received your reaction: '{reaction.type}' ")
+                    room.post_messages(
+                        f"Received your reaction: '{reaction.type}' ")
                     room.mark_as_processed(reaction)
 
             time.sleep(listen_freq)
