@@ -60,7 +60,7 @@ def sent2features(sent_x):
 
 
 def get_ner(question):
-    crf = joblib.load("model_crf_without_repeat.pkl")
+    crf = joblib.load("models/model_crf_without_repeat.pkl")
     question = question.split(' ')
     print(question)
     q_x = [sent2features(question)]
