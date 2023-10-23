@@ -44,3 +44,17 @@ def get_relation(question):
     except AssertionError:
         return
     
+def get_sparql(ner, relation):
+    query = f"""
+            PREFIX ddis: <http://ddis.ch/atai/>
+            PREFIX wd: <http://www.wikidata.org/entity/>
+            PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+            PREFIX schema: <http://schema.org/>
+            SELECT ?{relation} WHERE {{
+                ?movie rdfs:label ?movieLabel .
+                FILTER(CONTAINS(?movieLabel, "{ner}"))
+                ?item wdt:P577 ?{relation} .
+            }}
+            LIMIT 5
+        """
+    return query
