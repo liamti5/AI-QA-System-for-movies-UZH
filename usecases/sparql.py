@@ -5,6 +5,7 @@ import spacy
 import json
 import editdistance
 
+
 nlp = spacy.load("en_core_web_sm")
 
 
@@ -29,6 +30,26 @@ def query(message):
     return temp
 
 
+def query2(message):
+    entity = get_ner(message)
+    relation = get_relation(message)
+
+    nodes = get_nodes()
+    predicates = get_predicates()
+
+    matching_entity = get_matching(entity, nodes)
+    matching_relation = get_matching(relation, predicates)
+    print(matching_entity, matching_relation)
+
+    query = get_sparql(matching_entity, matching_relation)
+    print(query)
+
+    answer = [str(s) for s, in graph.query(query)]
+    print(answer)
+
+    return answer
+
+
 def get_ner(question):
     question_list = question.split(" ")
     ner = NER_CRF.get_ner(question)    
@@ -47,35 +68,28 @@ def get_relation(question):
         return
 
 
-def search_nodes(ner):
-    with open('../../data/nodes.json', 'r') as f:
+def get_nodes():
+    with open('data/nodes.json', 'r') as f:
         nodes = json.load(f)
     return nodes
 
 
-def search_predicates(relation):
-    with open('../../data/predicates_clean.json', 'r') as f:
+def get_predicates():
+    with open('data/predicates_clean.json', 'r') as f:
         predicates = json.load(f)    
     return predicates
 
 
-def get_edit_distance(item, dicti):
+def get_matching(item, dicti):
     assert type(dicti) == dict
     tmp = 9999
     match_node = ""
-    # print("entity matching for {}".format(item))
-    for key, value in dicti.items():        
-        #comment this line in order to run this program faster
-        # print("edit distance between {} and {}: {}".format(value, entity_word, editdistance.eval(value, entity_word)))
-        
-        #use these lines to discover useless urls, and delete them in the above code blocks
-        #if editdistance.eval(value, entity_word)<30:
-            #print("edit distance between {} and {}: {}".format(value, entity_word, editdistance.eval(value, entity_word)))
-        
+    for key, value in dicti.items():                
         if editdistance.eval(value, item) < tmp:
             tmp = editdistance.eval(value, item)
             match_node = key
     
+    match_node = match_node.split('/')[-1]
     return match_node    
 
     

@@ -1,5 +1,7 @@
-import unittest
-from usecases import sparql 
+import unittest 
+import time
+from usecases import sparql, bot_base
+
 
 """
 * There are mainly 8 types of tags:  
@@ -18,6 +20,12 @@ from usecases import sparql
 
 
 class TestSparql(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        bot_base.load_graph()
+
+
     def test_get_ner(self):
         expected_value = "Star Wars: Episode VI - Return of the Jedi"
         actual_value = sparql.get_ner("Who is the director of Star Wars: Episode VI - Return of the Jedi?")
@@ -46,10 +54,19 @@ class TestSparql(unittest.TestCase):
     #     actual_value = get_sparql("Star Wars: Episode VI - Return of the Jedi", "director")
     #     self.assertEqual(actual_value, expected_value)
 
-    def test_get_edit_distance(self):
+    def test_get_matching(self):
         expected_value = "this is a"
-        actual_value = sparql.get_edit_distance("test", {"this is a": "test"})
+        actual_value = sparql.get_matching("test", {"this is a": "test"})
         self.assertEqual(actual_value, expected_value)
+
+
+    def test_query2(self):
+        start_time = time.perf_counter_ns()
+        expected_value = ['Richard Marquand']
+        actual_value = sparql.query2("Who is the director of Star Wars: Episode VI - Return of the Jedi?")
+        self.assertEqual(actual_value, expected_value)
+        end_time = time.perf_counter_ns()
+        print(f"test_query2 took: {round((end_time - start_time) * 10**-9, 4)}s")
 
 
 if __name__ == '__main__':
