@@ -2,6 +2,8 @@ import rdflib
 import re
 from models import NER_CRF
 import spacy
+import json
+import editdistance
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -43,6 +45,39 @@ def get_relation(question):
         return relations[0]
     except AssertionError:
         return
+
+
+def search_nodes(ner):
+    with open('../../data/nodes.json', 'r') as f:
+        nodes = json.load(f)
+    return nodes
+
+
+def search_predicates(relation):
+    with open('../../data/predicates_clean.json', 'r') as f:
+        predicates = json.load(f)    
+    return predicates
+
+
+def get_edit_distance(item, dicti):
+    assert type(dicti) == dict
+    tmp = 9999
+    match_node = ""
+    # print("entity matching for {}".format(item))
+    for key, value in dicti.items():        
+        #comment this line in order to run this program faster
+        # print("edit distance between {} and {}: {}".format(value, entity_word, editdistance.eval(value, entity_word)))
+        
+        #use these lines to discover useless urls, and delete them in the above code blocks
+        #if editdistance.eval(value, entity_word)<30:
+            #print("edit distance between {} and {}: {}".format(value, entity_word, editdistance.eval(value, entity_word)))
+        
+        if editdistance.eval(value, item) < tmp:
+            tmp = editdistance.eval(value, item)
+            match_node = key
+    
+    return match_node    
+
     
 def get_sparql(ner, relation):
     query = f"""
@@ -50,10 +85,10 @@ def get_sparql(ner, relation):
             PREFIX wd: <http://www.wikidata.org/entity/>
             PREFIX wdt: <http://www.wikidata.org/prop/direct/>
             PREFIX schema: <http://schema.org/>
-            SELECT ?{relation} WHERE {{
-                ?movie rdfs:label ?movieLabel .
-                FILTER(CONTAINS(?movieLabel, "{ner}"))
-                ?item wdt:P577 ?{relation} .
+
+            SELECT ?subject WHERE {{
+                wd:{ner} wdt:{relation} ?item .
+                ?item rdfs:label ?subject .
             }}
             LIMIT 5
         """
