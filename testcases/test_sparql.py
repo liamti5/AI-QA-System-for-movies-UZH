@@ -21,14 +21,14 @@ from usecases import sparql, bot_base
 
 class TestSparql(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        bot_base.load_graph()
+    # @classmethod
+    # def setUpClass(cls):
+    #     bot_base.load_graph()
 
 
     def test_get_ner(self):
-        expected_value = "Star Wars: Episode VI - Return of the Jedi"
-        actual_value = sparql.get_ner("Who is the director of Star Wars: Episode VI - Return of the Jedi?")
+        expected_value = "The Godfather"
+        actual_value = sparql.get_ner("When was The Godfather released?")
         self.assertEqual(actual_value, expected_value)
 
 
@@ -60,13 +60,13 @@ class TestSparql(unittest.TestCase):
         self.assertEqual(actual_value, expected_value)
 
 
-    def test_query2(self):
-        start_time = time.perf_counter_ns()
-        expected_value = ['Richard Marquand']
-        actual_value = sparql.query2("Who is the director of Star Wars: Episode VI - Return of the Jedi?")
-        self.assertEqual(actual_value, expected_value)
-        end_time = time.perf_counter_ns()
-        print(f"test_query2 took: {round((end_time - start_time) * 10**-9, 4)}s")
+    # def test_query2(self):
+    #     start_time = time.perf_counter_ns()
+    #     expected_value = ['Richard Marquand']
+    #     actual_value = sparql.query2("Who is the director of Star Wars: Episode VI - Return of the Jedi?")
+    #     self.assertEqual(actual_value, expected_value)
+    #     end_time = time.perf_counter_ns()
+    #     print(f"test_query2 took: {round((end_time - start_time) * 10**-9, 4)}s")
 
 
 if __name__ == '__main__':

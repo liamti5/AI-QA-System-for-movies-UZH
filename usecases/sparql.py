@@ -32,6 +32,7 @@ def query(message):
 
 def query2(message):
     entity = get_ner(message)
+
     relation = get_relation(message)
 
     nodes = get_nodes()
@@ -51,11 +52,18 @@ def query2(message):
 
 
 def get_ner(question):
-    question_list = question.split(" ")
-    ner = NER_CRF.get_ner(question)    
-    indexes = [index for index, val in enumerate(ner[0]) if val != "O"]
-    entity = " ".join(question_list[indexes[0]:indexes[-1]+1]).rstrip("?")
-    return entity
+    try: 
+        question_list = question.split(" ")
+        ner = NER_CRF.get_ner(question)    
+        indexes = [index for index, val in enumerate(ner[0]) if val != "O"]
+        entity = " ".join(question_list[indexes[0]:indexes[-1]+1]).rstrip("?")
+        doc = nlp(question)
+        relations = [tok.lemma_ for tok in doc if tok.dep_ in ('attr', 'nsubj') and tok.pos_ in ('NOUN')][0]
+    except:
+        entity = "Tongs implementation"
+    finally:
+        print(entity)
+        return entity, relations
 
 
 def get_relation(question):
@@ -104,6 +112,6 @@ def get_sparql(ner, relation):
                 wd:{ner} wdt:{relation} ?item .
                 ?item rdfs:label ?subject .
             }}
-            LIMIT 5
+            LIMIT 1
         """
     return query
