@@ -155,8 +155,6 @@ def calculate_other_answer(question_list,tag_list):
         #find relations
         doc = nlp(question)
         relations = [tok.lemma_ for tok in doc if tok.dep_ in ('attr', 'nsubj') and tok.pos_ in ('NOUN')][0]
-        doc = nlp(question)
-        relations = [tok.lemma_ for tok in doc if tok.dep_ in ('attr', 'nsubj') and tok.pos_ in ('NOUN')]
 
         assert len(relations) == 1
         relations=relations[0]
