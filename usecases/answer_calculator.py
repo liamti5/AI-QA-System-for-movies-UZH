@@ -384,9 +384,7 @@ def answers_in_template(s_a_e,s_a_r,s_a,n_k_l,p_k_l):
     concatenate_words=[
         'Also, ',
         "What's more, ",
-        'In addition, ',
-        "That's to say, ",
-        'That indicates, '
+        'In addition, '
     ]
     number1=random.randint(0, 3)
     number2=random.randint(0, 1)
@@ -394,7 +392,7 @@ def answers_in_template(s_a_e,s_a_r,s_a,n_k_l,p_k_l):
     answer_sentence+=' '
     for i in range(len(s_a_e)-1):
         number2=random.randint(0, 1)
-        number3=random.randint(0, 4)
+        number3=random.randint(0, 2)
         t2=middle_templates[number2].replace('<<<',s_a[i+1][0]).replace('>>>',s_a_e[i+1][0]).replace('@@@',s_a_r[i+1][0])
         answer_sentence=answer_sentence+concatenate_words[number3]+t2
         answer_sentence+=' '
