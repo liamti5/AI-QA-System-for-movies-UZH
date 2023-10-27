@@ -275,7 +275,7 @@ class AnswerCalculator:
                 search_flag=0
 
 
-            if search_loop > 3:
+            if search_loop > 5:
                 answers = []
                 break
 
