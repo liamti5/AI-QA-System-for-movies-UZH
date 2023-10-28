@@ -370,7 +370,7 @@ class AnswerCalculator:
 def answers_in_template(s_a_e,s_a_r,s_a,n_k_l,p_k_l):
     first_templates=[
         'In my opinion, ',
-        'As far as I concerned, ',
+        "As far as I'm concerned, ",
         'In my point of view, ',
         'Personally speaking, '
     ]
