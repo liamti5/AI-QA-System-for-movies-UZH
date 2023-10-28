@@ -96,11 +96,13 @@ class AnswerCalculator:
         #the return answers should be
         #for example, [['asdfasdf']], [['asdf'],['adf'],['asdf']]
 
-
+        question=question.replace('\n','').replace('?','')
         question_list = question.split(" ")
 
         if question_list[-1]=='':
             question_list=question_list[0:len(question_list)-1]
+        if question_list[0]=='':
+            question_list=question_list[1:len(question_list)]
 
         tag_list = self.nlp_operator.get_ner(
             question
@@ -114,8 +116,11 @@ class AnswerCalculator:
 
     def calculate_other_answer(self, question, tag_list):
         question_list = question.split(" ")
+
         if question_list[-1]=='':
             question_list=question_list[0:len(question_list)-1]
+        if question_list[0]=='':
+            question_list=question_list[1:len(question_list)]
         print('using: calculte other answer...')
         try:
             # find entity
@@ -142,8 +147,11 @@ class AnswerCalculator:
 
     def calculate_when_answer(self, question, tag_list):
         question_list = question.split(" ")
+
         if question_list[-1]=='':
             question_list=question_list[0:len(question_list)-1]
+        if question_list[0]=='':
+            question_list=question_list[1:len(question_list)]
         print('using: calculate when answer...')
 
         try:
@@ -237,10 +245,14 @@ class AnswerCalculator:
                     searched_answers_relations.append(self.search_relation_name(p_key))
 
                     search_flag = 1
+                    if node_distance_dict[n_key] == 0:
+                        edit_distance = 0
+                    else:
+                        edit_distance = 1
                     break
 
                 #don't refactorize this line
-                if is_when and len(answers)>0 and len(answers[0])==10:
+                if is_when and len(answers)>0 and len(answers[0])==10 and '-' in answers[0]:
 
                     print('n_key,p_key,answers:',n_key,p_key,answers)
                     searched_answers.append(answers)
@@ -250,8 +262,11 @@ class AnswerCalculator:
                     searched_answers_relations.append(self.search_relation_name(p_key))
 
                     search_flag = 1
+                    if node_distance_dict[n_key] == 0:
+                        edit_distance = 0
+                    else:
+                        edit_distance = 1
                     break
-
 
             if search_flag == 1 and edit_distance == 1:
                 break
@@ -260,21 +275,21 @@ class AnswerCalculator:
                 search_flag=0
 
 
-            if node_distance_dict[n_key] == 0:
-                edit_distance = 0
-            else:
-                edit_distance = 1
-
-
-            if search_loop > 10:
+            if search_loop > 5:
                 answers = []
                 break
 
         #search done
         print('search done')
         #generate answers by templates
-        return answers_in_template(searched_answers_entities,searched_answers_relations,
+        if searched_answers_entities!=[]:
+            return answers_in_template(searched_answers_entities,searched_answers_relations,
                                    searched_answers,n_key_list,p_key_list)
+        sorry_message1='sorry for not found out the answers of the question. '
+        sorry_message2='Maybe you could try again with correct format.'
+        sorry_message=sorry_message1+sorry_message2
+        return sorry_message
+
 
     def calculate_node_distance(self, word):
         distance_dict = {}
@@ -300,6 +315,12 @@ class AnswerCalculator:
 
     def forcely_search(self, question_list, is_when):
         print('forcely search......')
+
+        if question_list[-1]=='':
+            question_list=question_list[0:len(question_list)-1]
+        if question_list[0]=='':
+            question_list=question_list[1:len(question_list)]
+
         for word in self.all_delete_words:
             try:
                 question_list.remove(word)
