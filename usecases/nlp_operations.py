@@ -8,6 +8,7 @@ class NLP_Operations:
     - get_ner: returns the named entity of a question e.g. [['O', 'O', 'O', 'O', 'B-org']]
     - get_relation: returns the relation of a question e.g. ['director']
     """
+
     def __init__(self):
         self.nlp = spacy.load("en_core_web_sm")
 

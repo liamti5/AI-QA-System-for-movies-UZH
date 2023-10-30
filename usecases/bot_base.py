@@ -55,8 +55,8 @@ class Agent:
 
                     except Exception as e:
                         print('Exception was caught:',e)
-                        sorry_message1='sorry for not found out the answers of the question. '
-                        sorry_message2='Maybe you could try again with correct format.'
+                        sorry_message1='Sorry for not finding the answer to your question. '
+                        sorry_message2='Maybe you could try again with a different format.'
                         room.post_messages(sorry_message1+sorry_message2)
 
                     finally:
