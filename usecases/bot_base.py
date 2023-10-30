@@ -1,7 +1,11 @@
 from speakeasypy import Speakeasy, Chatroom
 from typing import List
 import time
-from usecases.sparql import load_graph, query
+
+import sys
+sys.path.append('./usecases')
+
+from answer_calculator import AnswerCalculator
 
 DEFAULT_HOST_URL = 'https://speakeasy.ifi.uzh.ch'
 listen_freq = 2
@@ -10,10 +14,10 @@ listen_freq = 2
 class Agent:
     def __init__(self, username, password):
         self.username = username
+        self.answer_calculator = AnswerCalculator()
         # Initialize the Speakeasy Python framework and login.
         self.speakeasy = Speakeasy(
             host=DEFAULT_HOST_URL, username=username, password=password)
-        load_graph()
         # This framework will help you log out automatically when the program terminates.
         self.speakeasy.login()
 
@@ -41,15 +45,19 @@ class Agent:
                     try:
                         print('---------------------')
                         print(message.message)
-                        answer = query(message.message)
-                        room.post_messages(str(answer))
+                        answer = self.answer_calculator.calculate_answer(message.message)
+                        print()
+                        print(answer)
+                        room.post_messages(answer)
+
                         # room.post_messages(str(query(message.message)))
                         print('---------------------')
 
                     except Exception as e:
-                        print(e)
-                        room.post_messages('invalid RDF sentence.')
-                        print('invalid RDF sentence.')
+                        print('Exception was caught:',e)
+                        sorry_message1='Sorry for not finding the answer to your question. '
+                        sorry_message2='Maybe you could try again with a different format.'
+                        room.post_messages(sorry_message1+sorry_message2)
 
                     finally:
                         # Mark the message as processed, so it will be filtered out when retrieving new messages.

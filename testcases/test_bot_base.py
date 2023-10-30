@@ -106,7 +106,6 @@ class TestBotBase(unittest.TestCase):
                     SELECT ?screenwriter WHERE {
                         ?movie rdfs:label ?movieLabel .
                         FILTER(CONTAINS(?movieLabel, "The Masked Gang"))
-
                         ?movie wdt:P58 ?screenwriterItem .
                         ?screenwriterItem rdfs:label ?screenwriter .
                     }
