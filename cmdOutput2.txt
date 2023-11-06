@@ -1,0 +1,890 @@
+loading graph ...
+loaded graph successfully!
+Login successful. Session token: jhisnQFTJ8t7U8Xs0HQ-DgkHSkWSsH6O
+        - Chatroom 704021c7-1b60-4d06-988d-8c76047d67d6 - new message #1: 'Who is the director of The Masked Gang: Iraq?' - 09:36:33, 06-11-2023
+---------------------
+Who is the director of The Masked Gang: Iraq?
+['Who', 'is', 'the', 'director', 'of', 'The', 'Masked', 'Gang:', 'Iraq']
+using: calculte other answer...
+entity:The Masked Gang: Iraq
+relation:director
+n_key,p_key, answers: Q1907179 P57 ['Murat Aslan']
+n_key,p_key, answers: Q7750525 P57 ['Murat Aslan']
+search done
+
+Here is some information I found: The Masked Gang: Iraq's director is Murat Aslan and The Masked Gang: Cyprus's director is Murat Aslan. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q1907179', 'Q7750525'] ['P57', 'P57']
+(Sleep 0.07677412033081055 secs to avoid posting requests too frequently.)
+---------------------
+        - Chatroom 1166ea0e-d149-4a4f-af44-918e1a48e89c - new message #1: 'https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg' - 09:37:25, 06-11-2023
+---------------------
+https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg
+['https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:
+relation:https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+forcely search 2...
+entity:
+relation:https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+Here is some information I found: N's instance of is Latin-script letter. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q9937'] ['P31']
+---------------------
+        - Chatroom 1166ea0e-d149-4a4f-af44-918e1a48e89c - new message #3: 'image:https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg' - 09:39:53, 06-11-2023
+---------------------
+image:https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg
+['image:https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:
+relation:image:https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+forcely search 2...
+entity:
+relation:image:https://commons.wikimedia.org/wiki/File:Halle_Berry_by_Gage_Skidmore_2.jpg
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+Here is some information I found: the instance of of N is Latin-script letter. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q9937'] ['P31']
+---------------------
+        - Chatroom 1166ea0e-d149-4a4f-af44-918e1a48e89c - new message #5: 'image:<0000/rm0301568.jpg>' - 09:43:32, 06-11-2023
+---------------------
+image:<0000/rm0301568.jpg>
+['image:<0000/rm0301568.jpg>']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:
+relation:image:<0000/rm0301568.jpg>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+forcely search 2...
+entity:
+relation:image:<0000/rm0301568.jpg>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+Here is some information I found: N's instance of is Latin-script letter. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q9937'] ['P31']
+---------------------
+        - Chatroom 1166ea0e-d149-4a4f-af44-918e1a48e89c - new message #7: 'image:<rm0301568.jpg>' - 09:44:20, 06-11-2023
+---------------------
+image:<rm0301568.jpg>
+['image:<rm0301568.jpg>']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:
+relation:image:<rm0301568.jpg>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+forcely search 2...
+entity:
+relation:image:<rm0301568.jpg>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+Here is some information I found: the instance of of N is Latin-script letter. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q9937'] ['P31']
+---------------------
+        - Chatroom 1166ea0e-d149-4a4f-af44-918e1a48e89c - new message #9: 'image:<0000/rm0301568>' - 09:44:31, 06-11-2023
+---------------------
+image:<0000/rm0301568>
+['image:<0000/rm0301568>']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:
+relation:image:<0000/rm0301568>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+forcely search 2...
+entity:
+relation:image:<0000/rm0301568>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+Here is some information I found: the instance of of N is Latin-script letter. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q9937'] ['P31']
+---------------------
+        - Chatroom 1166ea0e-d149-4a4f-af44-918e1a48e89c - new message #11: 'image:<rm0301568>' - 09:45:35, 06-11-2023
+---------------------
+image:<rm0301568>
+['image:<rm0301568>']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:
+relation:image:<rm0301568>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+forcely search 2...
+entity:
+relation:image:<rm0301568>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+Here is some information I found: N's instance of is Latin-script letter. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q9937'] ['P31']
+---------------------
+        - Chatroom 1166ea0e-d149-4a4f-af44-918e1a48e89c - new message #13: 'wd:<www.wikidata.org>' - 09:46:10, 06-11-2023
+---------------------
+wd:<www.wikidata.org>
+['wd:<www.wikidata.org>']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:
+relation:wd:<www.wikidata.org>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+forcely search 2...
+entity:
+relation:wd:<www.wikidata.org>
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+Here is some information I found: the instance of of N is Latin-script letter. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q9937'] ['P31']
+---------------------
+        - Chatroom 1cd3b5aa-4ddd-43a8-8fd7-0243e3cb7159 - new message #1: 'wd:wikidata.org' - 09:48:04, 06-11-2023
+---------------------
+wd:wikidata.org
+['wd:wikidata.org']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:
+relation:wd:wikidata.org
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+forcely search 2...
+entity:
+relation:wd:wikidata.org
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+Here is some information I found: N's instance of is Latin-script letter. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q9937'] ['P31']
+---------------------
+^CTraceback (most recent call last):
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/main.py", line 10, in <module>
+    main()
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/main.py", line 6, in main
+    bot.listen()
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/usecases/bot_base.py", line 80, in listen
+    time.sleep(listen_freq)
+KeyboardInterrupt
+Logout successful.
+
+(venv) liamt@DESKTOP-5M5BK04:~/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library$ python3 main.py 
+loading graph ...
+loaded graph successfully!
+Login successful. Session token: U14T0O87Vha03inbz_ZauvzC9y-E0497
+        - Chatroom 3ec32e26-8c3d-4f87-9dce-feaacf10dee5 - new message #1: 'Hi
+' - 10:22:31, 06-11-2023
+---------------------
+Hi
+
+['Hi']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:
+relation:Hi
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+forcely search 2...
+entity:
+relation:Hi
+n_key,p_key, answers: Q9937 P31 ['Latin-script letter']
+search done
+
+Here is some information I found: the instance of of N is Latin-script letter. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q9937'] ['P31']
+---------------------
+        - Chatroom 3ec32e26-8c3d-4f87-9dce-feaacf10dee5 - new message #3: 'Who is the director of Titanic?' - 10:22:59, 06-11-2023
+---------------------
+Who is the director of Titanic?
+['Who', 'is', 'the', 'director', 'of', 'Titanic']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:Titanic
+relation:director
+n_key,p_key, answers: Q1426605 P57 ['Robert Lieberman']
+n_key,p_key, answers: Q44578 P57 ['James Cameron']
+n_key,p_key, answers: Q679670 P57 ['Herbert Selpin']
+n_key,p_key, answers: Q1197729 P57 ['Jean Negulesco']
+n_key,p_key, answers: Q1172062 P17 ['Italy']
+search done
+
+forcely search 2...
+entity:director
+relation:Titanic
+n_key,p_key, answers: Q8563321 P136 ['action film']
+search done
+
+Here is some information I found: Firestorm's genre is action film. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q8563321'] ['P136']
+---------------------
+        - Chatroom 1ec243f4-e876-4bc0-a3fb-c40ff484bd75 - new message #1: 'Who is the director of Avatar?
+' - 10:23:22, 06-11-2023
+---------------------
+Who is the director of Avatar?
+
+['Who', 'is', 'the', 'director', 'of', 'Avatar']
+using: calculte other answer...
+entity:Avatar
+relation:director
+n_key,p_key, answers: Q73966879 P31 ['media franchise']
+n_key,p_key, answers: Q55686820 P170 ['Bryan Konietzko']
+n_key,p_key, answers: Q29387886 P361 ['Avatar']
+n_key,p_key, answers: Q24871 P57 ['James Cameron']
+n_key,p_key, answers: Q83090 P17 ['India']
+search done
+
+Here is some information I found: the instance of of Avatar is media franchise, the creator of Avatar is Bryan Konietzko, the part of of Avatar is Avatar, the director of Avatar is James Cameron and the country of avatar is India. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q73966879', 'Q55686820', 'Q29387886', 'Q24871', 'Q83090'] ['P31', 'P170', 'P361', 'P57', 'P17']
+---------------------
+        - Chatroom 3ec32e26-8c3d-4f87-9dce-feaacf10dee5 - new message #5: 'Who directed Captain America: Civil War?' - 10:23:24, 06-11-2023
+---------------------
+Who directed Captain America: Civil War?
+['Who', 'directed', 'Captain', 'America:', 'Civil', 'War']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:Captain America: Civil War
+relation:directed
+n_key,p_key, answers: Q24033885 P136 ['film score']
+n_key,p_key, answers: Q18407657 P57 ['Anthony Russo']
+n_key,p_key, answers: Q24021759 P725 ['David Jenner']
+search done
+
+forcely search 2...
+entity:directed Captain America: Civil
+relation:War
+n_key,p_key, answers: Q24033885 P136 ['film score']
+search done
+
+Here is some information I found: the genre of Captain America: Civil War is film score. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q24033885'] ['P136']
+---------------------
+        - Chatroom 1ec243f4-e876-4bc0-a3fb-c40ff484bd75 - new message #3: 'Who is the director of Forrest Gump?' - 10:24:10, 06-11-2023
+---------------------
+Who is the director of Forrest Gump?
+['Who', 'is', 'the', 'director', 'of', 'Forrest', 'Gump']
+using: calculte other answer...
+entity:Forrest Gump
+relation:director
+n_key,p_key, answers: Q3077690 P175 ['Tom Hanks']
+n_key,p_key, answers: Q552213 P50 ['Winston Groom']
+n_key,p_key, answers: Q134773 P57 ['Robert Zemeckis']
+n_key,p_key, answers: Q1902494 P106 ['actor']
+search done
+
+Here is some information I found: Forrest Gump's performer is Tom Hanks, the author of Forrest Gump is Winston Groom, the director of Forrest Gump is Robert Zemeckis and the occupation of Marrese Crump is actor. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q3077690', 'Q552213', 'Q134773', 'Q1902494'] ['P175', 'P50', 'P57', 'P106']
+---------------------
+        - Chatroom 3ec32e26-8c3d-4f87-9dce-feaacf10dee5 - new message #7: 'Which is the genre of Ford vs Ferrari
+' - 10:24:39, 06-11-2023
+---------------------
+Which is the genre of Ford vs Ferrari
+
+['Which', 'is', 'the', 'genre', 'of', 'Ford', 'vs', 'Ferrari']
+using: calculte other answer...
+entity:Ford vs Ferrari
+relation:genre
+n_key,p_key, answers: Q55081822 P136 ['drama']
+search done
+
+Here is some information I found: Ford v Ferrari's genre is drama. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q55081822'] ['P136']
+---------------------
+        - Chatroom 3ec32e26-8c3d-4f87-9dce-feaacf10dee5 - new message #9: 'Who is the main actor in Oppenheimer' - 10:25:10, 06-11-2023
+---------------------
+Who is the main actor in Oppenheimer
+['Who', 'is', 'the', 'main', 'actor', 'in', 'Oppenheimer']
+using: calculte other answer...
+entity:Oppenheimer
+relation:actor
+n_key,p_key, answers: Q794151 P462 ['color']
+search done
+
+Here is some information I found: the color of Open Water is color. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q794151'] ['P462']
+---------------------
+        - Chatroom 3ec32e26-8c3d-4f87-9dce-feaacf10dee5 - new message #11: 'movies of Adam Sandler' - 10:26:46, 06-11-2023
+---------------------
+movies of Adam Sandler
+['movies', 'of', 'Adam', 'Sandler']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:Adam Sandler
+relation:movies
+n_key,p_key, answers: Q132952 P26 ['Jackie Sandler']
+n_key,p_key, answers: Q350806 P106 ['actor']
+search done
+
+forcely search 2...
+entity:movies Adam
+relation:Sandler
+n_key,p_key, answers: Q3292331 P22 ['Jean-François Adam']
+search done
+
+Here is some information I found: Marie Adam's father is Jean-François Adam. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q3292331'] ['P22']
+---------------------
+        - Chatroom 3ec32e26-8c3d-4f87-9dce-feaacf10dee5 - new message #13: 'Movies of Christopher Nolan' - 10:27:02, 06-11-2023
+---------------------
+Movies of Christopher Nolan
+['Movies', 'of', 'Christopher', 'Nolan']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:Christopher Nolan
+relation:Movies
+n_key,p_key, answers: Q25191 P26 ['Emma Thomas']
+n_key,p_key, answers: Q61742472 P106 ['actor']
+search done
+
+forcely search 2...
+entity:Movies Christopher
+relation:Nolan
+n_key,p_key, answers: Q19663507 P106 ['actor']
+search done
+
+Here is some information I found: the occupation of Julian Christopher is actor. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q19663507'] ['P106']
+---------------------
+        - Chatroom 3ec32e26-8c3d-4f87-9dce-feaacf10dee5 - new message #15: 'Which are the movies of Christopher Nolan?' - 10:27:54, 06-11-2023
+---------------------
+Which are the movies of Christopher Nolan?
+['Which', 'are', 'the', 'movies', 'of', 'Christopher', 'Nolan']
+using: calculte other answer...
+entity:Christopher Nolan
+relation:movie
+n_key,p_key, answers: Q25191 P26 ['Emma Thomas']
+n_key,p_key, answers: Q61742472 P106 ['actor']
+search done
+
+Here is some information I found: Christopher Nolan's spouse is Emma Thomas and Christopher Logan's occupation is actor. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q25191', 'Q61742472'] ['P26', 'P106']
+---------------------
+        - Chatroom 3ec32e26-8c3d-4f87-9dce-feaacf10dee5 - new message #17: 'This bot is great' - 10:28:23, 06-11-2023
+---------------------
+This bot is great
+['This', 'bot', 'is', 'great']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:bot great
+relation:This
+n_key,p_key, answers: Q93115465 P462 ['color']
+search done
+
+forcely search 2...
+entity:This bot
+relation:great
+n_key,p_key, answers: Q3988103 P161 ['Rue McClanahan']
+search done
+
+Here is some information I found: The Lot's cast member is Rue McClanahan. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q3988103'] ['P161']
+---------------------
+        - Chatroom e6f18461-080d-4cf2-9e8d-c3f2ea834059 - new message #1: 'Ask about the genre of Shoplifters.' - 10:35:14, 06-11-2023
+---------------------
+Ask about the genre of Shoplifters.
+['Ask', 'about', 'the', 'genre', 'of', 'Shoplifters.']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:about genre Shoplifters.
+relation:Ask
+n_key,p_key, answers: Q623502 P462 ['color']
+search done
+
+forcely search 2...
+entity:Ask about genre
+relation:Shoplifters.
+n_key,p_key, answers: Q14509721 P462 ['color']
+search done
+
+Here is some information I found: Are You Here's color is color. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q14509721'] ['P462']
+---------------------
+        - Chatroom 0e932d98-6b50-4835-ad1e-ac67f20c5a5f - new message #1: 'Who directed the movie Apocalypse Now?' - 10:35:55, 06-11-2023
+---------------------
+Who directed the movie Apocalypse Now?
+['Who', 'directed', 'the', 'movie', 'Apocalypse', 'Now']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:movie Apocalypse Now
+relation:directed
+n_key,p_key, answers: Q182692 P57 ['Francis Ford Coppola']
+search done
+
+forcely search 2...
+entity:directed movie Apocalypse
+relation:Now
+n_key,p_key, answers: Q2208696 P462 ['color']
+search done
+
+Here is some information I found: Meteor Apocalypse's color is color. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q2208696'] ['P462']
+---------------------
+        - Chatroom e6f18461-080d-4cf2-9e8d-c3f2ea834059 - new message #3: 'Ask about the director of The Longest Day. ' - 10:36:12, 06-11-2023
+---------------------
+Ask about the director of The Longest Day. 
+['Ask', 'about', 'the', 'director', 'of', 'The', 'Longest', 'Day.', '']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:about director The Longest Day.
+relation:Ask
+n_key,p_key, answers: Q468484 P462 ['black-and-white']
+search done
+
+forcely search 2...
+entity:Ask about director The Longest
+relation:Day.
+n_key,p_key, answers: Q59634 P462 ['color']
+search done
+
+Here is some information I found: Not Here to Be Loved's color is color. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q59634'] ['P462']
+---------------------
+        - Chatroom 0e932d98-6b50-4835-ad1e-ac67f20c5a5f - new message #3: 'What is the box office of Star Wars?' - 10:36:23, 06-11-2023
+---------------------
+What is the box office of Star Wars?
+['What', 'is', 'the', 'box', 'office', 'of', 'Star', 'Wars']
+using: calculte other answer...
+entity:Star Wars
+relation:office
+n_key,p_key, answers: Q22092344 P361 ['Star Wars']
+n_key,p_key, answers: Q462 P136 ['fantasy']
+n_key,p_key, answers: Q54320 P123 ['JVC Kenwood Victor Entertainment']
+n_key,p_key, answers: Q54317 P400 ['ZX Spectrum']
+n_key,p_key, answers: Q31088863 P136 ['drama']
+search done
+
+Here is some information I found: Star Wars's part of is Star Wars, the genre of Star Wars is fantasy, the publisher of Star Wars is JVC Kenwood Victor Entertainment, the platform of Star Wars is ZX Spectrum and the genre of Star Boys is drama. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q22092344', 'Q462', 'Q54320', 'Q54317', 'Q31088863'] ['P361', 'P136', 'P123', 'P400', 'P136']
+---------------------
+        - Chatroom 0e932d98-6b50-4835-ad1e-ac67f20c5a5f - new message #5: 'When was "The Godfather" released?' - 10:37:46, 06-11-2023
+---------------------
+When was "The Godfather" released?
+['When', 'was', '"The', 'Godfather"', 'released']
+using: calculate when answer...
+forcely search......
+forcely search 1...
+entity:Godfather released
+relation:The date
+n_key, p_key,answers: Q5576354 P577 ['1991-01-01']
+search done
+
+forcely search 2...
+entity:The Godfather
+relation:released date
+n_key, p_key,answers: Q47703 P577 ['1972-03-15']
+n_key, p_key,answers: Q1139696 P577 ['2006-03-21']
+n_key, p_key,answers: Q243556 P577 ['1969-03-10']
+n_key, p_key,answers: Q1678494 P577 ['1998-01-01']
+search done
+
+Here is some information I found: the publication date of The Godfather is 1972-03-15, the publication date of The Godfather is 2006-03-21, the publication date of The Godfather is 1969-03-10 and the publication date of The Grandfather is 1998-01-01. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q47703', 'Q1139696', 'Q243556', 'Q1678494'] ['P577', 'P577', 'P577', 'P577']
+---------------------
+        - Chatroom 0e932d98-6b50-4835-ad1e-ac67f20c5a5f - new message #7: 'Who is the screenwriter of The Masked Gang: Cyprus? ' - 10:38:05, 06-11-2023
+---------------------
+Who is the screenwriter of The Masked Gang: Cyprus? 
+['Who', 'is', 'the', 'screenwriter', 'of', 'The', 'Masked', 'Gang:', 'Cyprus', '']
+using: calculte other answer...
+entity:The Masked Gang: Cyprus
+relation:screenwriter
+n_key,p_key, answers: Q7750525 P136 ['adventure film']
+n_key,p_key, answers: Q1907179 P58 ['Murat Aslan']
+search done
+
+Here is some information I found: the genre of The Masked Gang: Cyprus is adventure film and the screenwriter of The Masked Gang: Iraq is Murat Aslan. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q7750525', 'Q1907179'] ['P136', 'P58']
+---------------------
+        - Chatroom 0e932d98-6b50-4835-ad1e-ac67f20c5a5f - new message #9: 'What is the genre of Star Wars?' - 10:38:32, 06-11-2023
+---------------------
+What is the genre of Star Wars?
+['What', 'is', 'the', 'genre', 'of', 'Star', 'Wars']
+using: calculte other answer...
+entity:Star Wars
+relation:genre
+n_key,p_key, answers: Q22092344 P361 ['Star Wars']
+n_key,p_key, answers: Q462 P136 ['fantasy']
+n_key,p_key, answers: Q54320 P144 ['Star Wars: Episode IV – A New Hope']
+n_key,p_key, answers: Q54317 P144 ['Star Wars: Episode IV – A New Hope']
+n_key,p_key, answers: Q31088863 P136 ['drama']
+search done
+
+Here is some information I found: the part of of Star Wars is Star Wars, the genre of Star Wars is fantasy, the based on of Star Wars is Star Wars: Episode IV – A New Hope, the based on of Star Wars is Star Wars: Episode IV – A New Hope and the genre of Star Boys is drama. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q22092344', 'Q462', 'Q54320', 'Q54317', 'Q31088863'] ['P361', 'P136', 'P144', 'P144', 'P136']
+---------------------
+        - Chatroom e6f18461-080d-4cf2-9e8d-c3f2ea834059 - new message #5: 'Who is the director of Star Wars: Episode VI - Return of the Jedi? ' - 10:38:51, 06-11-2023
+---------------------
+Who is the director of Star Wars: Episode VI - Return of the Jedi? 
+['Who', 'is', 'the', 'director', 'of', 'Star', 'Wars:', 'Episode', 'VI', '-', 'Return', 'of', 'the', 'Jedi', '']
+using: calculte other answer...
+entity:Star Wars: Episode VI - Return of the Jedi
+relation:director
+n_key,p_key, answers: Q181803 P57 ['Richard Marquand']
+search done
+
+Here is some information I found: the director of Star Wars: Episode VI – Return of the Jedi is Richard Marquand. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q181803'] ['P57']
+---------------------
+        - Chatroom 0e932d98-6b50-4835-ad1e-ac67f20c5a5f - new message #11: 'Who is the director of Star Wars: Episode VI - Return of the Jedi? ' - 10:38:56, 06-11-2023
+---------------------
+Who is the director of Star Wars: Episode VI - Return of the Jedi? 
+['Who', 'is', 'the', 'director', 'of', 'Star', 'Wars:', 'Episode', 'VI', '-', 'Return', 'of', 'the', 'Jedi', '']
+using: calculte other answer...
+entity:Star Wars: Episode VI - Return of the Jedi
+relation:director
+n_key,p_key, answers: Q181803 P57 ['Richard Marquand']
+search done
+
+Here is some information I found: Star Wars: Episode VI – Return of the Jedi's director is Richard Marquand. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q181803'] ['P57']
+---------------------
+        - Chatroom 0e932d98-6b50-4835-ad1e-ac67f20c5a5f - new message #13: 'When was Tom Hanks born?' - 10:39:25, 06-11-2023
+---------------------
+When was Tom Hanks born?
+['When', 'was', 'Tom', 'Hanks', 'born']
+using: calculate when answer...
+entity:Tom Hanks
+relation:born date
+search done
+
+Sorry for not finding the answer to your question. Maybe you could try again with a different format.
+---------------------
+        - Chatroom 0e932d98-6b50-4835-ad1e-ac67f20c5a5f - new message #15: 'What is the MPAA rating of Titanic?' - 10:41:29, 06-11-2023
+---------------------
+What is the MPAA rating of Titanic?
+['What', 'is', 'the', 'MPAA', 'rating', 'of', 'Titanic']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:rating Titanic
+relation:MPAA
+n_key,p_key, answers: Q3701528 P106 ['actor']
+search done
+
+forcely search 2...
+entity:MPAA rating
+relation:Titanic
+n_key,p_key, answers: P4437 P17 ['South Africa']
+search done
+
+Here is some information I found: the country of FPB rating is South Africa. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['P4437'] ['P17']
+---------------------
+        - Chatroom dd16e097-8b95-4136-8071-a52b6b19fa36 - new message #1: 'What is the country of citizenship of Olivier Schatzky?' - 10:46:03, 06-11-2023
+---------------------
+What is the country of citizenship of Olivier Schatzky?
+['What', 'is', 'the', 'country', 'of', 'citizenship', 'of', 'Olivier', 'Schatzky']
+using: calculte other answer...
+entity:Olivier Schatzky
+relation:country
+n_key,p_key, answers: Q3351369 P31 ['human']
+n_key,p_key, answers: Q822240 P106 ['writer']
+search done
+
+Here is some information I found: Olivier Schatzky's instance of is human and Oliver Schmitz's occupation is writer. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q3351369', 'Q822240'] ['P31', 'P106']
+---------------------
+        - Chatroom f9e251ae-e3ec-4ebd-8c08-edec9dc8d144 - new message #1: ''What is the earliest movie released before the year 1980?' - 10:46:30, 06-11-2023
+---------------------
+'What is the earliest movie released before the year 1980?
+["'What", 'is', 'the', 'earliest', 'movie', 'released', 'before', 'the', 'year', '1980']
+using: calculte other answer...
+entity:1980
+relation:movie
+n_key,p_key, answers: Q2439 P155 ['1979']
+n_key,p_key, answers: Q2434 P155 ['1982']
+search done
+
+Here is some information I found: 1980's follows is 1979 and 1983's follows is 1982. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q2439', 'Q2434'] ['P155', 'P155']
+---------------------
+        - Chatroom f9e251ae-e3ec-4ebd-8c08-edec9dc8d144 - new message #3: 'What is the earliest movie directed by Christopher Nolan?' - 10:46:47, 06-11-2023
+---------------------
+What is the earliest movie directed by Christopher Nolan?
+['What', 'is', 'the', 'earliest', 'movie', 'directed', 'by', 'Christopher', 'Nolan']
+using: calculte other answer...
+entity:Christopher Nolan
+relation:movie
+n_key,p_key, answers: Q25191 P26 ['Emma Thomas']
+n_key,p_key, answers: Q61742472 P106 ['actor']
+search done
+
+Here is some information I found: the spouse of Christopher Nolan is Emma Thomas and the occupation of Christopher Logan is actor. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q25191', 'Q61742472'] ['P26', 'P106']
+---------------------
+        - Chatroom 139755ca-d90e-4b76-a8ed-ae162e5fe529 - new message #1: 'Who is the director of The Ascent?' - 10:47:09, 06-11-2023
+---------------------
+Who is the director of The Ascent?
+['Who', 'is', 'the', 'director', 'of', 'The', 'Ascent']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:The Ascent
+relation:director
+n_key,p_key, answers: Q760053 P57 ['Larisa Shepitko']
+n_key,p_key, answers: Q1367317 P57 ['Neil Marshall']
+search done
+
+forcely search 2...
+entity:director The
+relation:Ascent
+n_key,p_key, answers: Q3256737 P551 ['Argentina']
+search done
+
+Here is some information I found: Director X's residence is Argentina. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q3256737'] ['P551']
+---------------------
+        - Chatroom f9e251ae-e3ec-4ebd-8c08-edec9dc8d144 - new message #5: 'When was "The Godfather" released? ' - 10:47:10, 06-11-2023
+---------------------
+When was "The Godfather" released? 
+['When', 'was', '"The', 'Godfather"', 'released', '']
+using: calculate when answer...
+forcely search......
+forcely search 1...
+entity:Godfather released
+relation:The date
+n_key, p_key,answers: Q5576354 P577 ['1991-01-01']
+search done
+
+forcely search 2...
+entity:The Godfather
+relation:released date
+n_key, p_key,answers: Q47703 P577 ['1972-03-15']
+n_key, p_key,answers: Q1139696 P577 ['2006-03-21']
+n_key, p_key,answers: Q243556 P577 ['1969-03-10']
+n_key, p_key,answers: Q1678494 P577 ['1998-01-01']
+search done
+
+Here is some information I found: The Godfather's publication date is 1972-03-15, the publication date of The Godfather is 2006-03-21, the publication date of The Godfather is 1969-03-10 and the publication date of The Grandfather is 1998-01-01. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q47703', 'Q1139696', 'Q243556', 'Q1678494'] ['P577', 'P577', 'P577', 'P577']
+---------------------
+        - Chatroom f9e251ae-e3ec-4ebd-8c08-edec9dc8d144 - new message #7: 'Who is the director of Star Wars: Episode VI - Return of the Jedi?' - 10:47:16, 06-11-2023
+---------------------
+Who is the director of Star Wars: Episode VI - Return of the Jedi?
+['Who', 'is', 'the', 'director', 'of', 'Star', 'Wars:', 'Episode', 'VI', '-', 'Return', 'of', 'the', 'Jedi']
+using: calculte other answer...
+entity:Star Wars: Episode VI - Return of the Jedi
+relation:director
+n_key,p_key, answers: Q181803 P57 ['Richard Marquand']
+search done
+
+Here is some information I found: Star Wars: Episode VI – Return of the Jedi's director is Richard Marquand. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q181803'] ['P57']
+---------------------
+        - Chatroom dd16e097-8b95-4136-8071-a52b6b19fa36 - new message #3: 'Who is the screenwriter of 12 Monkeys?' - 10:47:29, 06-11-2023
+---------------------
+Who is the screenwriter of 12 Monkeys?
+['Who', 'is', 'the', 'screenwriter', 'of', '12', 'Monkeys']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:12 Monkeys
+relation:screenwriter
+n_key,p_key, answers: Q175038 P58 ['David Peoples']
+n_key,p_key, answers: Q18421127 P136 ['science fiction television series']
+n_key,p_key, answers: Q795223 P58 ['Michael Thomas']
+search done
+
+forcely search 2...
+entity:screenwriter 12
+relation:Monkeys
+n_key,p_key, answers: Q52637393 P170 ['Brad Bird']
+search done
+
+Here is some information I found: Screenslaver's creator is Brad Bird. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q52637393'] ['P170']
+---------------------
+        - Chatroom f9e251ae-e3ec-4ebd-8c08-edec9dc8d144 - new message #9: 'Who is the director of Good Will Hunting' - 10:47:50, 06-11-2023
+---------------------
+Who is the director of Good Will Hunting
+['Who', 'is', 'the', 'director', 'of', 'Good', 'Will', 'Hunting']
+using: calculte other answer...
+entity:Will Hunting
+relation:director
+n_key,p_key, answers: Q862208 P641 ['swimming']
+search done
+
+Here is some information I found: the sport of Bill Hunter is swimming. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q862208'] ['P641']
+---------------------
+        - Chatroom 139755ca-d90e-4b76-a8ed-ae162e5fe529 - new message #3: '
+Who is the director of Star Wars: Episode VI - Return of the Jedi? ' - 10:48:03, 06-11-2023
+---------------------
+
+Who is the director of Star Wars: Episode VI - Return of the Jedi? 
+['Who', 'is', 'the', 'director', 'of', 'Star', 'Wars:', 'Episode', 'VI', '-', 'Return', 'of', 'the', 'Jedi', '']
+using: calculte other answer...
+entity:Star Wars: Episode VI - Return of the Jedi
+relation:director
+n_key,p_key, answers: Q181803 P57 ['Richard Marquand']
+search done
+
+Here is some information I found: the director of Star Wars: Episode VI – Return of the Jedi is Richard Marquand. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q181803'] ['P57']
+---------------------
+        - Chatroom f9e251ae-e3ec-4ebd-8c08-edec9dc8d144 - new message #11: 'Who is the director of Apocalypse Now?' - 10:48:04, 06-11-2023
+---------------------
+Who is the director of Apocalypse Now?
+['Who', 'is', 'the', 'director', 'of', 'Apocalypse', 'Now']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:Apocalypse Now
+relation:director
+n_key,p_key, answers: Q182692 P57 ['Francis Ford Coppola']
+n_key,p_key, answers: Q2119772 P725 ['Yeardley Smith']
+search done
+
+forcely search 2...
+entity:director Apocalypse
+relation:Now
+n_key,p_key, answers: Q2208696 P462 ['color']
+search done
+
+Here is some information I found: Meteor Apocalypse's color is color. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q2208696'] ['P462']
+---------------------
+        - Chatroom 139755ca-d90e-4b76-a8ed-ae162e5fe529 - new message #5: 'Who is the director of Apocalypse Now?' - 10:48:23, 06-11-2023
+---------------------
+Who is the director of Apocalypse Now?
+['Who', 'is', 'the', 'director', 'of', 'Apocalypse', 'Now']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:Apocalypse Now
+relation:director
+n_key,p_key, answers: Q182692 P57 ['Francis Ford Coppola']
+n_key,p_key, answers: Q2119772 P725 ['Yeardley Smith']
+search done
+
+forcely search 2...
+entity:director Apocalypse
+relation:Now
+n_key,p_key, answers: Q2208696 P462 ['color']
+search done
+
+Here is some information I found: the color of Meteor Apocalypse is color. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q2208696'] ['P462']
+---------------------
+        - Chatroom f9e251ae-e3ec-4ebd-8c08-edec9dc8d144 - new message #13: 'Who is the director of Star Wars: Episode VI - Return of the Jedi? 
+' - 10:48:30, 06-11-2023
+---------------------
+Who is the director of Star Wars: Episode VI - Return of the Jedi? 
+
+['Who', 'is', 'the', 'director', 'of', 'Star', 'Wars:', 'Episode', 'VI', '-', 'Return', 'of', 'the', 'Jedi', '']
+using: calculte other answer...
+entity:Star Wars: Episode VI - Return of the Jedi
+relation:director
+n_key,p_key, answers: Q181803 P57 ['Richard Marquand']
+search done
+
+Here is some information I found: Star Wars: Episode VI – Return of the Jedi's director is Richard Marquand. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q181803'] ['P57']
+---------------------
+        - Chatroom dd16e097-8b95-4136-8071-a52b6b19fa36 - new message #5: 'Show me a picture of Halle Berry' - 10:48:55, 06-11-2023
+---------------------
+Show me a picture of Halle Berry
+['Show', 'me', 'a', 'picture', 'of', 'Halle', 'Berry']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:me picture Halle Berry
+relation:Show
+n_key,p_key, answers: Q1033016 P26 ['Olivier Martinez']
+search done
+
+forcely search 2...
+entity:Show me picture Halle
+relation:Berry
+n_key,p_key, answers: Q388517 P136 ['fantasy']
+search done
+
+Here is some information I found: the genre of Shrek the Halls is fantasy. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q388517'] ['P136']
+---------------------
+        - Chatroom dd16e097-8b95-4136-8071-a52b6b19fa36 - new message #7: 'Top Thank you!' - 10:49:07, 06-11-2023
+---------------------
+Top Thank you!
+['Top', 'Thank', 'you!']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:Thank you!
+relation:Top
+n_key,p_key, answers: Q5396588 P462 ['color']
+search done
+
+forcely search 2...
+entity:Top Thank
+relation:you!
+n_key,p_key, answers: Q28039377 P106 ['art director']
+search done
+
+Here is some information I found: Don Shank's occupation is art director. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q28039377'] ['P106']
+---------------------
+        - Chatroom f9e251ae-e3ec-4ebd-8c08-edec9dc8d144 - new message #15: 'Who is the director of Star Wars: Episode VI - Return of the Jedi?' - 10:49:10, 06-11-2023
+---------------------
+Who is the director of Star Wars: Episode VI - Return of the Jedi?
+['Who', 'is', 'the', 'director', 'of', 'Star', 'Wars:', 'Episode', 'VI', '-', 'Return', 'of', 'the', 'Jedi']
+using: calculte other answer...
+entity:Star Wars: Episode VI - Return of the Jedi
+relation:director
+n_key,p_key, answers: Q181803 P57 ['Richard Marquand']
+search done
+
+Here is some information I found: Star Wars: Episode VI – Return of the Jedi's director is Richard Marquand. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q181803'] ['P57']
+---------------------
+        - Chatroom f9e251ae-e3ec-4ebd-8c08-edec9dc8d144 - new message #17: 'What is the most recently released movie with a rating of 7.5?' - 10:49:31, 06-11-2023
+---------------------
+What is the most recently released movie with a rating of 7.5?
+['What', 'is', 'the', 'most', 'recently', 'released', 'movie', 'with', 'a', 'rating', 'of', '7.5']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:recently released movie rating 7.5
+relation:most
+n_key,p_key, answers: Q1501765 P462 ['black-and-white']
+search done
+
+forcely search 2...
+entity:most recently released movie rating
+relation:7.5
+n_key,p_key, answers: Q4631061 P17 ['United States of America']
+search done
+
+Here is some information I found: 21st Century Film Corporation's country is United States of America. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q4631061'] ['P17']
+---------------------
+        - Chatroom dd16e097-8b95-4136-8071-a52b6b19fa36 - new message #9: 'Who won the Ballon D'or?' - 10:49:40, 06-11-2023
+---------------------
+Who won the Ballon D'or?
+['Who', 'won', 'the', 'Ballon', "D'or"]
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:Ballon Dor
+relation:won
+n_key,p_key, answers: Q2903195 P106 ['actor']
+search done
+
+forcely search 2...
+entity:won Ballon
+relation:Dor
+n_key,p_key, answers: Q332384 P641 ['association football']
+search done
+
+Here is some information I found: John Fallon's sport is association football. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q332384'] ['P641']
+---------------------
+        - Chatroom 139755ca-d90e-4b76-a8ed-ae162e5fe529 - new message #7: 'Who is the director of Apocalypse?' - 10:50:51, 06-11-2023
+---------------------
+Who is the director of Apocalypse?
+['Who', 'is', 'the', 'director', 'of', 'Apocalypse']
+using: calculte other answer...
+forcely search......
+forcely search 1...
+entity:Apocalypse
+relation:director
+n_key,p_key, answers: Q2071805 P175 ['Oscar Isaac']
+n_key,p_key, answers: Q60964254 P57 ['Isabelle Clarke']
+n_key,p_key, answers: Q4780073 P31 ['film series']
+n_key,p_key, answers: Q618766 P144 ['Terminator Salvation']
+n_key,p_key, answers: Q21491626 P462 ['color']
+search done
+
+forcely search 2...
+entity:director
+relation:Apocalypse
+n_key,p_key, answers: Q8563321 P462 ['color']
+search done
+
+Here is some information I found: the color of Firestorm is color. If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. ['Q8563321'] ['P462']

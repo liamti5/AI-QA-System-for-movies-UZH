@@ -98,11 +98,7 @@ class AnswerCalculator:
 
         question = question.replace("\n", "").replace("?", "")
         question_list = question.split(" ")
-
-        if question_list[-1] == "":
-            question_list = question_list[0 : len(question_list) - 1]
-        if question_list[0] == "":
-            question_list = question_list[1 : len(question_list)]
+        question_list = list(filter(lambda item: item != "", question_list)) # removes leading and trailing whitespaces from the list
 
         tag_list = self.nlp_operator.get_ner(
             question
@@ -117,10 +113,6 @@ class AnswerCalculator:
     def calculate_other_answer(self, question, tag_list):
         question_list = question.split(" ")
 
-        if question_list[-1] == "":
-            question_list = question_list[0 : len(question_list) - 1]
-        if question_list[0] == "":
-            question_list = question_list[1 : len(question_list)]
         print("using: calculte other answer...")
         try:
             # find entity
@@ -148,10 +140,6 @@ class AnswerCalculator:
     def calculate_when_answer(self, question, tag_list):
         question_list = question.split(" ")
 
-        if question_list[-1] == "":
-            question_list = question_list[0 : len(question_list) - 1]
-        if question_list[0] == "":
-            question_list = question_list[1 : len(question_list)]
         print("using: calculate when answer...")
 
         try:
@@ -363,7 +351,7 @@ class AnswerCalculator:
         possible_answer = []
         if len(possible_answer_list1) != 0:
             possible_answer = possible_answer_list1
-        if len(possible_answer_list2) != 0:
+        elif len(possible_answer_list2) != 0:
             possible_answer = possible_answer_list2
 
         return possible_answer
@@ -404,9 +392,9 @@ def answers_in_template(s_a_e, s_a_r, s_a, n_k_l, p_k_l):
     #     "In my point of view, ",
     #     "Personally speaking, ",
     # ]
-    
+
     first_templates = "Here is some information I found: "
-    
+
     #     R:@@@
     #     E:>>>
     #     A:<<<
@@ -416,15 +404,11 @@ def answers_in_template(s_a_e, s_a_r, s_a, n_k_l, p_k_l):
 
     # number1 = random.randint(0, 3)
     # number2 = random.randint(0, 1)
-    
-    number2 =random.randint(0, 1)
+
+    number2 = random.randint(0, 1)
     answer_sentence = first_templates + middle_templates[number2].replace(
         "<<<", s_a[0][0]
-    ).replace(
-        ">>>", s_a_e[0][0]
-    ).replace(
-        "@@@", s_a_r[0][0]
-    )
+    ).replace(">>>", s_a_e[0][0]).replace("@@@", s_a_r[0][0])
 
     for i in range(len(s_a_e) - 2):
         number2 = 0
@@ -437,14 +421,14 @@ def answers_in_template(s_a_e, s_a_r, s_a, n_k_l, p_k_l):
         )
         answer_sentence = answer_sentence + concatenate_words + t2
 
-    if len(s_a_e) -1 > 0:
+    if len(s_a_e) - 1 > 0:
         answer_sentence += " and " + (
-                middle_templates[number2]
-                .replace("<<<", s_a[len(s_a_e)-1][0])
-                .replace(">>>", s_a_e[len(s_a_e)-1][0])
-                .replace("@@@", s_a_r[len(s_a_e)-1][0])
-            )
-    
+            middle_templates[number2]
+            .replace("<<<", s_a[len(s_a_e) - 1][0])
+            .replace(">>>", s_a_e[len(s_a_e) - 1][0])
+            .replace("@@@", s_a_r[len(s_a_e) - 1][0])
+        )
+
     swear_words = ". If you don't believe me, you can check it yourself. I will show you the labels of entities and relations. "
     entities_words = str(n_k_l) + " "
     relations_words = str(p_k_l)
