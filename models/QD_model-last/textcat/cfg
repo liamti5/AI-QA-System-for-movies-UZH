@@ -1,0 +1,10 @@
+{
+  "labels":[
+    "CLOSED",
+    "RECOMMENDATION",
+    "WHEN",
+    "MULTIMEDIA"
+  ],
+  "threshold":0.0,
+  "positive_label":null
+}

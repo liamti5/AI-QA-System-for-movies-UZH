@@ -24,3 +24,19 @@ class NLP_Operations:
             if tok.dep_ in ("attr", "nsubj") and tok.pos_ in ("NOUN")
         ]
         return relations
+
+    def get_question_type(self, question) -> str:
+        nlp2 = spacy.load("./models/QD_model-last/")  
+        doc = nlp2(question)
+        most_likely_category = max(doc.cats, key=doc.cats.get)
+        return most_likely_category
+
+
+def main():
+    nlp = NLP_Operations()
+    question = "Who is the director of the movie Titanic?"
+    print(nlp.get_question_type(question))
+
+
+if __name__ == "__main__":
+    main()
