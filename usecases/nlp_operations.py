@@ -23,7 +23,8 @@ class NLP_Operations:
             for tok in doc
             if tok.dep_ in ("attr", "nsubj") and tok.pos_ in ("NOUN")
         ]
-        return relations
+        assert len(relations) == 1, "There should be exactly one relation"
+        return relations[0]
 
     def get_question_type(self, question) -> str:
         nlp2 = spacy.load("./models/QD_model-last/")  
