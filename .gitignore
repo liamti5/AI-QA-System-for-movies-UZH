@@ -4,3 +4,6 @@ dist/
 venv/
 speakeasypy.egg-info/
 .vscode/
+notebooks/NER/spacy/output/
+notebooks/NER/spacy/output2/
+
