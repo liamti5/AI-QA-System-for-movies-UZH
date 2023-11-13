@@ -7,7 +7,10 @@ def main():
     # bot = Agent("burn-largo-coffee_bot", "Q9R_PM3LJyRDfQ")
     # bot.listen()
     answer_calc = AnswerCalculator()
-    print(answer_calc.calculate_answer("Who is the screenwriter of the The Masked Gang: Cyprus?"))
+    quest = ["Who is the screenwriter of the The Masked Gang: Cyprus?", "When was Lord of the Rings released?", "When was The Masked Gang: Cyprus released?"]
+    for q in quest:
+        print(answer_calc.calculate_answer(q))
+
 
 if __name__ == '__main__':
     main()
