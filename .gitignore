@@ -6,4 +6,10 @@ speakeasypy.egg-info/
 .vscode/
 notebooks/NER/spacy/output/
 notebooks/NER/spacy/output2/
-
+notebooks/NER/spacy/output3/
+notebooks/NER/spacy/output4/
+notebooks/NER/spacy/dev_small.spacy
+notebooks/NER/spacy/dev.spacy
+notebooks/NER/spacy/dev_small.spacy
+notebooks/NER/spacy/train_small.spacy
+notebooks/NER/spacy/train.spacy

@@ -1,9 +1,10 @@
+from typing import Union
+import editdistance
+import random
 from usecases import utils
 from usecases import nlp_operations
 from usecases import graph_operations
-import copy
-import editdistance
-import random
+from usecases import recommendations
 
 
 class AnswerCalculator:
@@ -20,6 +21,7 @@ class AnswerCalculator:
         self.predicates = utils.get_dicti("data/predicates_clean.json")
         self.nlp_operator = nlp_operations.NLP_Operations()
         self.graph_operator = graph_operations.GraphOperations()
+        self.recommender = recommendations.Recommendations()
         self.wh_words = [
             "What",
             "what",
@@ -91,9 +93,11 @@ class AnswerCalculator:
             "over",
         ]
         self.all_delete_words = self.wh_words + self.useless_words
+        self.question = None
 
     def calculate_answer(self, question: str) -> str:
         # preprocess question
+        self.question = question
         question = question.replace("\n", "").replace("?", "")
         question_list = question.split(" ")
         question_list = list(
@@ -104,25 +108,9 @@ class AnswerCalculator:
         question_type = self.nlp_operator.get_question_type(question)
         print("question_type: ", question_type)
 
-        # get tags of words, returns e.g. [['O', 'O', 'O', 'O', 'O']]
-        tag_list = self.nlp_operator.get_ner(question)
-        print("tag_list: ", tag_list)
-
-        # find entity
-        indexes = [index for index, val in enumerate(tag_list[0]) if val != "O"]
-        entity = (
-            " ".join(question_list[indexes[0] : indexes[-1] + 1])
-            .rstrip("?")
-            .rstrip('"')
-            .rstrip("'")
-        )
-        print("entity: ", entity)
-
-        # find relation
-        relation = ""
-        if not question_type == "WHEN":
-            relation = self.nlp_operator.get_relation(question)
-            print("relation: ", relation)
+        named_entities = self.nlp_operator.get_ner(question)
+        assert named_entities, "no entities found"
+        print("entities: ", named_entities)
 
         mapping = {
             "WHEN": self.handle_when,
@@ -130,26 +118,43 @@ class AnswerCalculator:
             "RECOMMENDATION": self.handle_recommendation,
             "MULTIMEDIA": self.handle_multimedia,
         }
+
         # call the corresponding function
-        answer = mapping[question_type](entity, relation)
+        answer = mapping[question_type](named_entities)
         return answer
 
-    def handle_when(self, entity: str, relation: str) -> str:
+    def handle_when(self, entity: list) -> str:
+        entity = entity[0]
         relation_id = "P577"  # publication date
         entity_id = self.calculate_node_distance(entity)
-        answer = self.query(relation_id, entity_id)
+        answer = self.query(relation_id, entity_id)[0]
+        answers_templates = [
+            f"The release date of {entity} is {answer}",
+            f"{entity} was released on {answer}",
+        ]
+        answer = answers_templates[random.randint(0, len(answers_templates) - 1)]
         return answer
 
-    def handle_closed(self, entity: str, relation: str) -> str:
+    def handle_closed(self, entity: list) -> str:
+        entity = entity[0]
+        relation = self.nlp_operator.get_relation(self.question)
         relation_id = self.calculate_pred_distance(relation)
         entity_id = self.calculate_node_distance(entity)
+        print(relation_id, entity_id)
         answer = self.query(relation_id, entity_id)
+        answers_templates = [
+            f"The {relation} of {entity} is {answer}",
+            f"{entity}'s {relation} is {answer}",
+        ]
+        answer = answers_templates[random.randint(0, len(answers_templates) - 1)]
         return answer
 
-    def handle_recommendation(self, entity: str, relation: str):
-        return
+    def handle_recommendation(self, entity: list) -> str:
+        movies = self.recommender.recommend_movies(entity, 3)
+        answers = self.recommender.recommend_answers(movies)
+        return self.recommender.generate_answers_for_recommendation(answers)
 
-    def handle_multimedia(self, entity: str, relation: str):
+    def handle_multimedia(self, entity: list):
         return
 
     def query(self, relation: str, entity: str) -> str:
@@ -168,6 +173,7 @@ class AnswerCalculator:
         try:
             answer = self.graph_operator.query(query)
             assert answer, "No answer found, trying embeddings"
+            answer = self.nodes[answer[0]]
         except AssertionError:
             print("Using embeddings")
             answer = self.graph_operator.query_with_embeddings(entity, relation)
@@ -175,8 +181,7 @@ class AnswerCalculator:
         finally:
             if not answer:
                 answer = "Sorry, I don't know the answer to this question."
-
-        return answer
+            return answer
 
     def calculate_node_distance(self, entity: str) -> str:
         distance_dict = {}

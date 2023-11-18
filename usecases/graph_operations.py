@@ -51,4 +51,5 @@ class GraphOperations:
         dist = sklearn.metrics.pairwise_distances(lhs.reshape(1, -1), entity_emb).reshape(-1)
         most_likely = dist.argsort()[0]
         entity = id2ent[most_likely]
+        print(entity)
         return str(entity) # returns a link e.g. 'http://www.wikidata.org/entity/Q5058838'

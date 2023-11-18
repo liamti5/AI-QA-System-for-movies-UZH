@@ -1,16 +1,27 @@
 from usecases.bot_base import Agent
 from usecases.answer_calculator2 import AnswerCalculator
 from usecases.graph_operations import GraphOperations
+from usecases.nlp_operations import NLP_Operations
+from usecases.recommendations import Recommendations
 import rdflib
+
 
 def main():
     # bot = Agent("burn-largo-coffee_bot", "Q9R_PM3LJyRDfQ")
     # bot.listen()
+    # nlp = NLP_Operations()
+    # print(nlp.get_ner("I enjoy watching Jan Dara, Dry Wind, and Necrosis. What else would you recommend?"))
     answer_calc = AnswerCalculator()
-    quest = ["Who is the screenwriter of the The Masked Gang: Cyprus?", "When was Lord of the Rings released?", "When was The Masked Gang: Cyprus released?"]
-    for q in quest:
-        print(answer_calc.calculate_answer(q))
+    while True:
+        print("What would you like to know?\n")
+        quest = input()
+        print(answer_calc.calculate_answer(quest))
+    # recommender = Recommendations()
+    # test = ["Toy Story", "Jumanji"]
+    # movies = recommender.recommend_movies(test, 3)
+    # answers = recommender.recommend_answers(movies)
+    # print(recommender.generate_answers_for_recommendation(answers))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
