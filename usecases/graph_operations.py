@@ -1,7 +1,7 @@
 import rdflib
 import sklearn.metrics
+from collections import Counter
 from usecases import utils
-
 
 
 class GraphOperations:
@@ -16,6 +16,13 @@ class GraphOperations:
         self.graph = rdflib.Graph()
         self.loaded = False
         self.load_graph(graph_file)
+        self.WD = rdflib.Namespace("http://www.wikidata.org/entity/")
+        self.WDT = rdflib.Namespace("http://www.wikidata.org/prop/direct/")
+        self.DDIS = rdflib.Namespace("http://ddis.ch/atai/")
+        self.RDFS = rdflib.namespace.RDFS
+        self.SCHEMA = rdflib.Namespace("http://schema.org/")
+        self.entity_emb, self.ent2id, self.id2ent = utils.get_entity_embeddings()
+        self.relation_emb, self.rel2id, self.id2rel = utils.get_relation_embeddings()
 
     def load_graph(self, graph_file):
         assert self.loaded is False, "Graph already loaded"
@@ -29,27 +36,43 @@ class GraphOperations:
         query = str(query)
         answer = [str(s) for s, in self.graph.query(query)]
         return answer
-    
+
     def query_with_embeddings(self, ent, relation) -> str:
-        WD = rdflib.Namespace('http://www.wikidata.org/entity/')
-        WDT = rdflib.Namespace('http://www.wikidata.org/prop/direct/')
-        DDIS = rdflib.Namespace('http://ddis.ch/atai/')
-        RDFS = rdflib.namespace.RDFS
-        SCHEMA = rdflib.Namespace('http://schema.org/')
+        ent = self.WD[ent]
+        relation = self.WDT[relation]
 
-        ent = WD[ent]
-        relation = WDT[relation]
-
-        entity_emb, ent2id, id2ent = utils.get_entity_embeddings()
-        relation_emb, rel2id, id2rel = utils.get_relation_embeddings()
-        ent2lbl = {ent: str(lbl) for ent, lbl in self.graph.subject_objects(RDFS.label)}
+        ent2lbl = {
+            ent: str(lbl) for ent, lbl in self.graph.subject_objects(self.RDFS.label)
+        }
         lbl2ent = {lbl: ent for ent, lbl in ent2lbl.items()}
 
-        head = entity_emb[ent2id[ent]]
-        pred = relation_emb[rel2id[relation]]
+        head = self.entity_emb[self.ent2id[ent]]
+        pred = self.relation_emb[self.rel2id[relation]]
         lhs = head + pred
-        dist = sklearn.metrics.pairwise_distances(lhs.reshape(1, -1), entity_emb).reshape(-1)
+        dist = sklearn.metrics.pairwise_distances(
+            lhs.reshape(1, -1), self.entity_emb
+        ).reshape(-1)
         most_likely = dist.argsort()[0]
-        entity = id2ent[most_likely]
+        entity = self.id2ent[most_likely]
         print(entity)
-        return str(entity) # returns a link e.g. 'http://www.wikidata.org/entity/Q5058838'
+        return str(
+            entity
+        )  # returns a link e.g. 'http://www.wikidata.org/entity/Q5058838'
+
+    def recommendations_embeddings(self, ents: list) -> list:
+        # which entities are similar to "Harry Potter and the Goblet of Fire"
+        ents = [self.ent2id[self.WD[ent]] for ent in ents]
+        # we compare the embedding of the query entity to all other entity embeddings
+        recommendations = []
+        for ent in ents:
+            dist = sklearn.metrics.pairwise_distances(
+                self.entity_emb[ent].reshape(1, -1), self.entity_emb
+            ).reshape(-1)
+            # order by plausibility
+            most_likely = dist.argsort()[1:6]
+            recommendations += [str(self.id2ent[movie]) for movie in most_likely]
+        counts = Counter(recommendations).most_common(2)
+        first_rec = str(counts[0][0])
+        second_rec = str(counts[1][0])
+        recs = [first_rec, second_rec]
+        return recs

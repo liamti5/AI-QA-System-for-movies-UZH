@@ -1,5 +1,5 @@
 from speakeasypy import Speakeasy, Chatroom
-from .answer_calculator import AnswerCalculator
+from .answer_calculator2 import AnswerCalculator
 from typing import List
 import time
 

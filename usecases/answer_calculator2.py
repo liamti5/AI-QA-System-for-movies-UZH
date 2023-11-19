@@ -22,77 +22,6 @@ class AnswerCalculator:
         self.nlp_operator = nlp_operations.NLP_Operations()
         self.graph_operator = graph_operations.GraphOperations()
         self.recommender = recommendations.Recommendations()
-        self.wh_words = [
-            "What",
-            "what",
-            "when",
-            "When",
-            "where",
-            "Where",
-            "Who",
-            "who",
-            "Whom",
-            "whom",
-            "Which",
-            "which",
-            "Whose",
-            "whose",
-            "Why",
-            "why",
-            "How",
-            "how",
-        ]
-        self.useless_words = [
-            "am",
-            "is",
-            "are",
-            "have",
-            "has",
-            "had",
-            "was",
-            "were",
-            "a",
-            "an",
-            "the",
-            "that",
-            "this",
-            "these",
-            "those",
-            "above",
-            "across",
-            "against",
-            "along",
-            "among",
-            "around",
-            "at",
-            "before",
-            "behind",
-            "below",
-            "beneath",
-            "beside",
-            "between",
-            "by",
-            "down",
-            "from",
-            "in",
-            "into",
-            "near",
-            "off",
-            "on",
-            "to",
-            "woward",
-            "under",
-            "upon",
-            "with",
-            "and",
-            "within",
-            "of",
-            "for",
-            "since",
-            "during",
-            "over",
-        ]
-        self.all_delete_words = self.wh_words + self.useless_words
         self.question = None
 
     def calculate_answer(self, question: str) -> str:
@@ -152,11 +81,17 @@ class AnswerCalculator:
     def handle_recommendation(self, entity: list) -> str:
         movies = self.recommender.recommend_movies(entity, 3)
         answers = self.recommender.recommend_answers(movies)
-        return self.recommender.generate_answers_for_recommendation(answers)
+        recommendations1 = self.recommender.generate_answers_for_recommendation(answers)
+        
+        entity_ids = [self.calculate_node_distance(ent) for ent in entity]
+        embedding_recs = self.graph_operator.recommendations_embeddings(entity_ids)
+        embedding_recs_labels = [self.nodes[rec] for rec in embedding_recs]
+        recommendations2 = f" Furthermore, I have found some more movies you'd might like based on embeddings: {' and '.join(embedding_recs_labels)}. Enjoy!"
+        return recommendations1 + recommendations2
 
     def handle_multimedia(self, entity: list):
-        return
-
+        return 
+    
     def query(self, relation: str, entity: str) -> str:
         query = f"""
             PREFIX ddis: <http://ddis.ch/atai/>
@@ -178,10 +113,8 @@ class AnswerCalculator:
             print("Using embeddings")
             answer = self.graph_operator.query_with_embeddings(entity, relation)
             answer = self.nodes[answer]
-        finally:
-            if not answer:
-                answer = "Sorry, I don't know the answer to this question."
-            return answer
+            assert answer, "No answer found with embeddings"       
+        return answer
 
     def calculate_node_distance(self, entity: str) -> str:
         distance_dict = {}

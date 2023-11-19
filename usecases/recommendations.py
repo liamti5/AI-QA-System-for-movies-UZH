@@ -1,10 +1,13 @@
 import pandas as pd
+import random
+from fuzzywuzzy import process
 from collections import Counter
 
 
 class Recommendations:
     def __init__(self, data="./data/movies.csv"):
         self.movie_df = pd.read_csv(data, usecols=["title", "genres"])
+        self.liked_movies = []
         self.preprocess()
 
     def preprocess(self):
@@ -23,16 +26,19 @@ class Recommendations:
         return 0
 
     def recommend_movies(self, movies, n):
+        self.liked_movies = movies
         number_of_all_movies = len(self.movie_titles)
 
         movie_index = []
         for movie in movies:
-            try:
-                movie_index.append(self.movie_titles.index(movie))
-            except:
-                print(f"{movie} was not found")
+            threshold = 90
+            match, similarity = process.extractOne(movie, self.movie_titles)
+            if similarity >= threshold:
+                movie_index.append(self.movie_titles.index(match))
+            else:
+                print(f"{movie} was not found or no close match found")
 
-        assert movie_index, "I could not find any movies for you, sry!"
+        assert movie_index, "I could'nt find any movies for you, sry!"
 
         movie_r_time = []
         movie_r_genres = []
@@ -118,9 +124,9 @@ class Recommendations:
         if recommend_reason == -1:
             recommend_categories = "have not been found, so no reasons"
         elif recommend_reason == 0:
-            recommend_categories = "all the movies have been published in the same year and the genres are the same"
+            recommend_categories = "all the movies were published in the same year and the genres are the same"
         elif recommend_reason == 1:
-            recommend_categories = "all the movies have been published in the same year"
+            recommend_categories = "all the movies were published in the same year"
         elif recommend_reason == 2:
             recommend_categories = "all the movies are the same genres"
         return movie_list, time_list, genres_list, recommend_categories, whether_found
@@ -133,14 +139,22 @@ class Recommendations:
             recommend_categories,
             whether_found,
         ) = search_answers_outcomes
+        time_set = set(time_list)
+        genres_set = set()
+        for genres in genres_list:
+            genres_set.update(genres)
+
         if whether_found:
             return "no answers have been found, try again."
         else:
-            answer1 = "Adequate recommendations will be: {}, because {}.".format(
-                ", ".join(movie_list), recommend_categories
-            )
+            answers1 = [
+                "Adequate recommendations will be: {}, because {}.".format(
+                    ", ".join(movie_list), recommend_categories
+                ),
+                f"Since you like {', '.join(self.liked_movies)}, I think you would enjoy {', '.join(movie_list)}, because {recommend_categories}."
+            ]
             answer2 = " The details about the movies are shown as follows: "
-            answer3 = " publication date of each movie is {} and the genres of each movie is {}.".format(
-                ", ".join(time_list), genres_list
+            answer3 = "the publication date of all movies is {} and the genres of all movie are {}.".format(
+                ", ".join(time_set), ", ".join(genres_set)
             )
-            return answer1 + answer2 + answer3
+            return answers1[random.randint(0, len(answers1) - 1)] + answer2 + answer3
