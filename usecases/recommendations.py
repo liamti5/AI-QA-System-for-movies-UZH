@@ -30,11 +30,12 @@ class Recommendations:
         number_of_all_movies = len(self.movie_titles)
 
         movie_index = []
-        for movie in movies:
+        for i, movie in enumerate(movies):
             threshold = 90
             match, similarity = process.extractOne(movie, self.movie_titles)
             if similarity >= threshold:
                 movie_index.append(self.movie_titles.index(match))
+                movies[i] = match
             else:
                 print(f"{movie} was not found or no close match found")
 
@@ -148,10 +149,13 @@ class Recommendations:
             return "no answers have been found, try again."
         else:
             answers1 = [
-                "Adequate recommendations will be: {}, because {}.".format(
-                    ", ".join(movie_list), recommend_categories
-                ),
+                f"Adequate recommendations will be: {', '.join(movie_list)}, because {recommend_categories}.",
                 f"Since you like {', '.join(self.liked_movies)}, I think you would enjoy {', '.join(movie_list)}, because {recommend_categories}."
+                f"Based on your preferences, I'd recommend: {', '.join(movie_list)}. Why? Well, because {recommend_categories}.",
+                f"Considering what you like, how about trying {', '.join(movie_list)}? They fit the bill because {recommend_categories}.",
+                f"Since you're into {', '.join(self.liked_movies)}, you might really like {', '.join(movie_list)}. They match because {recommend_categories}.",
+                f"I think {', '.join(movie_list)} would be up your alley. They align well with your tastes, especially considering {recommend_categories}.",
+                f"Looking at your choices, I'd suggest checking out {', '.join(movie_list)}. They're great picks because {recommend_categories}."
             ]
             answer2 = " The details about the movies are shown as follows: "
             answer3 = "the publication date of all movies is {} and the genres of all movie are {}.".format(

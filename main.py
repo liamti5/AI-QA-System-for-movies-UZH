@@ -12,15 +12,13 @@ def main():
     # nlp = NLP_Operations()
     # print(nlp.get_ner("I enjoy watching Jan Dara, Dry Wind, and Necrosis. What else would you recommend?"))
     answer_calc = AnswerCalculator()
-    while True:
-        try: 
-            print("What would you like to know?\n")
-            quest = input()
-            if quest == "quit":
-                break
-            print(answer_calc.calculate_answer(quest))
-        except:
-            continue
+    while True:    
+        print("What would you like to know?\n")
+        quest = input()
+        if quest == "quit":
+            break
+        print(answer_calc.calculate_answer(quest))
+
     # print(answer_calc.handle_recommendation(["Jumanji", "Toy Story"]))
     # recommender = Recommendations()
     # test = ["Titaniic"]

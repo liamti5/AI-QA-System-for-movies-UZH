@@ -37,7 +37,7 @@ class AnswerCalculator:
         question_type = self.nlp_operator.get_question_type(question)
         print("question_type: ", question_type)
 
-        named_entities = self.nlp_operator.get_ner(question)
+        named_entities, entity_label = self.nlp_operator.get_ner(question)
         assert named_entities, "no entities found"
         print("entities: ", named_entities)
 
@@ -49,10 +49,10 @@ class AnswerCalculator:
         }
 
         # call the corresponding function
-        answer = mapping[question_type](named_entities)
+        answer = mapping[question_type](named_entities, entity_label)
         return answer
 
-    def handle_when(self, entity: list) -> str:
+    def handle_when(self, entity: list, label: list) -> str:
         entity = entity[0]
         relation_id = "P577"  # publication date
         entity_id = self.calculate_node_distance(entity)
@@ -60,25 +60,34 @@ class AnswerCalculator:
         answers_templates = [
             f"The release date of {entity} is {answer}",
             f"{entity} was released on {answer}",
+            f"Actually, {entity} was released on {answer}.",
+            f"Oh, {entity}? It was released on {answer}.",
+            f"You asked about {entity}? It hit the theaters on {answer}."
         ]
         answer = answers_templates[random.randint(0, len(answers_templates) - 1)]
         return answer
 
-    def handle_closed(self, entity: list) -> str:
+    def handle_closed(self, entity: list, label: list) -> str:
         entity = entity[0]
         relation = self.nlp_operator.get_relation(self.question)
         relation_id = self.calculate_pred_distance(relation)
+        relation_label = self.predicates[f"http://www.wikidata.org/prop/direct/{relation_id}"]
         entity_id = self.calculate_node_distance(entity)
         print(relation_id, entity_id)
         answer = self.query(relation_id, entity_id)
         answers_templates = [
-            f"The {relation} of {entity} is {answer}",
-            f"{entity}'s {relation} is {answer}",
+            f"The {relation_label} of {entity} is {answer}",
+            f"{entity}'s {relation_label} is {answer}",
+            f"Oh, the {relation_label} of {entity}? That's {answer}.",
+            f"Looks like {entity}'s {relation_label} is {answer}.",
+            f"Ah, for {entity}, the {relation_label} is actually {answer}.",
+            f"Yup, {entity}'s {relation_label}? Definitely {answer}.",
+            f"Alright, so {entity} has {answer} as its {relation_label}."
         ]
         answer = answers_templates[random.randint(0, len(answers_templates) - 1)]
         return answer
 
-    def handle_recommendation(self, entity: list) -> str:
+    def handle_recommendation(self, entity: list, label: list) -> str:
         movies = self.recommender.recommend_movies(entity, 3)
         answers = self.recommender.recommend_answers(movies)
         recommendations1 = self.recommender.generate_answers_for_recommendation(answers)
@@ -89,7 +98,7 @@ class AnswerCalculator:
         recommendations2 = f" Furthermore, I have found some more movies you'd might like based on embeddings: {' and '.join(embedding_recs_labels)}. Enjoy!"
         return recommendations1 + recommendations2
 
-    def handle_multimedia(self, entity: list):
+    def handle_multimedia(self, entity: list, label: list):
         return 
     
     def query(self, relation: str, entity: str) -> str:
@@ -108,12 +117,15 @@ class AnswerCalculator:
         try:
             answer = self.graph_operator.query(query)
             assert answer, "No answer found, trying embeddings"
-            answer = self.nodes[answer[0]]
+            try:
+                answer = self.nodes[answer[0]]
+            except KeyError:
+                answer = answer
         except AssertionError:
             print("Using embeddings")
             answer = self.graph_operator.query_with_embeddings(entity, relation)
+            assert answer, "No answer found with embeddings"
             answer = self.nodes[answer]
-            assert answer, "No answer found with embeddings"       
         return answer
 
     def calculate_node_distance(self, entity: str) -> str:
