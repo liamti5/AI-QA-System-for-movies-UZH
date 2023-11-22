@@ -7,17 +7,17 @@ import rdflib
 
 
 def main():
-    # bot = Agent("burn-largo-coffee_bot", "Q9R_PM3LJyRDfQ")
-    # bot.listen()
+    bot = Agent("burn-largo-coffee_bot", "Q9R_PM3LJyRDfQ")
+    bot.listen()
     # nlp = NLP_Operations()
     # print(nlp.get_ner("I enjoy watching Jan Dara, Dry Wind, and Necrosis. What else would you recommend?"))
-    answer_calc = AnswerCalculator()
-    while True:    
-        print("What would you like to know?\n")
-        quest = input()
-        if quest == "quit":
-            break
-        print(answer_calc.calculate_answer(quest))
+    # answer_calc = AnswerCalculator()
+    # while True:    
+    #     print("What would you like to know?\n")
+    #     quest = input()
+    #     if quest == "quit":
+    #         break
+    #     print(answer_calc.calculate_answer(quest))
 
     # print(answer_calc.handle_recommendation(["Jumanji", "Toy Story"]))
     # recommender = Recommendations()
