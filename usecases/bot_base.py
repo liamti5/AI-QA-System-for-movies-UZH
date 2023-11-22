@@ -1,13 +1,10 @@
 from speakeasypy import Speakeasy, Chatroom
+from .answer_calculator2 import AnswerCalculator
 from typing import List
 import time
 
-import sys
-sys.path.append('./usecases')
 
-from answer_calculator import AnswerCalculator
-
-DEFAULT_HOST_URL = 'https://speakeasy.ifi.uzh.ch'
+DEFAULT_HOST_URL = "https://speakeasy.ifi.uzh.ch"
 listen_freq = 2
 
 
@@ -17,7 +14,8 @@ class Agent:
         self.answer_calculator = AnswerCalculator()
         # Initialize the Speakeasy Python framework and login.
         self.speakeasy = Speakeasy(
-            host=DEFAULT_HOST_URL, username=username, password=password)
+            host=DEFAULT_HOST_URL, username=username, password=password
+        )
         # This framework will help you log out automatically when the program terminates.
         self.speakeasy.login()
 
@@ -29,7 +27,8 @@ class Agent:
                 if not room.initiated:
                     # send a welcome message if room is not initiated
                     room.post_messages(
-                        f'Hello! This is a welcome message from {room.my_alias}.')
+                        f"Hello! This is a welcome message from {room.my_alias}."
+                    )
                     room.initiated = True
                 # Retrieve messages from this chat room.
                 # If only_partner=True, it filters out messages sent by the current bot.
@@ -38,26 +37,33 @@ class Agent:
                     print(
                         f"\t- Chatroom {room.room_id} "
                         f"- new message #{message.ordinal}: '{message.message}' "
-                        f"- {self.get_time()}")
+                        f"- {self.get_time()}"
+                    )
 
                     # Implement your agent here #
                     # Send a message to the corresponding chat room using the post_messages method of the room object.
                     try:
-                        print('---------------------')
+                        print("---------------------")
                         print(message.message)
-                        answer = self.answer_calculator.calculate_answer(message.message)
+                        answer = self.answer_calculator.calculate_answer(
+                            message.message
+                        )
                         print()
                         print(answer)
                         room.post_messages(answer)
 
                         # room.post_messages(str(query(message.message)))
-                        print('---------------------')
+                        print("---------------------")
 
                     except Exception as e:
-                        print('Exception was caught:',e)
-                        sorry_message1='Sorry for not finding the answer to your question. '
-                        sorry_message2='Maybe you could try again with a different format.'
-                        room.post_messages(sorry_message1+sorry_message2)
+                        print("Exception was caught:", e)
+                        sorry_message1 = (
+                            "Sorry for not finding the answer to your question. "
+                        )
+                        sorry_message2 = (
+                            "Maybe you could try again with a different format."
+                        )
+                        room.post_messages(sorry_message1 + sorry_message2)
 
                     finally:
                         # Mark the message as processed, so it will be filtered out when retrieving new messages.
@@ -69,12 +75,12 @@ class Agent:
                     print(
                         f"\t- Chatroom {room.room_id} "
                         f"- new reaction #{reaction.message_ordinal}: '{reaction.type}' "
-                        f"- {self.get_time()}")
+                        f"- {self.get_time()}"
+                    )
 
                     # Implement your agent here #
 
-                    room.post_messages(
-                        f"Received your reaction: '{reaction.type}' ")
+                    room.post_messages(f"Received your reaction: '{reaction.type}' ")
                     room.mark_as_processed(reaction)
 
             time.sleep(listen_freq)
@@ -84,6 +90,6 @@ class Agent:
         return time.strftime("%H:%M:%S, %d-%m-%Y", time.localtime())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     demo_bot = Agent("burn-largo-coffee_bot", "Q9R_PM3LJyRDfQ")
     demo_bot.listen()
