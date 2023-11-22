@@ -1,5 +1,6 @@
 import pandas as pd
 import random
+import re
 from fuzzywuzzy import process
 from collections import Counter
 
@@ -37,7 +38,7 @@ class Recommendations:
                 movie_index.append(self.movie_titles.index(match))
                 movies[i] = match
             else:
-                print(f"{movie} was not found or no close match found")
+                print(f"{movie} was not found and no close match found")
 
         assert movie_index, "I could'nt find any movies for you, sry!"
 
@@ -125,11 +126,11 @@ class Recommendations:
         if recommend_reason == -1:
             recommend_categories = "have not been found, so no reasons"
         elif recommend_reason == 0:
-            recommend_categories = "all the movies were published in the same year and the genres are the same"
+            recommend_categories = "some movies were published in the same year and the genres are overlapping"
         elif recommend_reason == 1:
-            recommend_categories = "all the movies were published in the same year"
+            recommend_categories = "some movies were published in the same year"
         elif recommend_reason == 2:
-            recommend_categories = "all the movies are the same genres"
+            recommend_categories = "all the movies are have overlapping genres"
         return movie_list, time_list, genres_list, recommend_categories, whether_found
 
     def generate_answers_for_recommendation(self, search_answers_outcomes):
@@ -140,6 +141,29 @@ class Recommendations:
             recommend_categories,
             whether_found,
         ) = search_answers_outcomes
+        print(movie_list)
+        movie_list_corrected = []
+        for movie in movie_list:
+            if bool(re.search(r", The", movie)):
+                movie = re.sub(r", The", "", movie)
+                movie = f"The {movie}"
+            if bool(re.search(r", A", movie)):
+                movie = re.sub(r", A", "", movie)
+                movie = f"A {movie}"
+            movie_list_corrected.append(movie)        
+        movie_list = movie_list_corrected
+
+        liked_movies_corrected = []
+        for movie in self.liked_movies:
+            if bool(re.search(r", The", movie)):
+                movie = re.sub(r", The", "", movie)
+                movie = f"The {movie}"
+            if bool(re.search(r", A", movie)):
+                movie = re.sub(r", A", "", movie)
+                movie = f"A {movie}"
+            liked_movies_corrected.append(movie)
+        self.liked_movies = liked_movies_corrected
+
         time_set = set(time_list)
         genres_set = set()
         for genres in genres_list:
@@ -150,12 +174,12 @@ class Recommendations:
         else:
             answers1 = [
                 f"Adequate recommendations will be: {', '.join(movie_list)}, because {recommend_categories}.",
-                f"Since you like {', '.join(self.liked_movies)}, I think you would enjoy {', '.join(movie_list)}, because {recommend_categories}."
+                f"Since you like {', '.join(self.liked_movies)}, I think you would enjoy {', '.join(movie_list)}, because {recommend_categories}.",
                 f"Based on your preferences, I'd recommend: {', '.join(movie_list)}. Why? Well, because {recommend_categories}.",
-                f"Considering what you like, how about trying {', '.join(movie_list)}? They fit the bill because {recommend_categories}.",
+                f"Considering what you like ({', '.join(self.liked_movies)}), how about trying {', '.join(movie_list)}? They fit the bill because {recommend_categories}.",
                 f"Since you're into {', '.join(self.liked_movies)}, you might really like {', '.join(movie_list)}. They match because {recommend_categories}.",
                 f"I think {', '.join(movie_list)} would be up your alley. They align well with your tastes, especially considering {recommend_categories}.",
-                f"Looking at your choices, I'd suggest checking out {', '.join(movie_list)}. They're great picks because {recommend_categories}."
+                f"Looking at your choices ({', '.join(self.liked_movies)}), I'd suggest checking out {', '.join(movie_list)}. They're great picks because {recommend_categories}."
             ]
             answer2 = " The details about the movies are shown as follows: "
             answer3 = "the publication date of all movies is {} and the genres of all movie are {}.".format(
