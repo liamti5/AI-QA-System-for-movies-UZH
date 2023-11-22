@@ -60,15 +60,12 @@ class GraphOperations:
         )  # returns a link e.g. 'http://www.wikidata.org/entity/Q5058838'
 
     def recommendations_embeddings(self, ents: list) -> list:
-        # which entities are similar to "Harry Potter and the Goblet of Fire"
         ents = [self.ent2id[self.WD[ent]] for ent in ents]
-        # we compare the embedding of the query entity to all other entity embeddings
         recommendations = []
         for ent in ents:
             dist = sklearn.metrics.pairwise_distances(
                 self.entity_emb[ent].reshape(1, -1), self.entity_emb
             ).reshape(-1)
-            # order by plausibility
             most_likely = dist.argsort()[1:6]
             recommendations += [str(self.id2ent[movie]) for movie in most_likely]
         counts = Counter(recommendations).most_common(2)
