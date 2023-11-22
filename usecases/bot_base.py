@@ -58,7 +58,7 @@ class Agent:
                     except Exception as e:
                         print("Exception was caught:", e)
                         sorry_message1 = (
-                            "Sorry for not finding the answer to your question. "
+                            "Sorry, I couldn't find an answer to your question :(. "
                         )
                         sorry_message2 = (
                             "Maybe you could try again with a different format."
