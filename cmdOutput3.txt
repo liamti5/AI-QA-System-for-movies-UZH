@@ -1,0 +1,511 @@
+loading graph ...
+loaded graph successfully!
+Login successful. Session token: DhCcmK6kECD0gPTQmXMBZ_rhMnVR8TKT
+        - Chatroom 94b74081-f105-415c-8813-c7ad04d29c68 - new message #1: 'I liked the movie Kung Fu Panda, can you recommend 3 similar movies? ' - 10:23:09, 29-11-2023
+---------------------
+I liked the movie Kung Fu Panda, can you recommend 3 similar movies? 
+question_type:  RECOMMENDATION
+entities:  ['Kung Fu Panda']
+['In the Name of the King: A Dungeon Siege Tale', 'Cloverfield', 'Rambo (Rambo 4)']
+entity: Kung Fu Panda
+
+Since you like Kung Fu Panda, I think you would enjoy In the Name of the King: A Dungeon Siege Tale, Cloverfield, Rambo (Rambo 4), because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 2008 and the genres of all movie are Thriller, Action, Mystery, Sci-Fi, Drama, War, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Kung Fu Panda 2 and Kung Fu Panda 3. Enjoy!
+---------------------
+        - Chatroom 7a68aa79-886b-41fa-830a-4a944f5e8749 - new message #1: 'Can you recommend me 3 movies similar to Forest Gump and The Lord of the Rings: The Fellowship of the Ring.  ' - 10:23:35, 29-11-2023
+---------------------
+Can you recommend me 3 movies similar to Forest Gump and The Lord of the Rings: The Fellowship of the Ring.  
+question_type:  RECOMMENDATION
+entities:  ['Forest Gump', 'The Lord of the Rings: The Fellowship of the Ring']
+['Lamerica', 'Postman, The (Postino, Il)', 'Nobody Loves Me (Keiner liebt mich)']
+entity: Forrest Gump
+entity: Lord of the Rings: The Fellowship of the Ring, The
+
+Since you're into Forrest Gump, The Lord of the Rings: The Fellowship of the Ring, you might really like Lamerica, The Postman (Postino, Il), Nobody Loves Me (Keiner liebt mich). They match because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1994 and the genres of all movie are Drama, Romance, Adventure, Comedy. Furthermore, I have found some more movies you'd might like based on embeddings: Whitney Fordman and Tom Hanks. Enjoy!
+---------------------
+        - Chatroom 53fe9fcc-4250-499b-b545-9b8230b5f2fa - new message #1: 'Can you recommend me 3 movies like Nightmare on Elm Street, Friday the 13th, and Halloween. ' - 10:23:55, 29-11-2023
+---------------------
+Can you recommend me 3 movies like Nightmare on Elm Street, Friday the 13th, and Halloween. 
+question_type:  RECOMMENDATION
+entities:  ['Nightmare on Elm Street', 'Friday the 13th', 'Halloween']
+['Fog, The', 'Howling, The', 'Terminator, The']
+entity: Nightmare on Elm Street, A
+entity: Friday the 13th
+entity: Halloween
+
+Based on your preferences, I'd recommend: The Fog, The Howling, The Terminator. Why? Well, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1980, 1984 and the genres of all movie are Thriller, Action, Sci-Fi, Horror, Mystery. Furthermore, I have found some more movies you'd might like based on embeddings: Friday the 13th and Final Destination 3. Enjoy!
+---------------------
+        - Chatroom 53fe9fcc-4250-499b-b545-9b8230b5f2fa - new message #3: 'Can you recommend me 3 movies like Nightmare on Elm Street, Friday the 13th, and Halloween. ' - 10:24:41, 29-11-2023
+---------------------
+Can you recommend me 3 movies like Nightmare on Elm Street, Friday the 13th, and Halloween. 
+question_type:  RECOMMENDATION
+entities:  ['Nightmare on Elm Street', 'Friday the 13th', 'Halloween']
+['Fog, The', 'Howling, The', 'Terminator, The']
+entity: Nightmare on Elm Street, A
+entity: Friday the 13th
+entity: Halloween
+
+Since you like A Nightmare on Elm Street, Friday the 13th, Halloween, I think you would enjoy The Fog, The Howling, The Terminator, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1980, 1984 and the genres of all movie are Thriller, Action, Sci-Fi, Horror, Mystery. Furthermore, I have found some more movies you'd might like based on embeddings: Friday the 13th and Final Destination 3. Enjoy!
+---------------------
+        - Chatroom 94b74081-f105-415c-8813-c7ad04d29c68 - new message #3: 'I liked the movies Kung Fu Panda and Lord of the rings, can you recommend 3 similar movies?' - 10:24:49, 29-11-2023
+---------------------
+I liked the movies Kung Fu Panda and Lord of the rings, can you recommend 3 similar movies?
+question_type:  RECOMMENDATION
+entities:  ['Kung Fu Panda', 'Lord of the rings']
+['Cat from Outer Space, The', 'Hot Lead and Cold Feet', 'Return from Witch Mountain']
+entity: Kung Fu Panda
+entity: Lord of the Rings, The
+
+Looking at your choices (Kung Fu Panda, The Lord of the Rings), I'd suggest checking out The Cat from Outer Space, Hot Lead and Cold Feet, Return from Witch Mountain. They're great picks because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1978 and the genres of all movie are Western, Action, Children, Sci-Fi, Comedy. Furthermore, I have found some more movies you'd might like based on embeddings: Kung Fu Panda 2 and Kung Fu Panda 3. Enjoy!
+---------------------
+        - Chatroom 7a68aa79-886b-41fa-830a-4a944f5e8749 - new message #3: 'Which performances by Daniel Day-Lewis would you recommend for someone interested in method acting?"' - 10:25:18, 29-11-2023
+---------------------
+Which performances by Daniel Day-Lewis would you recommend for someone interested in method acting?"
+question_type:  RECOMMENDATION
+entities:  ['Daniel Day-Lewis', 'method acting"']
+Daniel Day-Lewis was not found and no close match found
+method acting" was not found and no close match found
+Exception was caught: I could'nt find any movies for you, sry!
+        - Chatroom 94b74081-f105-415c-8813-c7ad04d29c68 - new message #5: 'I liked the movie Lord of the Rings, can you recommend 3 similar movies?' - 10:25:37, 29-11-2023
+---------------------
+I liked the movie Lord of the Rings, can you recommend 3 similar movies?
+question_type:  RECOMMENDATION
+entities:  ['Lord of the Rings']
+['Cat from Outer Space, The', 'Return from Witch Mountain', 'Watership Down']
+entity: Lord of the Rings, The
+
+Looking at your choices (The Lord of the Rings), I'd suggest checking out The Cat from Outer Space, Return from Witch Mountain, Watership Down. They're great picks because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1978 and the genres of all movie are Animation, Children, Sci-Fi, Comedy, Drama, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Lord of the Flies and The Postman. Enjoy!
+---------------------
+        - Chatroom 7a68aa79-886b-41fa-830a-4a944f5e8749 - new message #5: 'After enjoying 'Black Panther', which other superhero movies with a strong cultural message would you recommend?' - 10:26:35, 29-11-2023
+---------------------
+After enjoying 'Black Panther', which other superhero movies with a strong cultural message would you recommend?
+question_type:  RECOMMENDATION
+entities:  ["'Black Panther'", 'superhero movies']
+['In the Name of the King: A Dungeon Siege Tale', 'Cloverfield', 'Rambo (Rambo 4)']
+entity: Black Panther
+entity: Superhero Movie
+
+Looking at your choices (Black Panther, Superhero Movie), I'd suggest checking out In the Name of the King: A Dungeon Siege Tale, Cloverfield, Rambo (Rambo 4). They're great picks because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 2008 and the genres of all movie are Thriller, Action, Mystery, Sci-Fi, Drama, War, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Black Panther film poster and Avengers: Infinity War. Enjoy!
+---------------------
+        - Chatroom 53fe9fcc-4250-499b-b545-9b8230b5f2fa - new reaction #4: 'THUMBS_UP' - 10:27:35, 29-11-2023
+        - Chatroom 94b74081-f105-415c-8813-c7ad04d29c68 - new message #7: 'I like the movie Cars,  can you recommend 1 similar movie?' - 10:27:41, 29-11-2023
+---------------------
+I like the movie Cars,  can you recommend 1 similar movie?
+question_type:  RECOMMENDATION
+entities:  ['Cars']
+['Scanner Darkly, A', "Grandma's Boy", 'Last Holiday']
+entity: Cars
+
+Looking at your choices (Cars), I'd suggest checking out A Scanner Darkly, Grandma's Boy, Last Holiday. They're great picks because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 2006 and the genres of all movie are Animation, Thriller, Sci-Fi, Comedy, Drama, Mystery. Furthermore, I have found some more movies you'd might like based on embeddings: Cars 2 and Cars 3. Enjoy!
+---------------------
+        - Chatroom 53fe9fcc-4250-499b-b545-9b8230b5f2fa - new message #6: 'Can you recommend me 3 movies like Titanic' - 10:28:06, 29-11-2023
+---------------------
+Can you recommend me 3 movies like Titanic
+question_type:  RECOMMENDATION
+entities:  ['Titanic']
+["'Til There Was You", 'Dangerous Ground', 'Bliss']
+entity: Titanic
+
+I think 'Til There Was You, Dangerous Ground, Bliss would be up your alley. They align well with your tastes, especially considering some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1997 and the genres of all movie are Drama, Romance. Furthermore, I have found some more movies you'd might like based on embeddings: 10.5 and Eloise at the Plaza. Enjoy!
+---------------------
+        - Chatroom 94b74081-f105-415c-8813-c7ad04d29c68 - new message #9: 'I like the movie Shrek, can you recommend 1 similar movie?' - 10:28:30, 29-11-2023
+---------------------
+I like the movie Shrek, can you recommend 1 similar movie?
+question_type:  RECOMMENDATION
+entities:  ['Shrek']
+["Recess: School's Out", 'Monkeybone', 'Spy Kids']
+entity: Shrek
+
+Considering what you like (Shrek), how about trying Recess: School's Out, Monkeybone, Spy Kids? They fit the bill because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 2001 and the genres of all movie are Animation, Action, Children, Comedy, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Shrek 5 and Shrek. Enjoy!
+---------------------
+        - Chatroom 53fe9fcc-4250-499b-b545-9b8230b5f2fa - new message #8: 'Can you recommend me 3 movies directed by Steven Spielberg' - 10:28:49, 29-11-2023
+---------------------
+Can you recommend me 3 movies directed by Steven Spielberg
+question_type:  RECOMMENDATION
+entities:  ['Steven Spielberg']
+['Desperate Measures', 'Phantoms', 'Sliding Doors']
+entity: Pi
+
+I think Desperate Measures, Phantoms, Sliding Doors would be up your alley. They align well with your tastes, especially considering some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1998 and the genres of all movie are Romance, Crime, Thriller, Drama, Horror. Furthermore, I have found some more movies you'd might like based on embeddings: Requiem for a Dream and The Fountain. Enjoy!
+---------------------
+        - Chatroom 53fe9fcc-4250-499b-b545-9b8230b5f2fa - new message #10: 'I liked the movie Kung Fu Panda, can you recommend 3 similar movies? ' - 10:29:19, 29-11-2023
+---------------------
+I liked the movie Kung Fu Panda, can you recommend 3 similar movies? 
+question_type:  RECOMMENDATION
+entities:  ['Kung Fu Panda']
+['In the Name of the King: A Dungeon Siege Tale', 'Cloverfield', 'Rambo (Rambo 4)']
+entity: Kung Fu Panda
+
+Since you're into Kung Fu Panda, you might really like In the Name of the King: A Dungeon Siege Tale, Cloverfield, Rambo (Rambo 4). They match because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 2008 and the genres of all movie are Thriller, Action, Mystery, Sci-Fi, Drama, War, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Kung Fu Panda 2 and Kung Fu Panda 3. Enjoy!
+---------------------
+        - Chatroom 7a68aa79-886b-41fa-830a-4a944f5e8749 - new message #7: 'Let me know what Sandra Bullock looks like. 
+' - 10:29:28, 29-11-2023
+---------------------
+Let me know what Sandra Bullock looks like. 
+
+question_type:  MULTIMEDIA
+entities:  ['Sandra Bullock']
+
+None
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/src/chatroom.py", line 127, in post_messages
+    response = self.chat_api.post_api_room_with_roomid(
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 771, in __call__
+    return self.callable(self, *args, **kwargs)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api/chat_api.py", line 350, in __post_api_room_with_roomid
+    return self.call_with_http_info(**kwargs)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 818, in call_with_http_info
+    self.__validate_inputs(kwargs)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 712, in __validate_inputs
+    fixed_val = validate_and_convert_types(
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/model_utils.py", line 1540, in validate_and_convert_types
+    converted_instance = attempt_convert_item(
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/model_utils.py", line 1422, in attempt_convert_item
+    raise get_type_error(input_value, path_to_item, valid_classes,
+speakeasypy.openapi.client.exceptions.ApiTypeError: Invalid type for variable 'body'. Required value type is str and passed type was NoneType at ['body']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 678, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.10/logging/__init__.py", line 368, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/main.py", line 10, in <module>
+    main()
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/main.py", line 6, in main
+    bot.listen()
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/usecases/bot_base.py", line 53, in listen
+    room.post_messages(answer)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/src/chatroom.py", line 132, in post_messages
+    logging.error(f"An error occurred while posting the message to room {self.room_id}:", e)
+Message: 'An error occurred while posting the message to room 7a68aa79-886b-41fa-830a-4a944f5e8749:'
+Arguments: (ApiTypeError("Invalid type for variable 'body'. Required value type is str and passed type was NoneType at ['body']"),)
+---------------------
+        - Chatroom 8688f286-25d3-4c12-a6d9-2603610482f9 - new message #1: 'Recommend some Steven Spielberg movies. I enjoyed the movie A.I. Artificial Intelligence. ' - 10:36:22, 29-11-2023
+---------------------
+Recommend some Steven Spielberg movies. I enjoyed the movie A.I. Artificial Intelligence. 
+question_type:  RECOMMENDATION
+entities:  ['Steven Spielberg', 'A.I. Artificial Intelligence']
+['Desperate Measures', 'Phantoms', 'Sliding Doors']
+entity: Pi
+entity: A.I. Artificial Intelligence
+
+I think Desperate Measures, Phantoms, Sliding Doors would be up your alley. They align well with your tastes, especially considering some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1998 and the genres of all movie are Romance, Crime, Thriller, Drama, Horror. Furthermore, I have found some more movies you'd might like based on embeddings: Requiem for a Dream and The Fountain. Enjoy!
+---------------------
+        - Chatroom 8688f286-25d3-4c12-a6d9-2603610482f9 - new message #3: 'I enjoyed the movie A.I. Artificial Intelligence. 
+' - 10:38:43, 29-11-2023
+---------------------
+I enjoyed the movie A.I. Artificial Intelligence. 
+
+question_type:  RECOMMENDATION
+entities:  ['A.I. Artificial Intelligence']
+['Antitrust', 'Save the Last Dance', 'Pledge, The']
+entity: A.I. Artificial Intelligence
+
+Since you're into A.I. Artificial Intelligence, you might really like Antitrust, Save the Last Dance, The Pledge. They match because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 2001 and the genres of all movie are Romance, Crime, Thriller, Drama, Mystery. Furthermore, I have found some more movies you'd might like based on embeddings: War of the Worlds and Vanilla Sky. Enjoy!
+---------------------
+        - Chatroom 8688f286-25d3-4c12-a6d9-2603610482f9 - new message #5: 'What is the genre of Good Neighbors? ' - 10:39:03, 29-11-2023
+---------------------
+What is the genre of Good Neighbors? 
+question_type:  CLOSED
+entities:  ['Good Neighbors']
+relation: genre
+entity: Good Neighbors
+P136 Q3110682
+
+The genre of Good Neighbors is art film
+---------------------
+        - Chatroom 8688f286-25d3-4c12-a6d9-2603610482f9 - new message #7: 'When was "The Godfather" released? ' - 10:39:28, 29-11-2023
+---------------------
+When was "The Godfather" released? 
+question_type:  WHEN
+entities:  ['"The Godfather']
+entity: "The Godfather
+
+Oh, "The Godfather? It was released on 1972-03-15.
+---------------------
+        - Chatroom 8688f286-25d3-4c12-a6d9-2603610482f9 - new message #9: '
+Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? ' - 10:39:49, 29-11-2023
+---------------------
+
+Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? 
+question_type:  RECOMMENDATION
+entities:  ['The Lion King', 'Pocahontas', 'The Beauty and the Beast']
+['Toy Story', 'Jumanji', 'Tom and Huck']
+entity: Lion King, The
+entity: Pocahontas
+entity: Beauty and the Beast
+
+Based on your preferences, I'd recommend: Toy Story, Jumanji, Tom and Huck. Why? Well, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1995 and the genres of all movie are Animation, Children, Comedy, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Veronica Webb and Roy Jones Jr.. Enjoy!
+---------------------
+        - Chatroom 8688f286-25d3-4c12-a6d9-2603610482f9 - new message #11: 'Recommend movies like Nightmare on Elm Street, Friday the 13th, and Halloween. ' - 10:40:46, 29-11-2023
+---------------------
+Recommend movies like Nightmare on Elm Street, Friday the 13th, and Halloween. 
+question_type:  RECOMMENDATION
+entities:  ['Nightmare on Elm Street', 'Friday the 13th', 'Halloween']
+['Fog, The', 'Howling, The', 'Terminator, The']
+entity: Nightmare on Elm Street, A
+entity: Friday the 13th
+entity: Halloween
+
+I think The Fog, The Howling, The Terminator would be up your alley. They align well with your tastes, especially considering some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1980, 1984 and the genres of all movie are Thriller, Action, Sci-Fi, Horror, Mystery. Furthermore, I have found some more movies you'd might like based on embeddings: Friday the 13th and Final Destination 3. Enjoy!
+---------------------
+        - Chatroom 8688f286-25d3-4c12-a6d9-2603610482f9 - new message #13: 'Give me some movies similar to Toy Story and Jumanji.' - 10:41:56, 29-11-2023
+---------------------
+Give me some movies similar to Toy Story and Jumanji.
+question_type:  RECOMMENDATION
+entities:  ['Toy Story', 'Jumanji']
+['Tom and Huck', 'GoldenEye', 'Balto']
+entity: Toy Story
+entity: Jumanji
+
+Considering what you like (Toy Story, Jumanji), how about trying Tom and Huck, GoldenEye, Balto? They fit the bill because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1995 and the genres of all movie are Animation, Thriller, Action, Children, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Toy Story and Outpost. Enjoy!
+---------------------
+        - Chatroom 8688f286-25d3-4c12-a6d9-2603610482f9 - new message #15: 'Give me some movies similar to Toy Stories and Jumanji.' - 10:42:38, 29-11-2023
+---------------------
+Give me some movies similar to Toy Stories and Jumanji.
+question_type:  RECOMMENDATION
+entities:  ['Toy Stories', 'Jumanji']
+Toy Stories was not found and no close match found
+['Toy Story', 'Tom and Huck', 'GoldenEye']
+entity: Toy Stories
+entity: Jumanji
+
+Since you like Toy Stories, Jumanji, I think you would enjoy Toy Story, Tom and Huck, GoldenEye, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1995 and the genres of all movie are Animation, Thriller, Action, Children, Comedy, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Toy Story and Toy Story 3. Enjoy!
+---------------------
+        - Chatroom dbf765bb-174e-40f7-bd98-c577fc0b67c1 - new message #1: 'I really like Wes Anderson, what should I watch? ' - 10:49:12, 29-11-2023
+---------------------
+I really like Wes Anderson, what should I watch? 
+question_type:  RECOMMENDATION
+entities:  ['Wes Anderson']
+Wes Anderson was not found and no close match found
+Exception was caught: I could'nt find any movies for you, sry!
+        - Chatroom b0552510-812d-419b-ae16-6af9c95de64b - new message #1: ' really like Wes Anderson, what should I watch? ' - 10:49:31, 29-11-2023
+---------------------
+ really like Wes Anderson, what should I watch? 
+question_type:  RECOMMENDATION
+entities:  ['Wes Anderson']
+Wes Anderson was not found and no close match found
+Exception was caught: I could'nt find any movies for you, sry!
+        - Chatroom dbf765bb-174e-40f7-bd98-c577fc0b67c1 - new message #3: 'Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? 
+
+' - 10:49:41, 29-11-2023
+---------------------
+Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? 
+
+
+question_type:  RECOMMENDATION
+entities:  ['The Lion King', 'Pocahontas', 'The Beauty and the Beast']
+['Toy Story', 'Jumanji', 'Tom and Huck']
+entity: Lion King, The
+entity: Pocahontas
+entity: Beauty and the Beast
+
+Looking at your choices (The Lion King, Pocahontas, Beauty and the Beast), I'd suggest checking out Toy Story, Jumanji, Tom and Huck. They're great picks because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1995 and the genres of all movie are Animation, Children, Comedy, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Veronica Webb and Roy Jones Jr.. Enjoy!
+---------------------
+        - Chatroom dbf765bb-174e-40f7-bd98-c577fc0b67c1 - new message #5: 'Recommend movies like Nightmare on Elm Street, Friday the 13th, and Halloween. 
+
+' - 10:50:04, 29-11-2023
+---------------------
+Recommend movies like Nightmare on Elm Street, Friday the 13th, and Halloween. 
+
+
+question_type:  RECOMMENDATION
+entities:  ['Nightmare on Elm Street', 'Friday the 13th', 'Halloween']
+['Fog, The', 'Howling, The', 'Terminator, The']
+entity: Nightmare on Elm Street, A
+entity: Friday the 13th
+entity: Halloween
+
+Since you like A Nightmare on Elm Street, Friday the 13th, Halloween, I think you would enjoy The Fog, The Howling, The Terminator, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1980, 1984 and the genres of all movie are Thriller, Action, Sci-Fi, Horror, Mystery. Furthermore, I have found some more movies you'd might like based on embeddings: Friday the 13th and Final Destination 3. Enjoy!
+---------------------
+        - Chatroom dbf765bb-174e-40f7-bd98-c577fc0b67c1 - new message #7: 'Who is the director of Star Wars: Episode VI - Return of the Jedi? 
+
+' - 10:50:25, 29-11-2023
+---------------------
+Who is the director of Star Wars: Episode VI - Return of the Jedi? 
+
+
+question_type:  CLOSED
+entities:  ['Star Wars: Episode VI - Return of the Jedi']
+relation: director
+entity: Star Wars: Episode VI - Return of the Jedi
+P57 Q181803
+
+Ah, for Star Wars: Episode VI - Return of the Jedi, the director is actually Richard Marquand.
+---------------------
+        - Chatroom dbf765bb-174e-40f7-bd98-c577fc0b67c1 - new message #9: 'Who is the screenwriter of The Masked Gang: Cyprus? 
+
+' - 10:50:46, 29-11-2023
+---------------------
+Who is the screenwriter of The Masked Gang: Cyprus? 
+
+
+question_type:  CLOSED
+entities:  ['The Masked Gang: Cyprus']
+relation: screenwriter
+entity: The Masked Gang: Cyprus
+P58 Q7750525
+Using embeddings
+http://www.wikidata.org/entity/Q5058838
+
+Ah, for The Masked Gang: Cyprus, the screenwriter is actually Cengiz Küçükayvaz.
+---------------------
+        - Chatroom b0552510-812d-419b-ae16-6af9c95de64b - new message #3: 'I really like Wes Anderson, what should I watch? ' - 10:50:58, 29-11-2023
+---------------------
+I really like Wes Anderson, what should I watch? 
+question_type:  RECOMMENDATION
+entities:  ['Wes Anderson']
+Wes Anderson was not found and no close match found
+Exception was caught: I could'nt find any movies for you, sry!
+        - Chatroom dbf765bb-174e-40f7-bd98-c577fc0b67c1 - new message #11: 'Recommend movies similar to star wars' - 10:51:10, 29-11-2023
+---------------------
+Recommend movies similar to star wars
+question_type:  RECOMMENDATION
+entities:  ['star wars']
+["Pete's Dragon", 'Candleshoe', 'Herbie Goes to Monte Carlo']
+entity: Star Wars: Episode IV - A New Hope
+
+Based on your preferences, I'd recommend: Pete's Dragon, Candleshoe, Herbie Goes to Monte Carlo. Why? Well, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1977 and the genres of all movie are Animation, Children, Comedy, Musical, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Star Wars: Episode V – The Empire Strikes Back and Star Wars: Episode VI – Return of the Jedi. Enjoy!
+---------------------
+        - Chatroom b0552510-812d-419b-ae16-6af9c95de64b - new message #5: 'Who directed Forrest Gump?' - 10:51:34, 29-11-2023
+---------------------
+Who directed Forrest Gump?
+question_type:  CLOSED
+entities:  ['Forrest Gump']
+relation: director
+entity: Forrest Gump
+P57 Q3077690
+Using embeddings
+http://www.wikidata.org/entity/Q83859
+
+Yup, Forrest Gump's director? Definitely John Milius.
+---------------------
+        - Chatroom b0552510-812d-419b-ae16-6af9c95de64b - new message #7: 'Recommend movies similar to Inception.' - 10:52:08, 29-11-2023
+---------------------
+Recommend movies similar to Inception.
+question_type:  RECOMMENDATION
+entities:  ['Inception']
+['Daybreakers', 'Book of Eli, The', 'Legion']
+entity: Inception
+
+Since you like Inception, I think you would enjoy Daybreakers, The Book of Eli, Legion, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 2010 and the genres of all movie are Thriller, Action, Drama, Horror, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Interstellar and The Dark Knight. Enjoy!
+---------------------
+        - Chatroom dbf765bb-174e-40f7-bd98-c577fc0b67c1 - new message #13: 'can you recommend some romantic movies?' - 10:52:47, 29-11-2023
+---------------------
+can you recommend some romantic movies?
+question_type:  RECOMMENDATION
+Exception was caught: no entities found
+        - Chatroom b0552510-812d-419b-ae16-6af9c95de64b - new message #9: 'Show me a picture of Halle Berry.' - 10:52:55, 29-11-2023
+---------------------
+Show me a picture of Halle Berry.
+question_type:  MULTIMEDIA
+entities:  ['Halle Berry']
+
+None
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/src/chatroom.py", line 127, in post_messages
+    response = self.chat_api.post_api_room_with_roomid(
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 771, in __call__
+    return self.callable(self, *args, **kwargs)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api/chat_api.py", line 350, in __post_api_room_with_roomid
+    return self.call_with_http_info(**kwargs)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 818, in call_with_http_info
+    self.__validate_inputs(kwargs)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/api_client.py", line 712, in __validate_inputs
+    fixed_val = validate_and_convert_types(
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/model_utils.py", line 1540, in validate_and_convert_types
+    converted_instance = attempt_convert_item(
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/openapi/client/model_utils.py", line 1422, in attempt_convert_item
+    raise get_type_error(input_value, path_to_item, valid_classes,
+speakeasypy.openapi.client.exceptions.ApiTypeError: Invalid type for variable 'body'. Required value type is str and passed type was NoneType at ['body']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 678, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.10/logging/__init__.py", line 368, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/main.py", line 10, in <module>
+    main()
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/main.py", line 6, in main
+    bot.listen()
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/usecases/bot_base.py", line 53, in listen
+    room.post_messages(answer)
+  File "/home/liamt/Uni/Master/HS23/ATAI/speakeasy-python-client-library/speakeasy-python-client-library/speakeasypy/src/chatroom.py", line 132, in post_messages
+    logging.error(f"An error occurred while posting the message to room {self.room_id}:", e)
+Message: 'An error occurred while posting the message to room b0552510-812d-419b-ae16-6af9c95de64b:'
+Arguments: (ApiTypeError("Invalid type for variable 'body'. Required value type is str and passed type was NoneType at ['body']"),)
+---------------------
+        - Chatroom b0552510-812d-419b-ae16-6af9c95de64b - new message #10: 'Recommend movies like Nightmare on Elm Street, Friday the 13th, and Halloween. 
+
+' - 10:53:27, 29-11-2023
+---------------------
+Recommend movies like Nightmare on Elm Street, Friday the 13th, and Halloween. 
+
+
+question_type:  RECOMMENDATION
+entities:  ['Nightmare on Elm Street', 'Friday the 13th', 'Halloween']
+['Fog, The', 'Howling, The', 'Terminator, The']
+entity: Nightmare on Elm Street, A
+entity: Friday the 13th
+entity: Halloween
+
+Looking at your choices (A Nightmare on Elm Street, Friday the 13th, Halloween), I'd suggest checking out The Fog, The Howling, The Terminator. They're great picks because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1980, 1984 and the genres of all movie are Thriller, Action, Sci-Fi, Horror, Mystery. Furthermore, I have found some more movies you'd might like based on embeddings: Friday the 13th and Final Destination 3. Enjoy!
+---------------------
+        - Chatroom b0552510-812d-419b-ae16-6af9c95de64b - new message #12: 'Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? ' - 10:54:10, 29-11-2023
+---------------------
+Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? 
+question_type:  RECOMMENDATION
+entities:  ['The Lion King', 'Pocahontas', 'The Beauty and the Beast']
+['Toy Story', 'Jumanji', 'Tom and Huck']
+entity: Lion King, The
+entity: Pocahontas
+entity: Beauty and the Beast
+
+I think Toy Story, Jumanji, Tom and Huck would be up your alley. They align well with your tastes, especially considering some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1995 and the genres of all movie are Animation, Children, Comedy, Fantasy, Adventure. Furthermore, I have found some more movies you'd might like based on embeddings: Veronica Webb and Roy Jones Jr.. Enjoy!
+---------------------
+        - Chatroom b0552510-812d-419b-ae16-6af9c95de64b - new message #14: 'What is the MPAA film rating of Weathering with You? 
+
+' - 10:55:05, 29-11-2023
+---------------------
+What is the MPAA film rating of Weathering with You? 
+
+
+question_type:  CLOSED
+entities:  ['Weathering with You']
+relation: MPA film rating
+entity: Weathering with You
+P1657 Q59692464
+
+Alright, so Weathering with You has NC-17 as its MPA film rating.
+---------------------
+        - Chatroom b0552510-812d-419b-ae16-6af9c95de64b - new message #16: 'Who is the director of Star Wars: Episode VI - Return of the Jedi? 
+
+' - 10:55:51, 29-11-2023
+---------------------
+Who is the director of Star Wars: Episode VI - Return of the Jedi? 
+
+
+question_type:  CLOSED
+entities:  ['Star Wars: Episode VI - Return of the Jedi']
+relation: director
+entity: Star Wars: Episode VI - Return of the Jedi
+P57 Q181803
+
+Yup, Star Wars: Episode VI - Return of the Jedi's director? Definitely Richard Marquand.

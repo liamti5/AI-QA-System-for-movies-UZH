@@ -1,5 +1,4 @@
 from usecases.bot_base import Agent
-from usecases import recommendations
 
 
 def main():
