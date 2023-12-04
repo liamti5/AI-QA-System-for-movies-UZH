@@ -109,7 +109,9 @@ class AnswerCalculator:
         assert imdb_ids, "No imdb ids found for {entity}"
         images = self.mm.find_image(imdb_ids, label)
         answer_images = "\n".join(images)
-        answer_text = [f"As you wished for, here are some images of {', '.join(entity)}"]
+        answer_text = [
+            f"As you wished for, here are some images of {', '.join(entity)}"
+        ]
         return answer_text[0] + answer_images
 
     def query(self, relation: str, entity: str) -> str:

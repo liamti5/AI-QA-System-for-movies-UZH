@@ -29,7 +29,11 @@ class Multimedia:
                 image = mapping[l][imdb_id][0]
                 print(image)
             except KeyError:
-                image = mapping["ACTOR"][imdb_id][0] if l == "MOVIE" else mapping["MOVIE"][imdb_id][0]
+                image = (
+                    mapping["ACTOR"][imdb_id][0]
+                    if l == "MOVIE"
+                    else mapping["MOVIE"][imdb_id][0]
+                )
                 print(image)
             finally:
                 assert image, f"No image found for {imdb_id}"
