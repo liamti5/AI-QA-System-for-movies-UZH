@@ -106,7 +106,7 @@ class AnswerCalculator:
         entity_ids = [self.calculate_node_distance(ent) for ent in entity]
         queries = [self.mm.create_sparql(ent_id) for ent_id in entity_ids]
         imdb_ids = [self.graph_operator.query(query)[0] for query in queries]
-        assert imdb_ids, "No imdb ids found for {entity}"
+        assert len(imdb_ids) == len(entity_ids), "No imdb ids found for {entity}"
         images = self.mm.find_image(imdb_ids, label)
         answer_images = "\n".join(images)
         answer_text = [
