@@ -6,4 +6,4 @@ speakeasypy.egg-info/
 .vscode/
 notebooks/NER/spacy/config/
 models/
-__pycache__
+__pycache__/

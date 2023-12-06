@@ -5,6 +5,7 @@ from usecases import utils
 from usecases import nlp_operations
 from usecases import graph_operations
 from usecases import recommendations
+from usecases import multimedia
 
 
 class AnswerCalculator:
@@ -22,6 +23,7 @@ class AnswerCalculator:
         self.nlp_operator = nlp_operations.NLP_Operations()
         self.graph_operator = graph_operations.GraphOperations()
         self.recommender = recommendations.Recommendations()
+        self.mm = multimedia.Multimedia()
         self.question = None
 
     def calculate_answer(self, question: str) -> str:
@@ -62,7 +64,7 @@ class AnswerCalculator:
             f"{entity} was released on {answer}",
             f"Actually, {entity} was released on {answer}.",
             f"Oh, {entity}? It was released on {answer}.",
-            f"You asked about {entity}? It hit the theaters on {answer}."
+            f"You asked about {entity}? It hit the theaters on {answer}.",
         ]
         answer = answers_templates[random.randint(0, len(answers_templates) - 1)]
         return answer
@@ -71,7 +73,9 @@ class AnswerCalculator:
         entity = entity[0]
         relation = self.nlp_operator.get_relation(self.question)
         relation_id = self.calculate_pred_distance(relation)
-        relation_label = self.predicates[f"http://www.wikidata.org/prop/direct/{relation_id}"]
+        relation_label = self.predicates[
+            f"http://www.wikidata.org/prop/direct/{relation_id}"
+        ]
         entity_id = self.calculate_node_distance(entity)
         print(relation_id, entity_id)
         answer = self.query(relation_id, entity_id)
@@ -82,7 +86,7 @@ class AnswerCalculator:
             f"Looks like {entity}'s {relation_label} is {answer}.",
             f"Ah, for {entity}, the {relation_label} is actually {answer}.",
             f"Yup, {entity}'s {relation_label}? Definitely {answer}.",
-            f"Alright, so {entity} has {answer} as its {relation_label}."
+            f"Alright, so {entity} has {answer} as its {relation_label}.",
         ]
         answer = answers_templates[random.randint(0, len(answers_templates) - 1)]
         return answer
@@ -91,7 +95,7 @@ class AnswerCalculator:
         movies = self.recommender.recommend_movies(entity, 3)
         answers = self.recommender.recommend_answers(movies)
         recommendations1 = self.recommender.generate_answers_for_recommendation(answers)
-        
+
         entity_ids = [self.calculate_node_distance(ent) for ent in entity]
         embedding_recs = self.graph_operator.recommendations_embeddings(entity_ids)
         embedding_recs_labels = [self.nodes[rec] for rec in embedding_recs]
@@ -99,8 +103,17 @@ class AnswerCalculator:
         return recommendations1 + recommendations2
 
     def handle_multimedia(self, entity: list, label: list):
-        return 
-    
+        entity_ids = [self.calculate_node_distance(ent) for ent in entity]
+        queries = [self.mm.create_sparql(ent_id) for ent_id in entity_ids]
+        imdb_ids = [self.graph_operator.query(query)[0] for query in queries]
+        assert len(imdb_ids) == len(entity_ids), "No imdb ids found for {entity}"
+        images = self.mm.find_image(imdb_ids, label)
+        answer_images = "\n".join(images)
+        answer_text = [
+            f"As you wished for, here are some images of {', '.join(entity)}"
+        ]
+        return answer_text[0] + answer_images
+
     def query(self, relation: str, entity: str) -> str:
         query = f"""
             PREFIX ddis: <http://ddis.ch/atai/>
