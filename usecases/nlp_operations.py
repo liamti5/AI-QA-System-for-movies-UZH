@@ -11,10 +11,12 @@ class NLP_Operations:
     """
 
     def __init__(self):
+        print("loading NLP models ...")
         self.nlp_sm = spacy.load("en_core_web_sm")
         self.nlp_ner = spacy.load("./models/NER_model-best/")
         self.nlp_dif = spacy.load("./models/QD_model-last/")
         self.preds = utils.get_dicti("./data/predicates_clean.json")
+        print("SUCCSESS: NLP models loaded")
 
     def get_ner(self, question) -> list:
         doc = self.nlp_ner(question)
