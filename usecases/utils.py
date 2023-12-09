@@ -2,6 +2,7 @@ import json
 import rdflib
 import csv
 import numpy as np
+import pandas as pd
 
 
 def get_dicti(path):
@@ -42,3 +43,8 @@ def get_relation_embeddings(
         id2rel = {v: k for k, v in rel2id.items()}
 
     return relation_emb, rel2id, id2rel
+
+def get_csv(path_csv):
+    with open(path_csv, "r") as f:
+        df = pd.read_csv(f)
+    return df

@@ -6,6 +6,7 @@ from usecases import nlp_operations
 from usecases import graph_operations
 from usecases import recommendations
 from usecases import multimedia
+from usecases import crowdsourcing
 
 
 class AnswerCalculator:
@@ -23,6 +24,7 @@ class AnswerCalculator:
         self.nlp_operator = nlp_operations.NLP_Operations()
         self.graph_operator = graph_operations.GraphOperations()
         self.recommender = recommendations.Recommendations()
+        self.cs = crowdsourcing.Crowdsourcing()
         self.mm = multimedia.Multimedia()
         self.question = None
 
@@ -58,7 +60,11 @@ class AnswerCalculator:
         entity = entity[0]
         relation_id = "P577"  # publication date
         entity_id = self.calculate_node_distance(entity)
-        answer = self.query(relation_id, entity_id)[0]
+        answer = self.query(relation_id, entity_id)
+        # sorry for bad solution below, just a quick fix as we have a different template for crowdsource data
+        if len(answer) > 150:
+            return answer
+        answer = answer[0]
         answers_templates = [
             f"The release date of {entity} is {answer}",
             f"{entity} was released on {answer}",
@@ -79,6 +85,9 @@ class AnswerCalculator:
         entity_id = self.calculate_node_distance(entity)
         print(relation_id, entity_id)
         answer = self.query(relation_id, entity_id)
+        # sorry for bad solution below, just a quick fix as we have a different template for crowdsource data
+        if len(answer) > 150:
+            return answer
         answers_templates = [
             f"The {relation_label} of {entity} is {answer}",
             f"{entity}'s {relation_label} is {answer}",
@@ -128,17 +137,36 @@ class AnswerCalculator:
         """
 
         try:
-            answer = self.graph_operator.query(query)
-            assert answer, "No answer found, trying embeddings"
-            try:
-                answer = self.nodes[answer[0]]
-            except KeyError:
-                answer = answer
+            print("Trying Crowd Data")
+            correct, corrected, incorrect, result, kappa = self.cs.search(
+                entity, relation
+            )
+            assert kappa, "Nothing found in crowddata, trying KG"
+
+            if "wd" in result.lower():
+                result = self.nodes[f"http://www.wikidata.org/entity/{result[3:]}"]
+
+            answer = (
+                f"{result} - according to the crowd, who had an inter-rater agreement of {kappa} in this batch. The answer distribution for this specific task was {correct} support votes and {incorrect} reject votes."
+                if correct or incorrect
+                else f"{result} - according to the crowd, who had an inter-rater agreement of {kappa} in this batch. The answer was corrected by the crowd workers with {corrected} workers voting for the same correction"
+            )
+
         except AssertionError:
-            print("Using embeddings")
-            answer = self.graph_operator.query_with_embeddings(entity, relation)
-            assert answer, "No answer found with embeddings"
-            answer = self.nodes[answer]
+            try:
+                print("Trying KG")
+                answer = self.graph_operator.query(query)
+                assert answer, "No answer found, trying embeddings"
+                try:
+                    answer = self.nodes[answer[0]]
+                except KeyError:
+                    pass
+            except AssertionError:
+                print("Trying embeddings")
+                answer = self.graph_operator.query_with_embeddings(entity, relation)
+                assert answer, "No answer found with embeddings"
+                answer = self.nodes[answer]
+
         return answer
 
     def calculate_node_distance(self, entity: str) -> str:
