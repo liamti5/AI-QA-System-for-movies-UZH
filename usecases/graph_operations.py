@@ -60,23 +60,27 @@ class GraphOperations:
         )  # returns a link e.g. 'http://www.wikidata.org/entity/Q5058838'
 
     def recommendations_embeddings(self, ents: list) -> list:
-        movie_type_id = self.ent2id[self.WD['Q11424']]
         ents = [self.ent2id[self.WD[ent]] for ent in ents]
         recommendations = []
         for ent in ents:
             dist = sklearn.metrics.pairwise_distances(
                 self.entity_emb[ent].reshape(1, -1), self.entity_emb
             ).reshape(-1)
-            most_likely = dist.argsort()[1:6]
+            most_likely = dist.argsort()[1:15]
             for movie in most_likely:
-                if self._check_entity_type()
-                recommendations += [str(self.id2ent[movie]) for movie in most_likely]
+                if self._check_entity_type(self.id2ent[movie], self.WD["Q11424"]):
+                    recommendations.append(str(self.id2ent[movie]))
         counts = Counter(recommendations).most_common(2)
-        first_rec = str(counts[0][0])
-        second_rec = str(counts[1][0])
-        recs = [first_rec, second_rec]
+        try:
+            first_rec = str(counts[0][0])
+            second_rec = str(counts[1][0])
+            recs = [first_rec, second_rec]
+        except IndexError:
+            return [str(counts[0][0])]
         return recs
-    
 
     def _check_entity_type(self, entity_id, type_id):
-
+        for s, _, _ in self.graph.triples((entity_id, self.WDT["P31"], type_id)):
+            if s:
+                return True
+        return False

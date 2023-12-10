@@ -23,6 +23,11 @@ class TestUtils(unittest.TestCase):
         actual_value = self.graph_operator.query(query)
         self.assertEqual(actual_value, expected_value)
 
+    def test_check_entity_type(self):
+        expected_value = True
+        actual_value = self.graph_operator._check_entity_type(self.graph_operator.ent2id[self.graph_operator.WD['Q11424']], self.graph_operator.WDT['P31'])
+        self.assertEqual(actual_value, expected_value)
+
 
 if __name__ == "__main__":
     unittest.main()
