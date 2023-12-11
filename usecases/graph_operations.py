@@ -27,7 +27,7 @@ class GraphOperations:
     def load_graph(self, graph_file):
         if self.loaded is True:
             print("graph already loaded")
-            return 
+            return
         print("loading graph ...")
         self.graph.parse(graph_file, format="turtle")
         print("loaded graph successfully!")
