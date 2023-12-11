@@ -12,10 +12,8 @@ from usecases import crowdsourcing
 class AnswerCalculator:
     """
     responsible for main calculations to answer a question and initializes all the helper classes
-    - calculate answer gets called from bot_base.py instead of query() (still needs to be implemented in main.py)
-    - handles different cases like When
-    - calculate_answer: use the other 2 functions to deal with "when" questions and other questions (calculate_other_answer,calculate_when_answer)
-    - search_answer: if everything goes well, namely we have found the entity and the relation, then we should handle the question which has maybe many answers for example: The "godfather" questions
+    - calculate answer gets called from bot_base.py
+    - handles different cases like When, Closed, Recommendations and Multimedia
     """
 
     def __init__(self):

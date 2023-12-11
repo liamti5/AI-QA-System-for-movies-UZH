@@ -57,7 +57,7 @@ class NLP_Operations:
                     if tok.pos_ in ("VERB")
                 ]
         
-        return relations   
+        return relations
 
     def get_question_type(self, question) -> str:
         doc = self.nlp_dif(question)

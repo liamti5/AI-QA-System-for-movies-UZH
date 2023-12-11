@@ -25,7 +25,9 @@ class GraphOperations:
         self.relation_emb, self.rel2id, self.id2rel = utils.get_relation_embeddings()
 
     def load_graph(self, graph_file):
-        assert self.loaded is False, "Graph already loaded"
+        if self.loaded is True:
+            print("graph already loaded")
+            return 
         print("loading graph ...")
         self.graph.parse(graph_file, format="turtle")
         print("loaded graph successfully!")
