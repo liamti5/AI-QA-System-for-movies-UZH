@@ -1,0 +1,1003 @@
+relation: director
+entity: Inception
+P57 Q25188
+Trying Crowd Data
+Trying KG
+
+Inception's director is Christopher Nolan
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #1: 'Hi' - 10:57:47, 13-12-2023
+---------------------
+Hi
+question_type:  WHEN
+Exception was caught: no entities found
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #3: 'Who directed Captain America: Civil War? ' - 10:58:00, 13-12-2023
+---------------------
+Who directed Captain America: Civil War? 
+question_type:  CLOSED
+entities:  ['Captain America: Civil War']
+relation: director
+entity: Captain America: Civil War
+P57 Q24033885
+Trying Crowd Data
+Trying KG
+Trying embeddings
+http://www.wikidata.org/entity/Q442740
+
+The director of Captain America: Civil War is Simon West
+---------------------
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #3: 'Recommend me a horror Movie?' - 10:58:09, 13-12-2023
+---------------------
+Recommend me a horror Movie?
+question_type:  CLOSED
+Exception was caught: no entities found
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new reaction #4: 'THUMBS_UP' - 10:58:18, 13-12-2023
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new reaction #2: 'THUMBS_DOWN' - 10:58:20, 13-12-2023
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #5: 'Recommend me a movie' - 10:58:20, 13-12-2023
+---------------------
+Recommend me a movie
+question_type:  MULTIMEDIA
+Exception was caught: no entities found
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #5: 'Who is the director of Batman?' - 10:58:34, 13-12-2023
+---------------------
+Who is the director of Batman?
+question_type:  CLOSED
+entities:  ['Batman']
+relation: director
+entity: Batman
+P57 Q64658410
+Trying Crowd Data
+Trying KG
+Trying embeddings
+http://www.wikidata.org/entity/Q64658410
+
+Oh, the director of Batman? That's Batman.
+---------------------
+        - Chatroom 8015afae-6791-4af4-9b5e-46cd7d2fb47f - new message #1: 'Can you recommend some drama movies given that I like 'Ryan Gosling'?' - 10:58:38, 13-12-2023
+---------------------
+Can you recommend some drama movies given that I like 'Ryan Gosling'?
+question_type:  RECOMMENDATION
+entities:  ["'Ryan Gosling'"]
+['Tea with Mussolini', 'Varsity Blues', "She's All That"]
+entity: Go
+
+Adequate recommendations will be: Tea with Mussolini, Varsity Blues, She's All That, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1999 and the genres of all movie are Drama, Comedy, Romance, War. Furthermore, I have found some more movies you'd might like based on embeddings: Poppoya and Villain. Enjoy!
+---------------------
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #7: 'Who is the director of The Masked Cyprus?' - 10:58:45, 13-12-2023
+---------------------
+Who is the director of The Masked Cyprus?
+question_type:  CLOSED
+entities:  ['The Masked Cyprus']
+relation: director
+entity: The Masked Cyprus
+P57 Q1219034
+Trying Crowd Data
+Trying KG
+
+The Masked Cyprus's director is Murat Aslan
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #7: 'Recommend movies similar to 'Hamlet' and 'Othello'' - 10:58:47, 13-12-2023
+---------------------
+Recommend movies similar to 'Hamlet' and 'Othello'
+question_type:  RECOMMENDATION
+entities:  ["'Hamlet'", "'Othello'"]
+['Grumpier Old Men', 'Waiting to Exhale', 'Heat']
+entity: Hamlet
+entity: Othello
+
+I think Grumpier Old Men, Waiting to Exhale, Heat would be up your alley. They align well with your tastes, especially considering some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1995 and the genres of all movie are Romance, Crime, Action, Thriller, Comedy, Drama. Furthermore, I have found some more movies you'd might like based on embeddings: Henry V and Richard III. Enjoy!
+---------------------
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #7: 'Show me a picture of Halle Berry' - 10:58:49, 13-12-2023
+---------------------
+Show me a picture of Halle Berry
+question_type:  MULTIMEDIA
+entities:  ['Halle Berry']
+entity: Halle Berry
+nm0000932
+ACTOR
+0353/rm3257480192
+
+As you wished for, here is an image of Halle Berry: image:0353/rm3257480192
+---------------------
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #9: 'Show me megan fox' - 10:58:58, 13-12-2023
+---------------------
+Show me megan fox
+question_type:  MULTIMEDIA
+Exception was caught: no entities found
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #9: 'Can you recommend me movies similar to John Wick and The Matrix?' - 10:59:02, 13-12-2023
+---------------------
+Can you recommend me movies similar to John Wick and The Matrix?
+question_type:  RECOMMENDATION
+entities:  ['John Wick', 'The Matrix']
+['In Dreams', 'Virus', 'Payback']
+entity: John Wick
+entity: Matrix, The
+
+I think In Dreams, Virus, Payback would be up your alley. They align well with your tastes, especially considering some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1999 and the genres of all movie are Horror, Sci-Fi, Thriller, Action. Furthermore, I have found some more movies you'd might like based on embeddings: John Wick: Chapter 2 and John Wick. Enjoy!
+---------------------
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #11: 'What is the Box Office of the princess and the Frog' - 10:59:14, 13-12-2023
+---------------------
+What is the Box Office of the princess and the Frog
+question_type:  CLOSED
+entities:  ['the princess and the Frog']
+relation: box office
+entity: the princess and the Frog
+P2142 Q171300
+Trying Crowd Data
+
+267000000 - according to the crowd, who had an inter-rater agreement of 0.236 in this batch. The answer distribution for this specific task was 2 support votes and 1 reject votes.
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new reaction #8: 'THUMBS_UP' - 10:59:17, 13-12-2023
+        - Chatroom 8015afae-6791-4af4-9b5e-46cd7d2fb47f - new message #3: 'What is the country of citizenship of Olivier Schatzky?' - 10:59:25, 13-12-2023
+---------------------
+What is the country of citizenship of Olivier Schatzky?
+question_type:  CLOSED
+entities:  ['Olivier Schatzky']
+relation: country
+entity: Olivier Schatzky
+P17 Q3351369
+Trying Crowd Data
+Trying KG
+Trying embeddings
+http://www.wikidata.org/entity/Q3351369
+
+The country of Olivier Schatzky is Olivier Schatzky
+---------------------
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #13: 'Who is the executive producer of X-Men: First Class? ' - 10:59:28, 13-12-2023
+---------------------
+Who is the executive producer of X-Men: First Class? 
+question_type:  CLOSED
+entities:  ['X-Men: First Class']
+relation: executive producer
+entity: X-Men: First Class
+P1431 Q223596
+Trying Crowd Data
+
+Sheryl Lee Ralph - according to the crowd, who had an inter-rater agreement of 0.199 in this batch. The answer distribution for this specific task was 2 support votes and 1 reject votes.
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #10: 'Give me a picture of Tim Burton' - 10:59:37, 13-12-2023
+---------------------
+Give me a picture of Tim Burton
+question_type:  MULTIMEDIA
+entities:  ['Tim Burton']
+entity: Tim Burton
+nm0000318
+ACTOR
+0521/rm475500288
+
+As you wished for, here is an image of Tim Burton: image:0521/rm475500288
+---------------------
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #15: 'What is the movie with the highest rating?' - 10:59:42, 13-12-2023
+---------------------
+What is the movie with the highest rating?
+question_type:  CLOSED
+Exception was caught: no entities found
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new reaction #11: 'THUMBS_UP' - 10:59:48, 13-12-2023
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #17: 'Given i like John Wick what could you recommend me?' - 11:00:07, 13-12-2023
+---------------------
+Given i like John Wick what could you recommend me?
+question_type:  MULTIMEDIA
+entities:  ['John Wick']
+entity: John Wick
+Exception was caught: list index out of range
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #11: 'Who is the screenwriter of the 12 monkeys?' - 11:00:10, 13-12-2023
+---------------------
+Who is the screenwriter of the 12 monkeys?
+question_type:  CLOSED
+entities:  ['12 monkeys']
+relation: screenwriter
+entity: 12 monkeys
+P58 Q175038
+Trying Crowd Data
+Trying KG
+
+12 monkeys's screenwriter is David Peoples
+---------------------
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #13: 'What is the publication date of Tom meets Zizou?' - 11:00:14, 13-12-2023
+---------------------
+What is the publication date of Tom meets Zizou?
+question_type:  WHEN
+entities:  ['Tom meets Zizou']
+entity: Tom meets Zizou
+Trying Crowd Data
+
+2011-01-01 - according to the crowd, who had an inter-rater agreement of 0.04 in this batch. The answer was corrected by the crowd workers with 3 workers voting for the same correction
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #13: 'Who is the screenwriter of Masked Gang — Cyprus?' - 11:00:25, 13-12-2023
+---------------------
+Who is the screenwriter of Masked Gang — Cyprus?
+question_type:  CLOSED
+entities:  ['Masked Gang — Cyprus']
+relation: screenwriter
+entity: Masked Gang — Cyprus
+P58 Q7750525
+Trying Crowd Data
+Trying KG
+Trying embeddings
+http://www.wikidata.org/entity/Q5058838
+
+Alright, so Masked Gang — Cyprus has Cengiz Küçükayvaz as its screenwriter.
+---------------------
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #19: 'Recommend me a movie of the Genre Animation?' - 11:00:41, 13-12-2023
+---------------------
+Recommend me a movie of the Genre Animation?
+question_type:  MULTIMEDIA
+entities:  ['Genre Animation']
+entity: Genre Animation
+Exception was caught: list index out of range
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #15: 'Can you recommend me some movies of Horror genre?' - 11:00:48, 13-12-2023
+---------------------
+Can you recommend me some movies of Horror genre?
+question_type:  RECOMMENDATION
+entities:  ['Horror genre']
+Horror genre was not found and no close match found
+Exception was caught: I could'nt find any movies for you, sry!
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new reaction #14: 'THUMBS_UP' - 11:00:50, 13-12-2023
+        - Chatroom 8015afae-6791-4af4-9b5e-46cd7d2fb47f - new message #5: 'Ask for a picture of 'Bruce Willis'. ' - 11:00:54, 13-12-2023
+---------------------
+Ask for a picture of 'Bruce Willis'. 
+question_type:  MULTIMEDIA
+entities:  ["'Bruce Willis'"]
+entity: 'Bruce Willis'
+nm0000246
+MOVIE
+1926/rm1037117952
+
+As you wished for, here is an image of 'Bruce Willis': image:1926/rm1037117952
+---------------------
+        - Chatroom 8015afae-6791-4af4-9b5e-46cd7d2fb47f - new message #7: 'Ask for a picture of 'Gal Gadot'.' - 11:01:05, 13-12-2023
+---------------------
+Ask for a picture of 'Gal Gadot'.
+question_type:  MULTIMEDIA
+entities:  ["'Gal Gadot'"]
+entity: 'Gal Gadot'
+nm2933757
+MOVIE
+2019/rm928977152
+
+As you wished for, here is an image of 'Gal Gadot': image:2019/rm928977152
+---------------------
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #21: 'Show me a picture of the movie Inception?' - 11:01:18, 13-12-2023
+---------------------
+Show me a picture of the movie Inception?
+question_type:  MULTIMEDIA
+entities:  ['Inception']
+entity: Inception
+tt1375666
+MOVIE
+0227/rm817857280
+
+As you wished for, here is an image of Inception: image:0227/rm817857280
+---------------------
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #17: 'I like The Lion King, and Pocahontas. Can you recommend me similar movies?' - 11:01:19, 13-12-2023
+---------------------
+I like The Lion King, and Pocahontas. Can you recommend me similar movies?
+question_type:  RECOMMENDATION
+entities:  ['The Lion King', 'Pocahontas']
+['Toy Story', 'Jumanji', 'Waiting to Exhale']
+entity: Lion King, The
+entity: Pocahontas
+Exception was caught: list index out of range
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #16: 'Who played in Fight Club' - 11:01:23, 13-12-2023
+---------------------
+Who played in Fight Club
+question_type:  CLOSED
+entities:  ['Fight Club']
+Exception was caught: list index out of range
+        - Chatroom 8015afae-6791-4af4-9b5e-46cd7d2fb47f - new message #9: 'Ask for a picture of 'Will Smith'' - 11:01:23, 13-12-2023
+---------------------
+Ask for a picture of 'Will Smith'
+question_type:  MULTIMEDIA
+entities:  ["'Will Smith"]
+entity: 'Will Smith
+nm0810337
+ACTOR
+Exception was caught: local variable 'image' referenced before assignment
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new reaction #17: 'THUMBS_DOWN' - 11:01:36, 13-12-2023
+        - Chatroom d0297dff-5a55-4d6f-97bd-fbd79665ef10 - new message #23: 'What are the genres of the movie Inception?' - 11:01:53, 13-12-2023
+---------------------
+What are the genres of the movie Inception?
+question_type:  CLOSED
+entities:  ['Inception']
+relation: genre
+entity: Inception
+P136 Q25188
+Trying Crowd Data
+Trying KG
+
+The genre of Inception is mystery film
+---------------------
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #19: 'Who is the actor in Django Unchained?' - 11:01:53, 13-12-2023
+---------------------
+Who is the actor in Django Unchained?
+question_type:  CLOSED
+entities:  ['Django Unchained']
+relation: creator
+entity: Django Unchained
+P170 Q571032
+Trying Crowd Data
+Trying KG
+Trying embeddings
+http://www.wikidata.org/entity/Q571032
+
+Ah, for Django Unchained, the creator is actually Django Unchained.
+---------------------
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #21: 'Who is the director of Django Unchained?' - 11:02:19, 13-12-2023
+---------------------
+Who is the director of Django Unchained?
+question_type:  CLOSED
+entities:  ['Django Unchained']
+relation: director
+entity: Django Unchained
+P57 Q571032
+Trying Crowd Data
+Trying KG
+
+Alright, so Django Unchained has Quentin Tarantino as its director.
+---------------------
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #23: 'Can you recommend me some Christopher Nolan Movies?' - 11:02:34, 13-12-2023
+---------------------
+Can you recommend me some Christopher Nolan Movies?
+question_type:  RECOMMENDATION
+entities:  ['Christopher Nolan']
+['Warm Bodies', 'Gangster Squad', 'Upstream Color']
+entity: Her
+
+Looking at your choices (Her), I'd suggest checking out Warm Bodies, Gangster Squad, Upstream Color. They're great picks because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 2013 and the genres of all movie are Romance, Crime, Horror, Action, Sci-Fi, Thriller, Comedy, Drama. Furthermore, I have found some more movies you'd might like based on embeddings: Lost in Translation and E.T. the Extra-Terrestrial. Enjoy!
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #19: 'Who is the director of Star Wars: Episode VI - Return of the Jedi?' - 11:02:56, 13-12-2023
+---------------------
+Who is the director of Star Wars: Episode VI - Return of the Jedi?
+question_type:  CLOSED
+entities:  ['Star Wars: Episode VI - Return of the Jedi']
+relation: director
+entity: Star Wars: Episode VI - Return of the Jedi
+P57 Q181803
+Trying Crowd Data
+Trying KG
+
+Yup, Star Wars: Episode VI - Return of the Jedi's director? Definitely Richard Marquand.
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new reaction #20: 'THUMBS_UP' - 11:03:07, 13-12-2023
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #25: 'What does Chris Evans look like?' - 11:03:15, 13-12-2023
+---------------------
+What does Chris Evans look like?
+question_type:  MULTIMEDIA
+entities:  ['Chris Evans']
+entity: Chris Evans
+nm0262635
+ACTOR
+1263/rm2112380928
+
+As you wished for, here is an image of Chris Evans: image:1263/rm2112380928
+---------------------
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #27: 'Can you show me a scene from The Avengers?' - 11:03:32, 13-12-2023
+---------------------
+Can you show me a scene from The Avengers?
+question_type:  MULTIMEDIA
+entities:  ['The Avengers']
+entity: The Avengers
+tt0848228
+MOVIE
+0251/rm1367873536
+
+As you wished for, here is an image of The Avengers: image:0251/rm1367873536
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #22: 'Who is the executive producer of XMen, first class?' - 11:03:39, 13-12-2023
+---------------------
+Who is the executive producer of XMen, first class?
+question_type:  CLOSED
+entities:  ['XMen', 'first class']
+relation: executive producer
+entity: XMen
+P1431 Q2006869
+Trying Crowd Data
+Trying KG
+Trying embeddings
+http://www.wikidata.org/entity/Q2593
+
+XMen's executive producer is Matthew Vaughn
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new reaction #23: 'THUMBS_DOWN' - 11:04:11, 13-12-2023
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #29: 'What is the MPA rating of The Avengers?' - 11:04:20, 13-12-2023
+---------------------
+What is the MPA rating of The Avengers?
+question_type:  CLOSED
+entities:  ['The Avengers']
+relation: IMDA rating
+entity: The Avengers
+P5201 Q182218
+Trying Crowd Data
+Trying KG
+
+Ah, for The Avengers, the IMDA rating is actually PG.
+---------------------
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #31: 'When was The Avengers released?' - 11:04:31, 13-12-2023
+---------------------
+When was The Avengers released?
+question_type:  WHEN
+entities:  ['The Avengers']
+entity: The Avengers
+Trying Crowd Data
+Trying KG
+
+The release date of The Avengers is 2011-07-15
+---------------------
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #33: 'Who is the director of The Avengers?' - 11:04:56, 13-12-2023
+---------------------
+Who is the director of The Avengers?
+question_type:  CLOSED
+entities:  ['The Avengers']
+relation: director
+entity: The Avengers
+P57 Q182218
+Trying Crowd Data
+Trying KG
+
+Ah, for The Avengers, the director is actually Joss Whedon.
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #25: 'give me a picture of Murat Aslan' - 11:05:13, 13-12-2023
+---------------------
+give me a picture of Murat Aslan
+question_type:  MULTIMEDIA
+entities:  ['Murat Aslan']
+entity: Murat Aslan
+Exception was caught: list index out of range
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #35: 'Can you recommend me movies similar to Aquaman?' - 11:05:34, 13-12-2023
+---------------------
+Can you recommend me movies similar to Aquaman?
+question_type:  RECOMMENDATION
+entities:  ['Aquaman']
+['Public Enemy, The', 'Little Caesar']
+entity: M
+
+Based on your preferences, I'd recommend: The Public Enemy, Little Caesar. Why? Well, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1931 and the genres of all movie are Crime, Drama, Action. Furthermore, I have found some more movies you'd might like based on embeddings: Psycho. Enjoy!
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #27: 'Show me how Jennifer Lawrence looks like' - 11:05:52, 13-12-2023
+---------------------
+Show me how Jennifer Lawrence looks like
+question_type:  MULTIMEDIA
+entities:  ['Jennifer Lawrence']
+entity: Jennifer Lawrence
+nm2225369
+ACTOR
+3914/rm4252017152
+
+As you wished for, here is an image of Jennifer Lawrence: image:3914/rm4252017152
+---------------------
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new reaction #28: 'THUMBS_UP' - 11:06:05, 13-12-2023
+        - Chatroom 7b257bd0-f688-4d8c-83d9-75852e826c45 - new message #37: 'What are some movies directed by Zack Snyder?' - 11:06:11, 13-12-2023
+---------------------
+What are some movies directed by Zack Snyder?
+question_type:  RECOMMENDATION
+entities:  ['Zack Snyder']
+Zack Snyder was not found and no close match found
+Exception was caught: I could'nt find any movies for you, sry!
+        - Chatroom 4fdba83c-dc2c-4016-9b23-f222a75ecdf0 - new message #30: 'What are the genres of inception?' - 11:06:35, 13-12-2023
+---------------------
+What are the genres of inception?
+question_type:  CLOSED
+entities:  ['inception']
+relation: genre
+entity: inception
+P136 Q25188
+Trying Crowd Data
+Trying KG
+
+Yup, inception's genre? Definitely mystery film.
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #1: 'the publication date (P577) of The Candidate (Q4993462)' - 11:13:23, 13-12-2023
+---------------------
+the publication date (P577) of The Candidate (Q4993462)
+question_type:  WHEN
+entities:  ['P577', 'The Candidate', 'Q4993462']
+entity: P577
+Trying Crowd Data
+Trying KG
+Trying embeddings
+Exception was caught: rdflib.term.URIRef('http://www.wikidata.org/prop/direct/P577')
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #1: 'Let me know what's Emma Stone look like.' - 11:13:35, 13-12-2023
+---------------------
+Let me know what's Emma Stone look like.
+question_type:  MULTIMEDIA
+entities:  ['Emma Stone']
+entity: Emma Stone
+nm0831868
+ACTOR
+Exception was caught: local variable 'image' referenced before assignment
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #3: 'can you tell me the publication date of the candidate' - 11:13:54, 13-12-2023
+---------------------
+can you tell me the publication date of the candidate
+question_type:  WHEN
+Exception was caught: no entities found
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #5: 'Ask for a picture of 'Scarlett Johansson'' - 11:14:31, 13-12-2023
+---------------------
+Ask for a picture of 'Scarlett Johansson'
+question_type:  MULTIMEDIA
+entities:  ["'Scarlett Johansson'"]
+entity: 'Scarlett Johansson'
+nm0424060
+MOVIE
+1598/rm3697944832
+
+As you wished for, here is an image of 'Scarlett Johansson': image:1598/rm3697944832
+---------------------
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #3: 'Let me know what Emma Stone looks like. ' - 11:14:50, 13-12-2023
+---------------------
+Let me know what Emma Stone looks like. 
+question_type:  MULTIMEDIA
+entities:  ['Emma Stone']
+entity: Emma Stone
+nm0831868
+ACTOR
+Exception was caught: local variable 'image' referenced before assignment
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #7: '
+Who is the director of Good Will Hunting? ' - 11:15:19, 13-12-2023
+---------------------
+
+Who is the director of Good Will Hunting? 
+question_type:  CLOSED
+entities:  ['Good Will Hunting']
+relation: director
+entity: Good Will Hunting
+P57 Q193835
+Trying Crowd Data
+Trying KG
+
+Good Will Hunting's director is Gus Van Sant
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #9: 'Who directed The Bridge on the River Kwai? ' - 11:15:28, 13-12-2023
+---------------------
+Who directed The Bridge on the River Kwai? 
+question_type:  CLOSED
+entities:  ['The Bridge on the River Kwai']
+relation: director
+entity: The Bridge on the River Kwai
+P57 Q188718
+Trying Crowd Data
+Trying KG
+
+Yup, The Bridge on the River Kwai's director? Definitely David Lean.
+---------------------
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #5: 'Show me a picture of Emma Stone.' - 11:15:37, 13-12-2023
+---------------------
+Show me a picture of Emma Stone.
+question_type:  MULTIMEDIA
+entities:  ['Emma Stone']
+entity: Emma Stone
+nm0831868
+ACTOR
+Exception was caught: local variable 'image' referenced before assignment
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #11: '
+Who is the screenwriter of The Masked Gang: Cyprus? ' - 11:15:39, 13-12-2023
+---------------------
+
+Who is the screenwriter of The Masked Gang: Cyprus? 
+question_type:  CLOSED
+entities:  ['The Masked Gang: Cyprus']
+relation: screenwriter
+entity: The Masked Gang: Cyprus
+P58 Q7750525
+Trying Crowd Data
+Trying KG
+Trying embeddings
+http://www.wikidata.org/entity/Q5058838
+
+Oh, the screenwriter of The Masked Gang: Cyprus? That's Cengiz Küçükayvaz.
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #13: 'Let me know what Sandra Bullock looks like. ' - 11:15:51, 13-12-2023
+---------------------
+Let me know what Sandra Bullock looks like. 
+question_type:  MULTIMEDIA
+entities:  ['Sandra Bullock']
+entity: Sandra Bullock
+nm0000113
+ACTOR
+1050/rm3423772416
+
+As you wished for, here is an image of Sandra Bullock: image:1050/rm3423772416
+---------------------
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #7: 'Recommend some movies similar to ‘Forest Gump’ and ‘The Lord of the Rings: The Fellowship of the Ring’.' - 11:15:57, 13-12-2023
+---------------------
+Recommend some movies similar to ‘Forest Gump’ and ‘The Lord of the Rings: The Fellowship of the Ring’.
+question_type:  RECOMMENDATION
+entities:  ['‘Forest Gump’', '‘The Lord of the Rings: The Fellowship of the Ring’']
+['Lamerica', 'Postman, The (Postino, Il)', 'Nobody Loves Me (Keiner liebt mich)']
+entity: Forrest Gump
+entity: Lord of the Rings: The Fellowship of the Ring, The
+
+I think Lamerica, The Postman (Postino, Il), Nobody Loves Me (Keiner liebt mich) would be up your alley. They align well with your tastes, especially considering some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1994 and the genres of all movie are Drama, Comedy, Adventure, Romance. Furthermore, I have found some more movies you'd might like based on embeddings: The Lord of the Rings: The Return of the King and The Lord of the Rings: The Two Towers. Enjoy!
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #15: 'Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? ' - 11:16:03, 13-12-2023
+---------------------
+Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? 
+question_type:  RECOMMENDATION
+entities:  ['The Lion King', 'Pocahontas', 'The Beauty and the Beast']
+['Toy Story', 'Jumanji', 'Tom and Huck']
+entity: Lion King, The
+entity: Pocahontas
+entity: Beauty and the Beast
+
+Adequate recommendations will be: Toy Story, Jumanji, Tom and Huck, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1995 and the genres of all movie are Fantasy, Adventure, Comedy, Animation, Children. Furthermore, I have found some more movies you'd might like based on embeddings: Belle's Tales of Friendship. Enjoy!
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #17: 'Who is the executive producer of X-Men: First Class? ' - 11:16:17, 13-12-2023
+---------------------
+Who is the executive producer of X-Men: First Class? 
+question_type:  CLOSED
+entities:  ['X-Men: First Class']
+relation: executive producer
+entity: X-Men: First Class
+P1431 Q223596
+Trying Crowd Data
+
+Sheryl Lee Ralph - according to the crowd, who had an inter-rater agreement of 0.199 in this batch. The answer distribution for this specific task was 2 support votes and 1 reject votes.
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #19: 'advise a movie like American Beauty' - 11:16:57, 13-12-2023
+---------------------
+advise a movie like American Beauty
+question_type:  MULTIMEDIA
+entities:  ['American Beauty']
+entity: American Beauty
+tt0169547
+MOVIE
+0325/rm3370781440
+
+As you wished for, here is an image of American Beauty: image:0325/rm3370781440
+---------------------
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #9: 'What's the publication date of The Candidate?' - 11:17:20, 13-12-2023
+---------------------
+What's the publication date of The Candidate?
+question_type:  WHEN
+entities:  ['The Candidate']
+entity: The Candidate
+Trying Crowd Data
+Trying KG
+
+Actually, The Candidate was released on 1972-01-01.
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #21: 'Recommend some 'Steven Spielberg' movies.' - 11:17:41, 13-12-2023
+---------------------
+Recommend some 'Steven Spielberg' movies.
+question_type:  RECOMMENDATION
+entities:  ['Steven Spielberg']
+['Desperate Measures', 'Phantoms', 'Sliding Doors']
+entity: Pi
+
+Looking at your choices (Pi), I'd suggest checking out Desperate Measures, Phantoms, Sliding Doors. They're great picks because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1998 and the genres of all movie are Romance, Crime, Horror, Thriller, Drama. Furthermore, I have found some more movies you'd might like based on embeddings: Requiem for a Dream and The Fountain. Enjoy!
+---------------------
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #11: 'What does Julia Roberts look like? ' - 11:18:17, 13-12-2023
+---------------------
+What does Julia Roberts look like? 
+question_type:  MULTIMEDIA
+entities:  ['Julia Roberts']
+entity: Julia Roberts
+nm0000210
+ACTOR
+3739/rm3651656960
+
+As you wished for, here is an image of Julia Roberts: image:3739/rm3651656960
+---------------------
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #13: '
+What is the box office of The Princess and the Frog?' - 11:18:38, 13-12-2023
+---------------------
+
+What is the box office of The Princess and the Frog?
+question_type:  CLOSED
+entities:  ['The Princess and the Frog']
+relation: box office
+entity: The Princess and the Frog
+P2142 Q171300
+Trying Crowd Data
+
+267000000 - according to the crowd, who had an inter-rater agreement of 0.236 in this batch. The answer distribution for this specific task was 2 support votes and 1 reject votes.
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #23: 'Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? ' - 11:18:47, 13-12-2023
+---------------------
+Given that I like The Lion King, Pocahontas, and The Beauty and the Beast, can you recommend some movies? 
+question_type:  RECOMMENDATION
+entities:  ['The Lion King', 'Pocahontas', 'The Beauty and the Beast']
+['Toy Story', 'Jumanji', 'Tom and Huck']
+entity: Lion King, The
+entity: Pocahontas
+entity: Beauty and the Beast
+
+Adequate recommendations will be: Toy Story, Jumanji, Tom and Huck, because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1995 and the genres of all movie are Fantasy, Adventure, Comedy, Animation, Children. Furthermore, I have found some more movies you'd might like based on embeddings: Belle's Tales of Friendship. Enjoy!
+---------------------
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #15: 'Can you tell me the publication date of Tom Meets Zizou? ' - 11:19:02, 13-12-2023
+---------------------
+Can you tell me the publication date of Tom Meets Zizou? 
+question_type:  WHEN
+entities:  ['Tom Meets Zizou']
+entity: Tom Meets Zizou
+Trying Crowd Data
+
+2011-01-01 - according to the crowd, who had an inter-rater agreement of 0.04 in this batch. The answer was corrected by the crowd workers with 3 workers voting for the same correction
+---------------------
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #17: 'What is the MPAA film rating of Weathering with You? ' - 11:19:35, 13-12-2023
+---------------------
+What is the MPAA film rating of Weathering with You? 
+question_type:  CLOSED
+entities:  ['Weathering with You']
+relation: MPA film rating
+entity: Weathering with You
+P1657 Q59692464
+Trying Crowd Data
+Trying KG
+
+Ah, for Weathering with You, the MPA film rating is actually NC-17.
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #25: 'Show me a picture of Shahrukh Khan.' - 11:19:38, 13-12-2023
+---------------------
+Show me a picture of Shahrukh Khan.
+question_type:  MULTIMEDIA
+entities:  ['Shahrukh Khan']
+entity: Shahrukh Khan
+nm0451321
+ACTOR
+0668/rm1152323072
+
+As you wished for, here is an image of Shahrukh Khan: image:0668/rm1152323072
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #27: 'Can you tell me the publication date of Tom Meets Zizou?' - 11:20:59, 13-12-2023
+---------------------
+Can you tell me the publication date of Tom Meets Zizou?
+question_type:  WHEN
+entities:  ['Tom Meets Zizou']
+entity: Tom Meets Zizou
+Trying Crowd Data
+
+2011-01-01 - according to the crowd, who had an inter-rater agreement of 0.04 in this batch. The answer was corrected by the crowd workers with 3 workers voting for the same correction
+---------------------
+        - Chatroom 5fdc1b3f-ec63-4661-b580-24b29269b0fc - new message #29: 'What is the box office of The Good Will Hunting? ' - 11:22:00, 13-12-2023
+---------------------
+What is the box office of The Good Will Hunting? 
+question_type:  CLOSED
+entities:  ['The Good Will Hunting']
+relation: box office
+entity: The Good Will Hunting
+P2142 Q193835
+Trying Crowd Data
+Trying KG
+
+Ah, for The Good Will Hunting, the box office is actually ['225900000'].
+---------------------
+        - Chatroom 9e9b8e1b-6f26-4e65-a5fd-88855c2f50f0 - new message #19: ' Who is the director of Star Wars: Episode VI - Return of the Jedi?' - 11:22:03, 13-12-2023
+---------------------
+ Who is the director of Star Wars: Episode VI - Return of the Jedi?
+question_type:  CLOSED
+entities:  ['Star Wars: Episode VI - Return of the Jedi']
+relation: director
+entity: Star Wars: Episode VI - Return of the Jedi
+P57 Q181803
+Trying Crowd Data
+Trying KG
+
+Yup, Star Wars: Episode VI - Return of the Jedi's director? Definitely Richard Marquand.
+---------------------
+        - Chatroom 1d519cbd-b7f4-4e7a-9f55-6a128c072468 - new message #1: 'how are you?' - 11:29:01, 13-12-2023
+---------------------
+how are you?
+question_type:  RECOMMENDATION
+Exception was caught: no entities found
+        - Chatroom 25c6a217-34b1-4852-a7db-002f98361d4d - new message #1: 'hi' - 11:29:03, 13-12-2023
+---------------------
+hi
+question_type:  WHEN
+entities:  ['hi']
+entity: hi
+Trying Crowd Data
+Trying KG
+
+Oh, hi? It was released on 1998-07-10.
+---------------------
+        - Chatroom 1d519cbd-b7f4-4e7a-9f55-6a128c072468 - new message #3: ' what is the genre of Shoplifters?' - 11:29:22, 13-12-2023
+---------------------
+ what is the genre of Shoplifters?
+question_type:  CLOSED
+entities:  ['Shoplifters']
+relation: genre
+entity: Shoplifters
+P136 Q48765577
+Trying Crowd Data
+Trying KG
+
+Ah, for Shoplifters, the genre is actually drama.
+---------------------
+        - Chatroom 25c6a217-34b1-4852-a7db-002f98361d4d - new message #3: 'what is the box office of Guardians of the Galaxy Vol. 2
+' - 11:29:44, 13-12-2023
+---------------------
+what is the box office of Guardians of the Galaxy Vol. 2
+
+question_type:  WHEN
+entities:  ['Guardians of the Galaxy Vol. 2']
+entity: Guardians of the Galaxy Vol. 2
+Trying Crowd Data
+Trying KG
+
+You asked about Guardians of the Galaxy Vol. 2? It hit the theaters on 2017-04-21.
+---------------------
+        - Chatroom 1d519cbd-b7f4-4e7a-9f55-6a128c072468 - new message #5: 'Who is the director of The Ascent? ' - 11:30:05, 13-12-2023
+---------------------
+Who is the director of The Ascent? 
+question_type:  CLOSED
+entities:  ['The Ascent']
+relation: director
+entity: The Ascent
+P57 Q760053
+Trying Crowd Data
+Trying KG
+
+Ah, for The Ascent, the director is actually Larisa Shepitko.
+---------------------
+        - Chatroom 10bf4f71-d56e-44db-a7d0-4b2d79609ec1 - new message #1: 'When was The Candidate published?' - 11:30:12, 13-12-2023
+---------------------
+When was The Candidate published?
+question_type:  WHEN
+entities:  ['The Candidate']
+entity: The Candidate
+Trying Crowd Data
+Trying KG
+
+The release date of The Candidate is 1972-01-01
+---------------------
+        - Chatroom 25c6a217-34b1-4852-a7db-002f98361d4d - new message #5: 'Who is the screenwriter of 12 Monkeys?' - 11:30:14, 13-12-2023
+---------------------
+Who is the screenwriter of 12 Monkeys?
+question_type:  CLOSED
+entities:  ['12 Monkeys']
+relation: screenwriter
+entity: 12 Monkeys
+P58 Q175038
+Trying Crowd Data
+Trying KG
+
+Looks like 12 Monkeys's screenwriter is David Peoples.
+---------------------
+        - Chatroom 1d519cbd-b7f4-4e7a-9f55-6a128c072468 - new message #7: 'Recommend some ‘Steven Spielberg’ movies. I enjoyed the movie ‘A.I. Artificial Intelligence’. ' - 11:30:29, 13-12-2023
+---------------------
+Recommend some ‘Steven Spielberg’ movies. I enjoyed the movie ‘A.I. Artificial Intelligence’. 
+question_type:  RECOMMENDATION
+entities:  ['Steven Spielberg’', '‘A.I. Artificial Intelligence’']
+['Desperate Measures', 'Phantoms', 'Sliding Doors']
+entity: Pi
+entity: A.I. Artificial Intelligence
+
+Considering what you like (Pi, A.I. Artificial Intelligence), how about trying Desperate Measures, Phantoms, Sliding Doors? They fit the bill because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1998 and the genres of all movie are Romance, Crime, Horror, Thriller, Drama. Furthermore, I have found some more movies you'd might like based on embeddings: Requiem for a Dream and The Fountain. Enjoy!
+---------------------
+        - Chatroom 10bf4f71-d56e-44db-a7d0-4b2d79609ec1 - new reaction #2: 'THUMBS_UP' - 11:30:31, 13-12-2023
+        - Chatroom 25c6a217-34b1-4852-a7db-002f98361d4d - new message #7: 'Can you recommend some drama movies given that I like 'Ryan Gosling'?' - 11:30:47, 13-12-2023
+---------------------
+Can you recommend some drama movies given that I like 'Ryan Gosling'?
+question_type:  RECOMMENDATION
+entities:  ["'Ryan Gosling'"]
+['Tea with Mussolini', 'Varsity Blues', "She's All That"]
+entity: Go
+
+I think Tea with Mussolini, Varsity Blues, She's All That would be up your alley. They align well with your tastes, especially considering some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1999 and the genres of all movie are Drama, Comedy, Romance, War. Furthermore, I have found some more movies you'd might like based on embeddings: Poppoya and Villain. Enjoy!
+---------------------
+        - Chatroom 10bf4f71-d56e-44db-a7d0-4b2d79609ec1 - new message #4: 'Who directed Captain America: Civil War?' - 11:31:24, 13-12-2023
+---------------------
+Who directed Captain America: Civil War?
+question_type:  CLOSED
+entities:  ['Captain America: Civil War']
+relation: director
+entity: Captain America: Civil War
+P57 Q24033885
+Trying Crowd Data
+Trying KG
+Trying embeddings
+http://www.wikidata.org/entity/Q442740
+
+Yup, Captain America: Civil War's director? Definitely Simon West.
+---------------------
+        - Chatroom 25c6a217-34b1-4852-a7db-002f98361d4d - new message #9: 'recommand some perfume brands
+' - 11:32:02, 13-12-2023
+---------------------
+recommand some perfume brands
+
+question_type:  RECOMMENDATION
+Exception was caught: no entities found
+        - Chatroom 1d519cbd-b7f4-4e7a-9f55-6a128c072468 - new message #9: 'show me a picture of Bruce Willis' - 11:32:57, 13-12-2023
+---------------------
+show me a picture of Bruce Willis
+question_type:  MULTIMEDIA
+entities:  ['Bruce Willis']
+entity: Bruce Willis
+nm0000246
+ACTOR
+1926/rm1037117952
+
+As you wished for, here is an image of Bruce Willis: image:1926/rm1037117952
+---------------------
+        - Chatroom 10bf4f71-d56e-44db-a7d0-4b2d79609ec1 - new reaction #5: 'THUMBS_UP' - 11:33:08, 13-12-2023
+        - Chatroom 1d519cbd-b7f4-4e7a-9f55-6a128c072468 - new message #11: 'what is the publication date of The Candidate?' - 11:33:33, 13-12-2023
+---------------------
+what is the publication date of The Candidate?
+question_type:  WHEN
+entities:  ['The Candidate']
+entity: The Candidate
+Trying Crowd Data
+Trying KG
+
+You asked about The Candidate? It hit the theaters on 1972-01-01.
+---------------------
+        - Chatroom 25c6a217-34b1-4852-a7db-002f98361d4d - new message #11: 'give me a picture of halle berry' - 11:33:44, 13-12-2023
+---------------------
+give me a picture of halle berry
+question_type:  MULTIMEDIA
+entities:  ['halle berry']
+entity: halle berry
+nm0000932
+MOVIE
+0353/rm3257480192
+
+As you wished for, here is an image of halle berry: image:0353/rm3257480192
+---------------------
+        - Chatroom 25c6a217-34b1-4852-a7db-002f98361d4d - new message #13: 'what is the box office of the princess and the frog' - 11:34:30, 13-12-2023
+---------------------
+what is the box office of the princess and the frog
+question_type:  WHEN
+entities:  ['the princess and the frog']
+entity: the princess and the frog
+Trying Crowd Data
+Trying KG
+
+The release date of the princess and the frog is 2009-11-25
+---------------------
+        - Chatroom 1d519cbd-b7f4-4e7a-9f55-6a128c072468 - new message #13: 'how can I write a script for a film?' - 11:34:42, 13-12-2023
+---------------------
+how can I write a script for a film?
+question_type:  MULTIMEDIA
+Exception was caught: no entities found
+        - Chatroom 10bf4f71-d56e-44db-a7d0-4b2d79609ec1 - new message #7: 'Who directed The First Avenger: Civil War 2018?
+' - 11:35:05, 13-12-2023
+---------------------
+Who directed The First Avenger: Civil War 2018?
+
+question_type:  CLOSED
+entities:  ['The First Avenger: Civil War 2018']
+relation: director
+entity: The First Avenger: Civil War 2018
+P57 Q1218232
+Trying Crowd Data
+Trying KG
+Trying embeddings
+http://www.wikidata.org/entity/Q42511
+
+Yup, The First Avenger: Civil War 2018's director? Definitely H. G. Wells.
+---------------------
+        - Chatroom 10bf4f71-d56e-44db-a7d0-4b2d79609ec1 - new reaction #8: 'THUMBS_DOWN' - 11:35:38, 13-12-2023
+        - Chatroom 10bf4f71-d56e-44db-a7d0-4b2d79609ec1 - new message #10: 'Recommend me movies similar to Hamlet and Othello!' - 11:36:26, 13-12-2023
+---------------------
+Recommend me movies similar to Hamlet and Othello!
+question_type:  RECOMMENDATION
+entities:  ['Hamlet', 'Othello!']
+['Grumpier Old Men', 'Waiting to Exhale', 'Heat']
+entity: Hamlet
+entity: Othello
+
+Considering what you like (Hamlet, Othello), how about trying Grumpier Old Men, Waiting to Exhale, Heat? They fit the bill because some movies were published in the same year and the genres are overlapping. The details about the movies are shown as follows: the publication date of all movies is 1995 and the genres of all movie are Romance, Crime, Action, Thriller, Comedy, Drama. Furthermore, I have found some more movies you'd might like based on embeddings: Henry V and Richard III. Enjoy!
+---------------------
+        - Chatroom 10bf4f71-d56e-44db-a7d0-4b2d79609ec1 - new message #12: 'Show me a picture of Brad Pitt.' - 11:36:40, 13-12-2023
+---------------------
+Show me a picture of Brad Pitt.
+question_type:  MULTIMEDIA
+entities:  ['Brad Pitt']
+entity: Brad Pitt
+nm0000093
+ACTOR
+3692/rm3681393408
+
+As you wished for, here is an image of Brad Pitt: image:3692/rm3681393408
+---------------------
+        - Chatroom 25c6a217-34b1-4852-a7db-002f98361d4d - new message #15: 'what is the box office of The Princess and the Frog' - 11:37:21, 13-12-2023
+---------------------
+what is the box office of The Princess and the Frog
+question_type:  CLOSED
+entities:  ['The Princess and the Frog']
+relation: box office
+entity: The Princess and the Frog
+P2142 Q171300
+Trying Crowd Data
+
+267000000 - according to the crowd, who had an inter-rater agreement of 0.236 in this batch. The answer distribution for this specific task was 2 support votes and 1 reject votes.
